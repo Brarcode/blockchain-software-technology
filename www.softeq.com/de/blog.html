@@ -1,0 +1,3691 @@
+<!doctype html><html lang="de">
+<!-- Mirrored from www.softeq.com/de/blog by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Oct 2022 04:06:14 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="
+      
+        Erfahren Sie in unserem IoT-Blog mehr über angeschlossene Geräte mit eigener Stromversorgung, smarte Fabriken, industrielle Inspektionsdrohnen und andere Technologien, die die Unternehmenslandschaft verändern.
+      
+    ">
+    <title>Blog über das Internet of Things | Softeq
+      
+      
+      
+    </title>
+    <link rel="shortcut icon" href="../hubfs/favicon-32.png">
+    
+    <script src="../hs/hsstatic/jquery-libs/static-1.4/jquery/jquery-1.11.2.js"></script>
+<script>hsjQuery = window['jQuery'];</script>
+    <meta property="og:description" content="Erfahren Sie in unserem IoT-Blog mehr über angeschlossene Geräte mit eigener Stromversorgung, smarte Fabriken, industrielle Inspektionsdrohnen und andere Technologien, die die Unternehmenslandschaft verändern.">
+    <meta property="og:title" content="">
+    <meta name="twitter:description" content="Erfahren Sie in unserem IoT-Blog mehr über angeschlossene Geräte mit eigener Stromversorgung, smarte Fabriken, industrielle Inspektionsdrohnen und andere Technologien, die die Unternehmenslandschaft verändern.">
+    <meta name="twitter:title" content="">
+
+    
+
+    
+    <style>
+a.cta_button{-moz-box-sizing:content-box !important;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;vertical-align:middle}.hs-breadcrumb-menu{list-style-type:none;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px}.hs-breadcrumb-menu-item{float:left;padding:10px 0px 10px 10px}.hs-breadcrumb-menu-divider:before{content:'›';padding-left:10px}.hs-featured-image-link{border:0}.hs-featured-image{float:right;margin:0 0 20px 20px;max-width:50%}@media (max-width: 568px){.hs-featured-image{float:none;margin:0;width:100%;max-width:100%}}.hs-screen-reader-text{clip:rect(1px, 1px, 1px, 1px);height:1px;overflow:hidden;position:absolute !important;width:1px}
+</style>
+
+<link rel="stylesheet" href="../hs/hsstatic/cos-LanguageSwitcher/static-1.11/sass/LanguageSwitcher.css">
+<link rel="stylesheet" href="../hs-fs/hub/2915353/hub_generated/module_assets/40993579460/1662031999319/module_40993579460_search_box.min.css">
+<link rel="stylesheet" href="../hs-fs/hub/2915353/hub_generated/module_assets/55305265190/1665561600101/module_55305265190_Ribbon_global.min.css">
+<link rel="stylesheet" href="../hs-fs/hub/2915353/hub_generated/module_assets/34316013517/1647940098536/module_34316013517_blog-hero_new2.min.css">
+<link rel="stylesheet" href="../hs-fs/hub/2915353/hub_generated/module_assets/25178155182/1648735050750/module_25178155182_cta-form.min.css">
+<link rel="stylesheet" href="../hs-fs/hub/2915353/hub_generated/module_assets/1615469062823/module_42225714444_search-field-footer.css">
+<link rel="stylesheet" href="../hs-fs/hub/2915353/hub_generated/module_assets/1615468549715/module_41053827494_search-field.css">
+    
+
+    
+<!--  Added by GoogleAnalytics integration -->
+<script>
+var _hsp = window._hsp = window._hsp || [];
+_hsp.push(['addPrivacyConsentListener', function(consent) { if (consent.allowed || (consent.categories && consent.categories.analytics)) {
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+  ga('create','UA-289784-1','auto');
+  ga('send','pageview');
+}}]);
+</script>
+
+<!-- /Added by GoogleAnalytics integration -->
+
+<!--  Added by GoogleTagManager integration -->
+<script>
+var _hsp = window._hsp = window._hsp || [];
+
+var hsLoadGtm = function loadGtm() {
+    if(window._hsGtmLoadOnce) {
+      return;
+    }
+
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P4V86H');
+
+    window._hsGtmLoadOnce = true;
+};
+
+var useGoogleConsentMode = false;
+
+if (!useGoogleConsentMode){
+    _hsp.push(['addPrivacyConsentListener', function(consent){
+      if(consent.allowed || (consent.categories && consent.categories.analytics)){
+        hsLoadGtm();
+      }
+  }]);
+} else{
+    if(!window._hsGoogleConsentRunOnce){
+      window._hsGoogleConsentRunOnce=true;
+
+      window.dataLayer=window.dataLayer||[];
+      function gtag(){dataLayer.push(arguments);}
+
+      gtag('consent','default',{
+        'ad_storage':'denied',
+        'analytics_storage':'denied'
+      });
+
+      gtag('set','developer_id.dZTQ1Zm',true);
+
+      _hsp.push(['addPrivacyConsentListener',function(consent){
+      var hasAnalyticsConsent=consent&&(consent.allowed||(consent.categories&&consent.categories.analytics));
+      var hasAdsConsent=consent&&(consent.allowed||(consent.categories&&consent.categories.advertisement));
+
+      gtag('consent','update',{
+        'ad_storage':hasAdsConsent?'granted':'denied',
+        'analytics_storage':hasAnalyticsConsent?'granted':'denied'
+      });
+    }]);
+  }
+
+  hsLoadGtm();
+}
+</script>
+
+<!-- /Added by GoogleTagManager integration -->
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push(
+{'gtm.start': new Date().getTime(),event:'gtm.js'}
+);var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P4V86H');</script>
+<!-- End Google Tag Manager -->
+<meta name="facebook-domain-verification" content="dycyfc5ers49cougs4xdd4ryic75ya">
+
+<meta property="og:url" content="https://www.softeq.com/de/blog">
+<meta property="og:type" content="blog">
+<meta name="twitter:card" content="summary">
+<link rel="alternate" type="application/rss+xml" href="blog/rss.xml">
+<meta name="twitter:domain" content="www.softeq.com">
+<script src="../../platform.linkedin.com/in.js" type="text/javascript">
+    lang: de_DE
+</script>
+
+<meta http-equiv="content-language" content="de">
+<link rel="alternate" hreflang="de" href="blog.html">
+<link rel="alternate" hreflang="en" href="../blog.html">
+
+<link rel="stylesheet" href="../hs-fs/hub/2915353/hub_generated/template_assets/18851204580/1664962975104/softeq/css/main.min.css">
+<link rel="stylesheet" href="../hs-fs/hub/2915353/hub_generated/template_assets/23908735323/1663832674487/softeq-blog/css/blog-main.min.css">
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:500&amp;display=swap" rel="stylesheet">
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'../../connect.facebook.net/en_US/fbevents.js');
+fbq('init', '504731893395981');
+fbq('track', 'PageView');
+</script>
+<noscript>&lt;img  height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=504731893395981&amp;amp;ev=PageView&amp;amp;noscript=1"&gt;</noscript>
+<!-- End Facebook Pixel Code -->
+<link rel="next" href="blog/page/2">
+  <meta name="generator" content="HubSpot"></head>
+  <body class="page page--blog">
+<!--  Added by GoogleTagManager integration -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P4V86H" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- /Added by GoogleTagManager integration -->
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P4V86H" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="preloader js-preloader"></div>
+    <div class="page__inner">
+      <header class="header page__header">
+        
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+  <div class="header__inner">
+    <div class="header__group">
+      <span id="hs_cos_wrapper_default-logo" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_logo logo header__logo" style="" data-hs-cos-general-type="widget" data-hs-cos-type="logo"><a href="../index.html" id="hs-link-default-logo" style="border-width:0px;border:0px;"><img src="../hubfs/logo-solid-white.svg" class="hs-image-widget " style="width:130px;border-width:0px;border:0px;" width="130" alt="" title=""></a></span>
+      <nav class="header__nav">
+        <ul class="header-menu header__main-menu">
+          
+          
+          
+<li class="header-menu__item">
+  
+  <div class="header-menu__link header-menu__link--with-arrow">
+    Services
+  </div>
+  <ul class="header-submenu header-submenu_v2 header-menu__submenu">
+    <li class="header-submenu__title h3">Services</li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="custom_application_development.html">
+        Individuelle Softwareentwicklung
+      </a>
+      <ul class="header-submenu header-submenu--more">
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="web_app_development.html">
+            Web-Systeme
+          </a>
+        </li>
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="mobile_application_development.html">
+            Mobile Apps
+          </a>
+        </li>
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="cloud_app_development.html">
+            Cloud-Systeme
+          </a>
+        </li>
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="softeq-amazon-web-services.html">
+            AWS-Software
+          </a>
+        </li>
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="desktop_application_development.html">
+            Desktop-Apps
+          </a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="embedded_system.html">
+        Embedded-Systementwicklung
+      </a>
+      <ul class="header-submenu header-submenu--more">
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="embedded.html">
+            Embedded Software Entwicklung
+          </a>
+        </li>
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="firmware_development.html">
+            Firmware
+          </a>
+        </li>
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="thunderbolt-solution-development.html">
+            Thunderbolt
+          </a>
+        </li>
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="hmi_development.html">
+            Human-Machine-Interfaces (HMIs)
+          </a>
+        </li>
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="middleware_development.html">
+            Middleware
+          </a>
+        </li>
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="connectivity_solutions.html">
+            Connectivity-Lösungen
+          </a>
+        </li>
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="proximity_solutions.html">
+            Proximity-Lösungen
+          </a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="hardware_design.html">
+        Hardwaredesign
+      </a>
+      <ul class="header-submenu header-submenu--more">
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="electronics_system_design.html">
+            Elektronisches Systemdesign
+          </a>
+        </li>
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="electronic_circuit_design.html">
+            Design elektronischer Schaltungen
+          </a>
+        </li>
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="pcb_design_and_layout_services.html">
+            PCB-Design und Layoutservices
+          </a>
+        </li>
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="expert_analysis_simulation_modeling_services.html">
+            PCB-Designsimulationen
+          </a>
+        </li>
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="fpga_design_services.html">
+            FPGA-Design
+          </a>
+        </li>
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="enclosure_design.html">
+            Gehäusedesign
+          </a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="../innovation-lab.html">
+        Innovation in der Frühphase
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="ui_ux_design.html">
+        UX/UI-Design
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="frontend_development.html">
+        Frontend
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="backend_development.html">
+        Backend
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="quality_assurance.html">
+        Quality Assurance
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="application_maintenance_and_support.html">
+        Wartung und Support
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="devops_as_a_service.html">
+        DevOps
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="digital_transformation.html">
+        Digitale Transformtion
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="business-analysis-and-it-consulting.html">
+        Business Analyse
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="cybersecurity.html">
+        Cybersicherheit
+      </a>
+      
+    </li>
+    
+  </ul>
+  
+</li>
+
+          
+          
+<li class="header-menu__item">
+  
+  <div class="header-menu__link header-menu__link--with-arrow">
+    Lösungen
+  </div>
+  <ul class="header-submenu header-submenu_v2 header-menu__submenu">
+    <li class="header-submenu__title h3">Lösungen</li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="internet_of_things.html">
+        IoT
+      </a>
+      <ul class="header-submenu header-submenu--more">
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="consumer-internet-of-things.html">
+            Consumer IoT
+          </a>
+        </li>
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="industrial_iot.html">
+            Industrial IoT (IIoT)
+          </a>
+        </li>
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="medical-internet-of-things.html">
+            Healthcare IoT
+          </a>
+        </li>
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="smart-home.html">
+            Smart Home
+          </a>
+        </li>
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="wearable_technology_solutions.html">
+            Wearables
+          </a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="nand_storage_memory_solutions.html">
+        Storage
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="industrial_automation_and_robotics.html">
+        Industrielle Automatisierung und Robotik
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="video_streaming.html">
+        Verarbeitung und Distribution von Medieninhalten
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="video_analytics_and_camera_app_development.html">
+        Computer Vision
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="machine_learning.html">
+        KI/Machine Learning
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="ar_and_vr_development.html">
+        AR/VR
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="blockchain_software_development.html">
+        Blockchain
+      </a>
+      
+    </li>
+    
+  </ul>
+  
+</li>
+
+          
+          
+<li class="header-menu__item">
+  
+  <div class="header-menu__link header-menu__link--with-arrow">
+    Branchen
+  </div>
+  <ul class="header-submenu header-submenu_v2 header-menu__submenu">
+    <li class="header-submenu__title h3">Branchen</li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="healthcare-industry.html">
+        Healthcare
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="consumer-electronics-industry.html">
+        Verbraucherelektronik
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="digital-media-and-entertainment-industry.html">
+        Medien und Unterhaltung
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="software-and-technology-industry.html">
+        Software und Technologie
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="digital-solutions-for-industrial-manufacturing.html">
+        Industrielle Fertigung
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="transportation-industry.html">
+        Transport
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="automotive.html">
+        Automotive
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="data-srorage-industry.html">
+        Datenspeicherung
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="solutions-for-the-sports-industry.html">
+        Sport
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="pet-tech-solutions.html">
+        Pet Tech
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="baby-tech-software-solutions.html">
+        Babytech
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="climatetech-solutions.html">
+        Green Tech
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="elearning-industry.html">
+        E-Learning
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="oil-and-gas-industry.html">
+        Energie
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="construction-industry.html">
+        Baugewerbe
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="game-development-services.html">
+        Spiele
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="retail-solutions-industry.html">
+        Einzelhandel
+      </a>
+      
+    </li>
+    
+  </ul>
+  
+</li>
+
+          
+          
+<li class="header-menu__item">
+  
+  <div class="header-menu__link header-menu__link--with-arrow">
+    Über uns
+  </div>
+  <ul class="header-submenu header-submenu_v2 header-menu__submenu">
+    <li class="header-submenu__title h3">Über uns</li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="testimonials.html">
+        Was unsere Kunden sagen
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="25-anniversary.html">
+        25 Jahre Innovation
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="../innovation-lab.html">
+        Innovation Lab
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="services.html">
+        Unser Verfahren
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="technology-capabilities-overview.html">
+        Unsere Tech-Skills 
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="vision-mission-and-values.html">
+        Unsere Vision, Mission und Werte
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="partnerships.html">
+        Partnerschaften 
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="our-iso-certificates-your-piece-of-mind.html">
+        ISO-Zertifizierungen
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="how-we-work.html">
+        Kooperationsmodelle
+      </a>
+      
+    </li>
+    
+  </ul>
+  
+</li>
+
+          
+        </ul>
+      </nav>
+    </div>
+    <div class="header__group">
+      <ul class="header-menu header-menu--extra header__extra-menu">
+        
+        
+        
+<li class="header-menu__item">
+  
+  <a class="header-menu__link" href="featured_projects.html">
+    Portfolio
+  </a>
+  
+</li>
+
+        
+        
+<li class="header-menu__item">
+  
+  <div class="header-menu__link header-menu__link--with-arrow">
+    Medien
+  </div>
+  <ul class="header-submenu header-submenu_v2 header-menu__submenu">
+    <li class="header-submenu__title h3">Medien</li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="news.html">
+        Softeq-News
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="blog.html">
+        Blog
+      </a>
+      
+    </li>
+    
+  </ul>
+  
+</li>
+
+        
+      </ul>
+
+      <div class="hide-xs language-switcher js-language-switcher">
+        <span class="language-switcher__label">de</span>
+        <span id="hs_cos_wrapper_language_switcher" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_language_switcher" style="" data-hs-cos-general-type="widget" data-hs-cos-type="language_switcher"><div class="lang_switcher_class">
+   <div class="globe_class" onclick="">
+       <ul class="lang_list_class">
+           <li>
+               <a class="lang_switcher_link" data-language="de" lang="de" href="blog.html">Deutsch</a>
+           </li>
+           <li>
+               <a class="lang_switcher_link" data-language="en" lang="en" href="../blog.html">English</a>
+           </li>
+       </ul>
+   </div>
+</div></span>
+      </div>
+      
+        <div class="hide-md" style="margin-left: 8px">
+          <div id="hs_cos_wrapper_module_161166177346253" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+
+
+<div class="hs-search-bar" id="hs-search-bar">
+  <button class="hs-search-bar__button" aria-label="Search"><span id="hs_cos_wrapper_module_161166177346253_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_icon" style="" data-hs-cos-general-type="widget" data-hs-cos-type="icon"><svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" aria-hidden="true"><g id="search1_layer"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" /></g></svg></span></button>
+  <div class="hs-search-bar__field">
+    <div class="hs-search-field">
+      <div class="hs-search-field__bar">
+        <form action="https://www.softeq.com/hs-search-results">
+          <input type="text" class="hs-search-field__input" name="term" autocomplete="off" aria-label="Frequent queries" placeholder="
+
+
+
+
+
+
+
+
+Zum Beispiel: Industrial IoT
+
+">
+          
+            <button class="hs-search-field__button" aria-label="
+
+
+
+
+
+
+
+
+Suche
+
+"><span id="hs_cos_wrapper_module_161166177346253_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_icon" style="" data-hs-cos-general-type="widget" data-hs-cos-type="icon"><svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" aria-hidden="true"><g id="search2_layer"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" /></g></svg></span></button>
+          
+          
+            <input type="hidden" name="type" value="SITE_PAGE">
+          
+          
+          
+            <input type="hidden" name="type" value="BLOG_POST">
+            <input type="hidden" name="type" value="LISTING_PAGE">
+          
+          
+        </form>
+      </div>
+      <ul class="hs-search-field__suggestions">
+        
+          
+  <li class="h5 hs-search-field__title">Häufig gestellte Fragen</li>
+  
+    
+    
+    <li>
+      <a href="internet_of_things.html">
+        Entwicklung von IoT-Lösungen
+      </a>
+    </li>
+  
+    
+    
+    <li>
+      <a href="digital_transformation.html">
+        Digitale Transformation
+      </a>
+    </li>
+  
+    
+    
+    <li>
+      <a href="embedded.html">
+        Entwicklung von Embedded Lösungen
+      </a>
+    </li>
+  
+    
+    
+    <li>
+      <a href="hardware_design.html">
+        Hardwaredesign
+      </a>
+    </li>
+  
+    
+    
+    <li>
+      <a href="../venture-studio.html">
+        Venture Studio
+      </a>
+    </li>
+  
+    
+    
+    <li>
+      <a href="contact.html">
+        Kontakt
+      </a>
+    </li>
+  
+    
+    
+    <li>
+      <a href="featured_projects/adas-solution-for-electric-vehicles.html">
+        ADAS-Lösung für Elektrofahrzeuge
+      </a>
+    </li>
+  
+    
+    
+    <li>
+      <a href="featured_projects/full_cycle_software_development_for_smart_bassinette.html">
+        Mobile App, Web und Firmware für ein intelligentes Babybett
+      </a>
+    </li>
+  
+    
+    
+    <li>
+      <a href="featured_projects/pcb-design-verification-for-an-automotive-radar-sensor-system.html">
+        PCB-Designverifizierung für ein automobiles Radarsensorsystem
+      </a>
+    </li>
+  
+    
+    
+    <li>
+      <a href="device-management-suite-for-daikin-smart-thermostats-and-indoor-air-quality-sensors.html">
+        Gerätemanagement-Suite für smarte Thermostate und Raumluftqualität-Sensoren von Daikin
+      </a>
+    </li>
+  
+
+        
+      </ul>
+    </div>
+  </div>
+</div></div>
+        </div>
+      
+      
+        <a class="btn btn-white header__action header__action_v2" href="contact.html">
+
+Kontakt
+
+</a>
+      
+      <button class="menu-toggle header__menu-toggle js-menu-toggle" data-action="open" type="button">
+        <span></span>
+      </button>
+    </div>
+  </div>
+</div>
+<div id="hs_cos_wrapper_module_16317066883226" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+  
+</div>
+      </header>
+      <div class="page__content">
+        
+          <div id="hs_cos_wrapper_module_159889450327842" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+ 
+  <div class="news-hero">
+ 
+  <div class="container">
+    
+    <div class="news-container">
+      <div class="news-title">
+        <h1 class="news-h1">
+          
+
+
+
+
+
+
+
+
+Softeq Blog
+
+
+        </h1>
+        <h2 class="news-h2">
+          
+
+
+
+
+
+
+
+
+Ein Blog über alles rund um IoT und die digitale Transformation.
+
+
+        </h2>
+      </div>
+      <div class="news-filter">
+        <div class="filter-title">
+
+Nach Thema filtern
+
+</div>
+        
+        <div class="blog-filter__container">
+          
+          <div class="news-tag-selector">
+            
+              <div class="filter-topics">
+                <input type="text" value="" placeholder="Filter tags" class="blog-tag-selector__filter">
+              </div>
+            
+            <div class="filter-arrow">
+              <svg width="15" height="15" viewbox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 6.96436L7.50011 13.4645L14.0002 6.96436" stroke="#ffffff" stroke-width="2" />
+              </svg>
+            </div>
+          </div>
+          <ul class="blog-tag-selector__list">
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/5g">5G</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/adas">ADAS</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/ar-vr">AR/VR</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="#">Artificial Intelligence</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/automotive">Automotive</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="#">AWS</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/azure">Azure</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="#">Baby Tech</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/bauindustrie">Bauindustrie</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="#">Bluetooth</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/business-analyse">Business-Analyse</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="#">Business Analysis</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/chip">Chip</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="#">Cloud</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/consumer-iot">Consumer IoT</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/cybersecurity">Cybersecurity</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/design">Design</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/digital-signage">Digital Signage</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/digitale-transformation">Digitale Transformation</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/digitale-zwillinge">Digitale Zwillinge</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/discovery-phase">Discovery Phase</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/drohnen">Drohnen</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/ecommerce">Ecommerce</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/edge-computing">Edge Computing</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/embedded">Embedded</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/energie">Energie</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/fertigung">Fertigung</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/green-tech">Green Tech</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/hardware">Hardware</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/healthcare">Healthcare</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/immobilien">Immobilien</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/industrial-iot">Industrial IoT</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/innovation">Innovation</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/insights">Insights</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/internet-of-behavior">Internet of Behavior</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/iot">IoT</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/ki">KI</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/lieferketten">Lieferketten</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/machine-learning">Machine Learning</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/manufacturing">Manufacturing</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/medien-unterhaltung">Medien &amp; Unterhaltung</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/mobile">Mobile</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/pettech">PetTech</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/retail">Retail</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/robotics">Robotics</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/robotik">Robotik</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/smart-building">Smart Building</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/smart-home">Smart Home</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/start-ups">Start-ups</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/technologie">Technologie</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/technology">Technology</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/transportwesen">Transportwesen</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/trends">Trends</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/use-cases">Use Cases</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/venture-studio">Venture Studio</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/verbraucherelektronik">Verbraucherelektronik</a>
+            </li>
+            
+            <li class="blog-tag-selector__item">
+              <a href="blog/tag/wearables">Wearables</a>
+            </li>
+            
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    
+    </div>
+  </div>
+</div></div>
+          
+<!--             previous blog-filter -->
+          
+          
+<div class="blog-list-container">
+  
+  <div class="container blog-post-list js-blog-list">
+    
+    
+    
+      
+    
+    
+      <div class="blog-post-item cta-list cta-list_hide-form-text">
+        
+        <div class="cta-list__title">Abonnieren Sie unseren Newsletter</div>
+        <div class="cta-list__subtitle">Wir verschicken nur Inhalte, die wir als substanziell erachten</div>
+        
+        <div class="cta-list__form gradient-form">
+          <span id="hs_cos_wrapper_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_form" style="" data-hs-cos-general-type="widget" data-hs-cos-type="form"><h3 id="hs_cos_wrapper_form_461274822_title" class="hs_cos_wrapper form-title" data-hs-cos-general-type="widget_field" data-hs-cos-type="text"></h3>
+
+<div id="hs_form_target_form_461274822"></div>
+
+
+
+
+
+
+
+
+
+</span>
+        </div>
+      </div>
+    
+
+    
+    
+    
+      
+      
+      
+      
+      
+      <div class="blog-post-item js-blog-list-item even-post-item" style="" onclick="window.location='blog/a-dedicated-team-of-developers-3-scenarios-where-you-need-this';">
+        <div class="featured_image">
+          
+          <a href="blog/a-dedicated-team-of-developers-3-scenarios-where-you-need-this" title="" class="blog-post-item__img" style="background-image:url(../hubfs/Blog/3-scenarios-where-the-dedicated-team-model-works-best-hero-1.jpg);"></a>
+          
+          <div class="topic_list">
+            
+
+            
+              
+            
+              
+            
+            
+              <span class="blog-post-info__topic">Technologie</span> / 
+            
+              <span class="blog-post-info__topic">Use Cases</span>
+            
+          </div>
+
+        </div>
+        <div class="blog-post-item__details">
+          
+            
+            <div style="padding: 20px 0 0px 28px; margin-bottom: -25px; font-size: 14px; color: #939393; font-family: Roboto;">
+              <img src="../hubfs/blog_assets/text.svg" alt="Time to read" style="margin-bottom: -4px; margin-right: 4px;">5 min
+            </div>
+            
+          
+          <div class="blog-post-info">
+            <div>
+              
+              
+
+Von
+
+
+              <a class="author-link" href="blog/author/tatsiana-tsiukhai">Tatsiana Tsiukhai</a>
+              /
+              
+                August 16, 2022 
+            </div>
+
+          </div>
+          <div class="blog-post-item__title"><a href="blog/a-dedicated-team-of-developers-3-scenarios-where-you-need-this">Das Dedicated Team: 3 Beispiele für Einsatzmöglichkeiten des Entwicklungsteams</a></div>
+          <div class="blog-post-item__description">
+            <a href="blog/a-dedicated-team-of-developers-3-scenarios-where-you-need-this">
+              Ein Dedicated Team ist ein Entwicklungsteam, das Sie als Remote-Team für Ihr Projekt anheuern - ganz gleich, ob Sie einen Prototyp entwickeln oder eine große Webplattform skalieren müssen. Hier sind drei Szenarien, in denen sich der Einsatz eines Dedicated Teams lohnt. Mithilfe des Dedicated Teams können Sie ein Produkt schneller auf den Markt bringen und das Budget für die Anstellung von Mitarbeitern sparen.
+              <svg width="17" height="12" viewbox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 5.3033H15.6927V6.36395H0V5.3033Z" fill="#00ADFF" />
+                <path d="M11.2494 11.25L16.2764 5.25001L16.9048 6.00001L11.8778 12L11.2494 11.25Z" fill="#00ADFF" />
+                <path d="M11.8778 0L16.9048 6.00001L16.2764 6.74999L11.2494 0.749999L11.8778 0Z" fill="#00ADFF" />
+              </svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      
+    
+      
+      
+      
+      
+      
+      <div class="blog-post-item js-blog-list-item " style="" onclick="window.location='blog/experiential-tech-use-cases';">
+        <div class="featured_image">
+          
+          <a href="blog/experiential-tech-use-cases" title="" class="blog-post-item__img" style="background-image:url(../hubfs/XR%20Tech.jpg);"></a>
+          
+          <div class="topic_list">
+            
+
+            
+              
+            
+              
+            
+            
+              <span class="blog-post-info__topic">AR/VR</span> / 
+            
+              <span class="blog-post-info__topic">Use Cases</span>
+            
+          </div>
+
+        </div>
+        <div class="blog-post-item__details">
+          
+            
+            <div style="padding: 20px 0 0px 28px; margin-bottom: -25px; font-size: 14px; color: #939393; font-family: Roboto;">
+              <img src="../hubfs/blog_assets/text.svg" alt="Time to read" style="margin-bottom: -4px; margin-right: 4px;">6 min
+            </div>
+            
+          
+          <div class="blog-post-info">
+            <div>
+              
+              
+
+Von
+
+
+              <a class="author-link" href="blog/author/alex-makarevich">Alex Makarevich</a>
+              /
+              
+                August 1, 2022 
+            </div>
+
+          </div>
+          <div class="blog-post-item__title"><a href="blog/experiential-tech-use-cases">Wie Experiential Technology ganze Branchen revolutioniert: Beispiele aus der Praxis</a></div>
+          <div class="blog-post-item__description">
+            <a href="blog/experiential-tech-use-cases">
+              Die Zukunft der Immersive Technology beginnt jetzt, mit preiswerter, benutzerfreundlicher Hardware. Immer mehr Unternehmen wollen Experiential Technology, VR und AR, nutzen, um der Konkurrenz einen Schritt voraus zu sein. Entdecken Sie anhand von Beispielen, wie Einzelhändler, Fertigungs- und andere Unternehmen den Trends der Immersive Technology folgen und mit XR-Anwendungen Millionen verdienen, bevor die Technologie zum Mainstream wird.
+              <svg width="17" height="12" viewbox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 5.3033H15.6927V6.36395H0V5.3033Z" fill="#00ADFF" />
+                <path d="M11.2494 11.25L16.2764 5.25001L16.9048 6.00001L11.8778 12L11.2494 11.25Z" fill="#00ADFF" />
+                <path d="M11.8778 0L16.9048 6.00001L16.2764 6.74999L11.2494 0.749999L11.8778 0Z" fill="#00ADFF" />
+              </svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      
+    
+      
+      
+      
+      
+      
+      <div class="blog-post-item js-blog-list-item even-post-item" style="" onclick="window.location='blog/iot-in-the-entertainment-industry-real-life-examples';">
+        <div class="featured_image">
+          
+          <a href="blog/iot-in-the-entertainment-industry-real-life-examples" title="" class="blog-post-item__img" style="background-image:url(../hubfs/Blog/iot-in-media-and-entertainment-real-world-examples-hero.jpg);"></a>
+          
+          <div class="topic_list">
+            
+
+            
+              
+            
+              
+            
+              
+            
+            
+              <span class="blog-post-info__topic">AR/VR</span> / 
+            
+              <span class="blog-post-info__topic">Digitale Transformation</span> / 
+            
+              <span class="blog-post-info__topic">Medien &amp; Unterhaltung</span>
+            
+          </div>
+
+        </div>
+        <div class="blog-post-item__details">
+          
+            
+            <div style="padding: 20px 0 0px 28px; margin-bottom: -25px; font-size: 14px; color: #939393; font-family: Roboto;">
+              <img src="../hubfs/blog_assets/text.svg" alt="Time to read" style="margin-bottom: -4px; margin-right: 4px;">4 min
+            </div>
+            
+          
+          <div class="blog-post-info">
+            <div>
+              
+              
+
+Von
+
+
+              <a class="author-link" href="blog/author/tatsiana-tsiukhai">Tatsiana Tsiukhai</a>
+              /
+              
+                Juli 14, 2022 
+            </div>
+
+          </div>
+          <div class="blog-post-item__title"><a href="blog/iot-in-the-entertainment-industry-real-life-examples">Use Cases für IoT in Medien- und Unterhaltungsbranche: Beispiele aus der Praxis</a></div>
+          <div class="blog-post-item__description">
+            <a href="blog/iot-in-the-entertainment-industry-real-life-examples">
+              Für die Medien- und Unterhaltungsbranche ergeben sich durch IoT unzählige Möglichkeiten, die weit über Unterhaltungs-Apps hinausgehen. Hier stellen wir die vier wichtigsten IoT-Anwendungsbereiche in der Medien- und Unterhaltungsbranche vor. Sie reichen von personalisierten Inhalten bis zu immersiven Lösungen.
+              <svg width="17" height="12" viewbox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 5.3033H15.6927V6.36395H0V5.3033Z" fill="#00ADFF" />
+                <path d="M11.2494 11.25L16.2764 5.25001L16.9048 6.00001L11.8778 12L11.2494 11.25Z" fill="#00ADFF" />
+                <path d="M11.8778 0L16.9048 6.00001L16.2764 6.74999L11.2494 0.749999L11.8778 0Z" fill="#00ADFF" />
+              </svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      
+    
+      
+      
+      
+      
+      
+      <div class="blog-post-item js-blog-list-item " style="" onclick="window.location='blog/anwendungsbeispiele-f%c3%bcr-edge-computing-nur-so-nah-wie-n%c3%b6tig';">
+        <div class="featured_image">
+          
+          <a href="blog/anwendungsbeispiele-f%c3%bcr-edge-computing-nur-so-nah-wie-n%c3%b6tig" title="" class="blog-post-item__img" style="background-image:url(../hubfs/Edge%20Computing.jpg);"></a>
+          
+          <div class="topic_list">
+            
+
+            
+              
+            
+              
+            
+            
+              <span class="blog-post-info__topic">IoT</span> / 
+            
+              <span class="blog-post-info__topic">Digitale Transformation</span>
+            
+          </div>
+
+        </div>
+        <div class="blog-post-item__details">
+          
+            
+            <div style="padding: 20px 0 0px 28px; margin-bottom: -25px; font-size: 14px; color: #939393; font-family: Roboto;">
+              <img src="../hubfs/blog_assets/text.svg" alt="Time to read" style="margin-bottom: -4px; margin-right: 4px;">4 min
+            </div>
+            
+          
+          <div class="blog-post-info">
+            <div>
+              
+              
+
+Von
+
+
+              <a class="author-link" href="blog/author/alex-makarevich">Alex Makarevich</a>
+              /
+              
+                Juni 21, 2022 
+            </div>
+
+          </div>
+          <div class="blog-post-item__title"><a href="blog/anwendungsbeispiele-f%c3%bcr-edge-computing-nur-so-nah-wie-n%c3%b6tig">Anwendungsbeispiele für Edge Computing: Nur so nah wie nötig</a></div>
+          <div class="blog-post-item__description">
+            <a href="blog/anwendungsbeispiele-f%c3%bcr-edge-computing-nur-so-nah-wie-n%c3%b6tig">
+              Entdecken Sie fünf anschauliche Beispiele für den Einsatz von Edge Computing. Erfahren Sie, wie Edge Computing Unternehmen bei der Erfassung wertvoller Echtzeitdaten im Energiemanagement, in der Produktion, im Gesundheitswesen und im Einzelhandel hilft.
+              <svg width="17" height="12" viewbox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 5.3033H15.6927V6.36395H0V5.3033Z" fill="#00ADFF" />
+                <path d="M11.2494 11.25L16.2764 5.25001L16.9048 6.00001L11.8778 12L11.2494 11.25Z" fill="#00ADFF" />
+                <path d="M11.8778 0L16.9048 6.00001L16.2764 6.74999L11.2494 0.749999L11.8778 0Z" fill="#00ADFF" />
+              </svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      
+    
+      
+      
+      
+      
+      
+      <div class="blog-post-item js-blog-list-item even-post-item" style="" onclick="window.location='blog/durch-iot-monitoring-der-umwelt-zu-mehr-nachhaltigkeit-im-unternehmen';">
+        <div class="featured_image">
+          
+          <a href="blog/durch-iot-monitoring-der-umwelt-zu-mehr-nachhaltigkeit-im-unternehmen" title="" class="blog-post-item__img" style="background-image:url(../hubfs/Smart%20environment.jpg);"></a>
+          
+          <div class="topic_list">
+            
+
+            
+              
+            
+              
+            
+            
+              <span class="blog-post-info__topic">Digitale Transformation</span> / 
+            
+              <span class="blog-post-info__topic">Green Tech</span>
+            
+          </div>
+
+        </div>
+        <div class="blog-post-item__details">
+          
+            
+            <div style="padding: 20px 0 0px 28px; margin-bottom: -25px; font-size: 14px; color: #939393; font-family: Roboto;">
+              <img src="../hubfs/blog_assets/text.svg" alt="Time to read" style="margin-bottom: -4px; margin-right: 4px;">4 min
+            </div>
+            
+          
+          <div class="blog-post-info">
+            <div>
+              
+              
+
+Von
+
+
+              <a class="author-link" href="blog/author/alex-makarevich">Alex Makarevich</a>
+              /
+              
+                Juni 13, 2022 
+            </div>
+
+          </div>
+          <div class="blog-post-item__title"><a href="blog/durch-iot-monitoring-der-umwelt-zu-mehr-nachhaltigkeit-im-unternehmen">Durch IoT-Monitoring der Umwelt zu mehr Nachhaltigkeit im Unternehmen</a></div>
+          <div class="blog-post-item__description">
+            <a href="blog/durch-iot-monitoring-der-umwelt-zu-mehr-nachhaltigkeit-im-unternehmen">
+              Wie können Unternehmen Umweltschutzvorschriften einhalten, ohne ein Vermögen zu investieren? Eine effektive Lösung ist das Environment Monitoring mit IoT. Zu den Vorteilen des grünen IoT zählen die Vermeidung von Geldstrafen und die Steigerung der Gewinne. Entdecken Sie neue Möglichkeiten anhand von vier Beispielen aus der Praxis.
+              <svg width="17" height="12" viewbox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 5.3033H15.6927V6.36395H0V5.3033Z" fill="#00ADFF" />
+                <path d="M11.2494 11.25L16.2764 5.25001L16.9048 6.00001L11.8778 12L11.2494 11.25Z" fill="#00ADFF" />
+                <path d="M11.8778 0L16.9048 6.00001L16.2764 6.74999L11.2494 0.749999L11.8778 0Z" fill="#00ADFF" />
+              </svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      
+        <div class="blog-list-cta-form">
+          <div id="hs_cos_wrapper_module_158074017020580" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+<pre style="display: none;">(SizeLimitingPyMap: {form_de={form_id=f5b7ba60-b3a2-44dc-82f3-1dee48686d18, response_type=inline, message=Thanks for submitting the form., gotowebinar_webinar_key=null, form_type=HUBSPOT}, background=dark, form_en={form_id=ef0a9d42-3f10-4c25-b5f6-6eaa6c2d2b7c, response_type=inline, message=Thanks for submitting the form., gotowebinar_webinar_key=null, form_type=HUBSPOT}, type=module, image_field={size_type=auto, src=https://www.softeq.com/hubfs/bg.png, alt=bg, width=730, height=595, max_width=730, max_height=595}})</pre>
+<div class="cta-blog-block cta-blog-block_dark">
+  <!--[if lte IE 8]>
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+  <![endif]-->
+  <script charset="utf-8" type="text/javascript" src="../../js.hsforms.net/forms/v2.js"></script>
+  <script>
+    hbspt.forms.create({
+      portalId: "2915353",
+      formId: "f5b7ba60-b3a2-44dc-82f3-1dee48686d18"
+    });
+  </script>
+
+  <div class="image-container form-image" style="background-image: url(../hubfs/bg.png)">
+  </div>
+</div></div>
+        </div>
+        <div></div>
+        <div></div>
+      
+    
+      
+      
+      
+      
+      
+      <div class="blog-post-item js-blog-list-item " style="" onclick="window.location='blog/fuenf-beispiele-fuer-nachhaltiges-lieferkettenmanagement';">
+        <div class="featured_image">
+          
+          <a href="blog/fuenf-beispiele-fuer-nachhaltiges-lieferkettenmanagement" title="" class="blog-post-item__img" style="background-image:url(../hubfs/Blog/green-supply-chain-management-use-cases-and-benefits.jpg);"></a>
+          
+          <div class="topic_list">
+            
+
+            
+              
+            
+              
+            
+              
+            
+            
+              <span class="blog-post-info__topic">Digitale Transformation</span> / 
+            
+              <span class="blog-post-info__topic">Green Tech</span> / 
+            
+              <span class="blog-post-info__topic">Lieferketten</span>
+            
+          </div>
+
+        </div>
+        <div class="blog-post-item__details">
+          
+            
+            <div style="padding: 20px 0 0px 28px; margin-bottom: -25px; font-size: 14px; color: #939393; font-family: Roboto;">
+              <img src="../hubfs/blog_assets/text.svg" alt="Time to read" style="margin-bottom: -4px; margin-right: 4px;">5 min
+            </div>
+            
+          
+          <div class="blog-post-info">
+            <div>
+              
+              
+
+Von
+
+
+              <a class="author-link" href="blog/author/anna-hofer">Anna Hofer</a>
+              /
+              
+                Juni 6, 2022 
+            </div>
+
+          </div>
+          <div class="blog-post-item__title"><a href="blog/fuenf-beispiele-fuer-nachhaltiges-lieferkettenmanagement">Fünf Beispiele für nachhaltiges Lieferkettenmanagement</a></div>
+          <div class="blog-post-item__description">
+            <a href="blog/fuenf-beispiele-fuer-nachhaltiges-lieferkettenmanagement">
+              Wie können Unternehmen den strengen Umweltvorschriften gerecht werden? Die intelligenteste Lösung ist es, Lieferketten nachhaltiger zu gestalten, mithilfe von Technologien wie IoT, KI und Blockchain. Sehen Sie sich fünf Lösungen für ein grüneres und nachhaltigeres Lieferkettenmanagement an.
+              <svg width="17" height="12" viewbox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 5.3033H15.6927V6.36395H0V5.3033Z" fill="#00ADFF" />
+                <path d="M11.2494 11.25L16.2764 5.25001L16.9048 6.00001L11.8778 12L11.2494 11.25Z" fill="#00ADFF" />
+                <path d="M11.8778 0L16.9048 6.00001L16.2764 6.74999L11.2494 0.749999L11.8778 0Z" fill="#00ADFF" />
+              </svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      
+    
+      
+      
+      
+      
+      
+      <div class="blog-post-item js-blog-list-item even-post-item" style="" onclick="window.location='blog/die-5-haeufigsten-sicherheitsluecken-bei-iot-im-gesundheitswesen-und-wie-man-sie-schliesst';">
+        <div class="featured_image">
+          
+          <a href="blog/die-5-haeufigsten-sicherheitsluecken-bei-iot-im-gesundheitswesen-und-wie-man-sie-schliesst" title="" class="blog-post-item__img" style="background-image:url(../hubfs/Blog/top-4-iot-vulnerabilities-in-healthcare-hero.jpg);"></a>
+          
+          <div class="topic_list">
+            
+
+            
+              
+            
+              
+            
+              
+            
+            
+              <span class="blog-post-info__topic">Healthcare</span> / 
+            
+              <span class="blog-post-info__topic">Cybersecurity</span> / 
+            
+              <span class="blog-post-info__topic">Technologie</span>
+            
+          </div>
+
+        </div>
+        <div class="blog-post-item__details">
+          
+            
+            <div style="padding: 20px 0 0px 28px; margin-bottom: -25px; font-size: 14px; color: #939393; font-family: Roboto;">
+              <img src="../hubfs/blog_assets/text.svg" alt="Time to read" style="margin-bottom: -4px; margin-right: 4px;">6 min
+            </div>
+            
+          
+          <div class="blog-post-info">
+            <div>
+              
+              
+
+Von
+
+
+              <a class="author-link" href="blog/author/tatsiana-tsiukhai">Tatsiana Tsiukhai</a>
+              /
+              
+                Mai 23, 2022 
+            </div>
+
+          </div>
+          <div class="blog-post-item__title"><a href="blog/die-5-haeufigsten-sicherheitsluecken-bei-iot-im-gesundheitswesen-und-wie-man-sie-schliesst">IoT Healthcare Security: Wie man sensible Daten sichert</a></div>
+          <div class="blog-post-item__description">
+            <a href="blog/die-5-haeufigsten-sicherheitsluecken-bei-iot-im-gesundheitswesen-und-wie-man-sie-schliesst">
+              Machen Sie IoT-Cybersicherheit zur obersten Priorität, wenn Sie eine intelligente Lösung für das Gesundheitswesen entwickeln. Hier sind die fünf größten IoT-Schwachstellen im Gesundheitswesen und Anwendungsszenarien, die zeigen, wie man sie verhindern kann.
+              <svg width="17" height="12" viewbox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 5.3033H15.6927V6.36395H0V5.3033Z" fill="#00ADFF" />
+                <path d="M11.2494 11.25L16.2764 5.25001L16.9048 6.00001L11.8778 12L11.2494 11.25Z" fill="#00ADFF" />
+                <path d="M11.8778 0L16.9048 6.00001L16.2764 6.74999L11.2494 0.749999L11.8778 0Z" fill="#00ADFF" />
+              </svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      
+    
+      
+      
+      
+      
+      
+      <div class="blog-post-item js-blog-list-item " style="" onclick="window.location='blog/innovative-logistik-und-supply-chain-4.0-wie-technologie-hilft-lieferkettenprobleme-zu-loesen';">
+        <div class="featured_image">
+          
+          <a href="blog/innovative-logistik-und-supply-chain-4.0-wie-technologie-hilft-lieferkettenprobleme-zu-loesen" title="" class="blog-post-item__img" style="background-image:url(../hubfs/Blog/five-smart-supply-chain-solutions-to-help-businesses-overcome-global-crises.jpg);"></a>
+          
+          <div class="topic_list">
+            
+
+            
+              
+            
+              
+            
+              
+            
+            
+              <span class="blog-post-info__topic">Industrial IoT</span> / 
+            
+              <span class="blog-post-info__topic">Digitale Transformation</span> / 
+            
+              <span class="blog-post-info__topic">Lieferketten</span>
+            
+          </div>
+
+        </div>
+        <div class="blog-post-item__details">
+          
+            
+            <div style="padding: 20px 0 0px 28px; margin-bottom: -25px; font-size: 14px; color: #939393; font-family: Roboto;">
+              <img src="../hubfs/blog_assets/text.svg" alt="Time to read" style="margin-bottom: -4px; margin-right: 4px;">6 min
+            </div>
+            
+          
+          <div class="blog-post-info">
+            <div>
+              
+              
+
+Von
+
+
+              <a class="author-link" href="blog/author/anna-hofer">Anna Hofer</a>
+              /
+              
+                Mai 17, 2022 
+            </div>
+
+          </div>
+          <div class="blog-post-item__title"><a href="blog/innovative-logistik-und-supply-chain-4.0-wie-technologie-hilft-lieferkettenprobleme-zu-loesen">Innovative Logistik und Supply Chain 4.0: Wie Technologie hilft, Lieferkettenprobleme zu lösen</a></div>
+          <div class="blog-post-item__description">
+            <a href="blog/innovative-logistik-und-supply-chain-4.0-wie-technologie-hilft-lieferkettenprobleme-zu-loesen">
+              Lieferketten geraten immer wieder ins Stocken, und es ist keine Besserung in Sicht. Vielleicht ist das der Grund, warum das Interesse der Investoren an intelligentem Lieferkettenmanagement wächst. Entdecken Sie fünf Beispiele aus der Praxis, wie intelligente IoT- und KI-Lösungen in der Lieferkette Unternehmen helfen können, globale Krisen zu überstehen.
+              <svg width="17" height="12" viewbox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 5.3033H15.6927V6.36395H0V5.3033Z" fill="#00ADFF" />
+                <path d="M11.2494 11.25L16.2764 5.25001L16.9048 6.00001L11.8778 12L11.2494 11.25Z" fill="#00ADFF" />
+                <path d="M11.8778 0L16.9048 6.00001L16.2764 6.74999L11.2494 0.749999L11.8778 0Z" fill="#00ADFF" />
+              </svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      
+    
+      
+      
+      
+      
+      
+      <div class="blog-post-item js-blog-list-item even-post-item" style="" onclick="window.location='blog/wie-5g-iot-und-edge-compute-trends-die-industrie-im-jahr-2022-umgestalten';">
+        <div class="featured_image">
+          
+          <a href="blog/wie-5g-iot-und-edge-compute-trends-die-industrie-im-jahr-2022-umgestalten" title="" class="blog-post-item__img" style="background-image:url(../hubfs/Blog/watch-out-top-5-internet-of-things-latest-trends.jpg);"></a>
+          
+          <div class="topic_list">
+            
+
+            
+              
+            
+              
+            
+              
+            
+            
+              <span class="blog-post-info__topic">IoT</span> / 
+            
+              <span class="blog-post-info__topic">Trends</span> / 
+            
+              <span class="blog-post-info__topic">5G</span>
+            
+          </div>
+
+        </div>
+        <div class="blog-post-item__details">
+          
+            
+            <div style="padding: 20px 0 0px 28px; margin-bottom: -25px; font-size: 14px; color: #939393; font-family: Roboto;">
+              <img src="../hubfs/blog_assets/text.svg" alt="Time to read" style="margin-bottom: -4px; margin-right: 4px;">4 min
+            </div>
+            
+          
+          <div class="blog-post-info">
+            <div>
+              
+              
+
+Von
+
+
+              <a class="author-link" href="blog/author/alex-makarevich">Alex Makarevich</a>
+              /
+              
+                April 28, 2022 
+            </div>
+
+          </div>
+          <div class="blog-post-item__title"><a href="blog/wie-5g-iot-und-edge-compute-trends-die-industrie-im-jahr-2022-umgestalten">5 IoT-Trends, die Sie nicht verpassen dürfen</a></div>
+          <div class="blog-post-item__description">
+            <a href="blog/wie-5g-iot-und-edge-compute-trends-die-industrie-im-jahr-2022-umgestalten">
+              Die künftige Entwicklung von IoT-Anwendungen wird auf drei Säulen beruhen. Die erste ist die Erschwinglichkeit. Günstige Geräte sorgen dafür, dass jedes KMU ein hochwertiges vernetztes Produkt erhalten kann. Die zweite ist die Verfügbarkeit. Diese wird durch bewährte und getestete Technologien gewährleistet. Die dritte ist die Autonomie. Eine vernetzte, eigenständige Einheit wird die Herstellung selbst konfigurieren, koordinieren und steuern. Die IoT-Trends in der Fertigung belegen dies mit neuen Beispielen für Smart Factories.
+              <svg width="17" height="12" viewbox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 5.3033H15.6927V6.36395H0V5.3033Z" fill="#00ADFF" />
+                <path d="M11.2494 11.25L16.2764 5.25001L16.9048 6.00001L11.8778 12L11.2494 11.25Z" fill="#00ADFF" />
+                <path d="M11.8778 0L16.9048 6.00001L16.2764 6.74999L11.2494 0.749999L11.8778 0Z" fill="#00ADFF" />
+              </svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      
+    
+      
+      
+      
+      
+      
+      <div class="blog-post-item js-blog-list-item " style="" onclick="window.location='blog/disruptive-innovationen-im-gesundheitswesen-beispiele-und-vorteile';">
+        <div class="featured_image">
+          
+          <a href="blog/disruptive-innovationen-im-gesundheitswesen-beispiele-und-vorteile" title="" class="blog-post-item__img" style="background-image:url(../hubfs/Disruptions%20in%20healthcare.jpg);"></a>
+          
+          <div class="topic_list">
+            
+
+            
+              
+            
+              
+            
+              
+            
+            
+              <span class="blog-post-info__topic">IoT</span> / 
+            
+              <span class="blog-post-info__topic">Healthcare</span> / 
+            
+              <span class="blog-post-info__topic">KI</span>
+            
+          </div>
+
+        </div>
+        <div class="blog-post-item__details">
+          
+            
+            <div style="padding: 20px 0 0px 28px; margin-bottom: -25px; font-size: 14px; color: #939393; font-family: Roboto;">
+              <img src="../hubfs/blog_assets/text.svg" alt="Time to read" style="margin-bottom: -4px; margin-right: 4px;">6 min
+            </div>
+            
+          
+          <div class="blog-post-info">
+            <div>
+              
+              
+
+Von
+
+
+              <a class="author-link" href="blog/author/vera-solovyova">Vera Solovyova</a>
+              /
+              
+                April 20, 2022 
+            </div>
+
+          </div>
+          <div class="blog-post-item__title"><a href="blog/disruptive-innovationen-im-gesundheitswesen-beispiele-und-vorteile">Drei Beispiele für bahnbrechende Innovationen im Gesundheitswesen</a></div>
+          <div class="blog-post-item__description">
+            <a href="blog/disruptive-innovationen-im-gesundheitswesen-beispiele-und-vorteile">
+              Digitalisierung der Medizin ermöglicht es den Anbietern medizinischer Dienstleistungen, ihren Konkurrenten immer einen Schritt voraus zu sein. Welche innovativen Technologien revolutionieren das Gesundheitswesen? Welche Vorteile bringen diese Technologien mit sich? Das erfahren Sie in unserem aktuellen Blogartikel.
+
+              <svg width="17" height="12" viewbox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 5.3033H15.6927V6.36395H0V5.3033Z" fill="#00ADFF" />
+                <path d="M11.2494 11.25L16.2764 5.25001L16.9048 6.00001L11.8778 12L11.2494 11.25Z" fill="#00ADFF" />
+                <path d="M11.8778 0L16.9048 6.00001L16.2764 6.74999L11.2494 0.749999L11.8778 0Z" fill="#00ADFF" />
+              </svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      
+    
+      
+      
+      
+      
+      
+      <div class="blog-post-item js-blog-list-item even-post-item" style="" onclick="window.location='blog/drohnen-im-bauwesen-beispiele-aus-der-praxis';">
+        <div class="featured_image">
+          
+          <a href="blog/drohnen-im-bauwesen-beispiele-aus-der-praxis" title="" class="blog-post-item__img" style="background-image:url(../hubfs/Blog/Prospective-Uses-of-Drones-in-Construction.jpg);"></a>
+          
+          <div class="topic_list">
+            
+
+            
+              
+            
+              
+            
+              
+            
+              
+            
+            
+              <span class="blog-post-info__topic">IoT</span> / 
+            
+              <span class="blog-post-info__topic">Drohnen</span> / 
+            
+              <span class="blog-post-info__topic">Bauindustrie</span> / 
+            
+              <span class="blog-post-info__topic">Digitale Transformation</span>
+            
+          </div>
+
+        </div>
+        <div class="blog-post-item__details">
+          
+            
+            <div style="padding: 20px 0 0px 28px; margin-bottom: -25px; font-size: 14px; color: #939393; font-family: Roboto;">
+              <img src="../hubfs/blog_assets/text.svg" alt="Time to read" style="margin-bottom: -4px; margin-right: 4px;">6 min
+            </div>
+            
+          
+          <div class="blog-post-info">
+            <div>
+              
+              
+
+Von
+
+
+              <a class="author-link" href="blog/author/anna-hofer">Anna Hofer</a>
+              /
+              
+                April 14, 2022 
+            </div>
+
+          </div>
+          <div class="blog-post-item__title"><a href="blog/drohnen-im-bauwesen-beispiele-aus-der-praxis">Bauen digital: Drohnen auf der Baustelle</a></div>
+          <div class="blog-post-item__description">
+            <a href="blog/drohnen-im-bauwesen-beispiele-aus-der-praxis">
+              Hier sind die fünf wichtigsten Einsatzmöglichkeiten von Drohnen, die Bauunternehmen helfen, effizienter zu arbeiten. Entdecken Sie Anwendungsfälle, Beispiele aus der Praxis, Vorteile und Statistiken über den aktuellen und zukünftigen Einsatz von Drohnen im Bauwesen.
+              <svg width="17" height="12" viewbox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 5.3033H15.6927V6.36395H0V5.3033Z" fill="#00ADFF" />
+                <path d="M11.2494 11.25L16.2764 5.25001L16.9048 6.00001L11.8778 12L11.2494 11.25Z" fill="#00ADFF" />
+                <path d="M11.8778 0L16.9048 6.00001L16.2764 6.74999L11.2494 0.749999L11.8778 0Z" fill="#00ADFF" />
+              </svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      
+    
+      
+      
+      
+      
+      
+      <div class="blog-post-item js-blog-list-item " style="" onclick="window.location='blog/europaeische-start-ups-entwickeln-loesungen-fuer-digital-farming';">
+        <div class="featured_image">
+          
+          <a href="blog/europaeische-start-ups-entwickeln-loesungen-fuer-digital-farming" title="" class="blog-post-item__img" style="background-image:url(../hubfs/Blog/digital-farming-zukunft-der-landwirtschaft.jpg);"></a>
+          
+          <div class="topic_list">
+            
+
+            
+              
+            
+              
+            
+              
+            
+              
+            
+            
+              <span class="blog-post-info__topic">IoT</span> / 
+            
+              <span class="blog-post-info__topic">KI</span> / 
+            
+              <span class="blog-post-info__topic">Green Tech</span> / 
+            
+              <span class="blog-post-info__topic">Robotik</span>
+            
+          </div>
+
+        </div>
+        <div class="blog-post-item__details">
+          
+            
+            <div style="padding: 20px 0 0px 28px; margin-bottom: -25px; font-size: 14px; color: #939393; font-family: Roboto;">
+              <img src="../hubfs/blog_assets/text.svg" alt="Time to read" style="margin-bottom: -4px; margin-right: 4px;">7 min
+            </div>
+            
+          
+          <div class="blog-post-info">
+            <div>
+              
+              
+
+Von
+
+
+              <a class="author-link" href="blog/author/daria-titova">Daria Titova</a>
+              /
+              
+                April 7, 2022 
+            </div>
+
+          </div>
+          <div class="blog-post-item__title"><a href="blog/europaeische-start-ups-entwickeln-loesungen-fuer-digital-farming">Digital Farming: Wie Start-Ups die Zukunft der Landwirtschaft gestalten</a></div>
+          <div class="blog-post-item__description">
+            <a href="blog/europaeische-start-ups-entwickeln-loesungen-fuer-digital-farming">
+              Digital Farming ist die Zukunft der Landwirtschaft. Digitale Technologien wie IoT, KI und Robotik sorgen für mehr Nachhaltigkeit und Effizienz auf dem Feld und im Stall. Welche technologischen Top-Trends werden die Landwirtschaft 4.0 am stärksten prägen? Woran arbeiten europäische Start-Ups im Bereich AgTech? Erfahren Sie anhand von 10 Beispielen, wie Smart Farming die Landwirtschaft revolutioniert.
+              <svg width="17" height="12" viewbox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 5.3033H15.6927V6.36395H0V5.3033Z" fill="#00ADFF" />
+                <path d="M11.2494 11.25L16.2764 5.25001L16.9048 6.00001L11.8778 12L11.2494 11.25Z" fill="#00ADFF" />
+                <path d="M11.8778 0L16.9048 6.00001L16.2764 6.74999L11.2494 0.749999L11.8778 0Z" fill="#00ADFF" />
+              </svg>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      
+    
+  </div>
+</div>
+<div class="container blog-load-container text-secondary js-blog-load-container">
+  
+    <a href="blog/page/2" class="blog-load-container__load blog-link js-blog-load-more"></a>
+    <div class="blog-load-container__loaded">
+
+Alle Artikel angezeigt
+
+</div>
+    <div class="blog-load-container__loading">
+      <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 6C12.268 6 6 12.268 6 20C6 27.732 12.268 34 20 34C27.732 34 34 27.732 34 20C34 15.7422 32.0993 11.9283 29.1 9.36058" stroke="#00ADFF" stroke-width="2" />
+      </svg>
+    </div>
+  
+</div>
+        
+        <div class="back-to-top js-back-to-top">
+          <div class="svg-icon s32" data-icon-source="material" data-icon-name="expand_less">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24"><path d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z" /></svg>
+          </div>
+        </div>
+        <footer class="footer page__footer" id="footer">
+          
+
+<div class="footer__info">
+  <div class="container">
+    <div class="footer__inner">
+      
+
+
+
+<h2 class="h1 contacts-form__title contacts-form-title">
+
+Kontakt
+
+</h2>
+
+      
+      <div id="contacts-form"></div>
+      <div class="contacts-form contacts__form">
+        <div class="contacts__form-title--small">
+
+Senden Sie Ihre Anforderungen und erhalten Sie eine profunde Einschätzung
+
+</div>
+        <div id="hs_cos_wrapper_module_157865030967185" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+
+
+
+<div id="contact-form-site"></div>
+
+<script id="hbspt-forms-script" charset="utf-8" src="../../js.hsforms.net/forms/v2.js" type="text/javascript" data-script-no-autoload="true"></script>
+<script id="contact-form-script" type="text/javascript" data-script-dependency="hbspt-forms-script" data-script-no-autoload="true">
+  hbspt.forms.create({
+    portalId: "2915353",
+    formId: "1ab510ca-5280-4cf5-9a20-615c3e6e4bf6",
+    pageId: "69911499837",
+    redirectUrl: "",
+    target: "#contact-form-site",
+    css: "",
+    formData: {
+      cssClass: 'hs-form stacked hs-custom-form'
+    },
+    onFormReady: function($form) {
+      $form.attr("autocomplete", "off");
+      $form.find("input, textarea").attr("autocomplete", "off");
+
+      var $attachment = $form.find('.hs_attachment');
+      var $input = $form.find('.hs_attachment input');
+      var $text = $form.find('.hs_attachment label span');
+      var $message = $form.find(".hs_message textarea");
+
+      $text.css({
+        "white-space": "nowrap",
+        "overflow": "hidden",
+        "text-overflow": "ellipsis",
+        "width": "20ch",
+        "display": "block"
+      });
+
+      if ($message) {
+        function setTextareaHeight() {
+          $message.height('auto');
+          $message.height($message[0].scrollHeight - parseInt($message.css("padding-top")) - parseInt($message.css("padding-bottom")));
+        }
+        $message.attr("rows", "1");
+        setTextareaHeight();
+        $(window).resize(setTextareaHeight);
+      }
+
+      startText = $text.html();
+      $input.change(function(ev) {
+        const files = Array.prototype.slice.call(ev.target.files);
+        if (files.length) {
+          $text.html(files.map(function (file) {
+            return file.name;
+          }).join(", "));
+        } else {
+          $text.html(startText);
+        }
+      });
+
+      $attachment.click(function() {
+        $input.click();
+      });
+      $input.click(function(ev) {
+        ev.stopPropagation();
+      });
+    },
+    onFormSubmit: function($form) {
+      $form.addClass("has-spinner");
+    }
+  });
+</script></div>
+      </div>
+      
+
+<div class="covid__content">        
+  <div class="covid-icon">
+    <svg width="50" height="52" viewbox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.708 3.25091C18.5454 3.25091 19.2243 2.57203 19.2243 1.73459C19.2243 0.897143 18.5454 0.218262 17.708 0.218262C16.8705 0.218262 16.1917 0.897143 16.1917 1.73459C16.1917 2.57203 16.8705 3.25091 17.708 3.25091Z" fill="#00ADFF" />
+      <path d="M35.7472 10.0491C35.7636 9.54455 35.5906 9.05212 35.2623 8.66864C34.934 8.28515 34.4741 8.03836 33.9731 7.97679C29.9296 7.47135 25.8304 5.34849 22.7927 3.42781C22.6763 3.3508 22.5458 3.29773 22.4087 3.27169C22.2716 3.24566 22.1306 3.24719 21.9941 3.27618C21.8156 3.31466 21.6509 3.40077 21.5174 3.52536C21.3839 3.64995 21.2866 3.80837 21.236 3.9838C21.1736 4.19324 21.1807 4.41725 21.2564 4.62228C21.332 4.8273 21.472 5.0023 21.6555 5.12104C24.8751 7.1883 29.2624 9.44762 33.7254 10.0087C33.6243 12.637 33.1189 17.752 30.8646 22.584C28.3627 27.9266 22.8332 34.0424 17.9152 34.0576C12.9973 34.0727 7.45764 27.9266 4.9557 22.5638C2.70144 17.752 2.19599 12.642 2.09996 9.98339C6.47203 9.43246 10.8037 7.23884 14.0385 5.20191C14.1497 5.12923 14.2454 5.03536 14.3203 4.92567C14.3952 4.81597 14.4478 4.6926 14.475 4.56259C14.5023 4.43258 14.5036 4.29849 14.479 4.16796C14.4544 4.03743 14.4043 3.91302 14.3316 3.80184C14.259 3.69066 14.1651 3.59489 14.0554 3.51998C13.9457 3.44508 13.8223 3.39252 13.6923 3.3653C13.5623 3.33808 13.4282 3.33673 13.2977 3.36133C13.1672 3.38593 13.0427 3.436 12.9316 3.50869C9.89892 5.42431 5.85539 7.4764 1.85735 7.97679C1.35539 8.0372 0.894271 8.28348 0.564933 8.66709C0.235594 9.05069 0.0619339 9.54377 0.0781954 10.0491C0.184338 12.8594 0.72516 18.2676 3.11084 23.413C6.00197 29.6198 12.1734 36.049 17.895 36.0793C23.6166 36.0793 29.788 29.6198 32.6842 23.413C35.0952 18.2676 35.636 12.8594 35.7472 10.0491Z" fill="#00ADFF" />
+      <path d="M23.1668 17.2314H18.8756V12.9402C18.8756 12.6721 18.7691 12.415 18.5795 12.2254C18.3899 12.0358 18.1328 11.9293 17.8647 11.9293C17.5966 11.9293 17.3395 12.0358 17.1499 12.2254C16.9603 12.415 16.8538 12.6721 16.8538 12.9402V17.2314H12.5626C12.2945 17.2314 12.0374 17.3379 11.8478 17.5275C11.6582 17.7171 11.5517 17.9742 11.5517 18.2423C11.5517 18.5104 11.6582 18.7675 11.8478 18.9571C12.0374 19.1467 12.2945 19.2532 12.5626 19.2532H16.8538V23.5444C16.8538 23.8125 16.9603 24.0696 17.1499 24.2592C17.3395 24.4488 17.5966 24.5553 17.8647 24.5553C18.1328 24.5553 18.3899 24.4488 18.5795 24.2592C18.7691 24.0696 18.8756 23.8125 18.8756 23.5444V19.2532H23.1668C23.4349 19.2532 23.692 19.1467 23.8816 18.9571C24.0711 18.7675 24.1776 18.5104 24.1776 18.2423C24.1776 17.9742 24.0711 17.7171 23.8816 17.5275C23.692 17.3379 23.4349 17.2314 23.1668 17.2314Z" fill="#00ADFF" />
+    </svg>
+  </div>
+  <div>
+    <h3>
+
+
+
+
+
+
+
+
+COVID-19 UPDATE
+
+</h3>
+    <p>
+
+
+
+
+
+
+
+
+Softeq steht auch während der aktuellen Pandemie uneingeschränkt zu Ihrer Verfügung! Alle Mitarbeiter können remote arbeiten und Ihre Projekte pünktlich bearbeiten. Sie haben eine Projektidee?
+
+ <a href="contact.html">
+
+
+
+
+
+
+
+
+Schreiben Sie uns
+
+</a>
+
+
+
+
+
+
+
+
+, wir melden uns binnen 24 Stunden.
+
+</p>
+    <p>
+
+
+
+
+
+
+
+
+Bleiben Sie gesund und achten Sie aufeinander. Das Softeq-Team fühlt sich Ihren Wünschen stets verpflichtet.
+
+</p>
+  </div>
+</div>
+    </div>
+    <div class="contacts footer__contacts">
+      
+
+
+<div class="contacts-details contacts__details">
+  <div class="contacts-details__inner js-accords">
+    
+    <div class="contacts-details__item contacts-details__item--main">
+      <div class="contacts-details__status accord-header js-accord active" data-visible="xs">
+        
+
+
+
+
+
+
+
+
+
+
+Hauptsitz
+
+
+      </div>
+      <div class="accord-content">
+        <div class="contacts-details__group">
+          <span class="h2 contacts-details__place">
+
+
+
+
+
+
+
+
+
+
+Houston, US
+
+</span>
+          <div class="contacts-details__address">
+            <span>
+
+
+
+
+
+
+
+
+
+
+<p>Softeq Development Corp.</p><p>1155 Dairy Ashford Rd., Suite 125</p><p>Houston, Texas 77079 USA</p>
+
+</span>
+          </div>
+          
+          <ul class="contacts-details__list">
+            
+            <li class="contacts-details__list-item">
+              <a class="contacts-details__link" href="tel:+1%20888%20552-5001" onclick="ga('send', 'event', 'contact_phone_de', 'click');">
+                +1 888 552-5001
+              </a>
+            </li>
+            
+            <li class="contacts-details__list-item">
+              <a class="contacts-details__link" href="tel:+%201%20281%20552-5000" onclick="ga('send', 'event', 'contact_phone_de', 'click');">
+                + 1 281 552-5000
+              </a>
+            </li>
+            
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+    
+    <div class="contacts-details__item ">
+      <div class="contacts-details__status accord-header js-accord " data-visible="xs">
+        
+
+
+
+
+
+
+
+
+
+
+Kundenlieferzentrum
+
+
+      </div>
+      <div class="accord-content">
+        <div class="contacts-details__group">
+          <span class="h2 contacts-details__place">
+
+
+
+
+
+
+
+
+
+
+München, DE
+
+</span>
+          <div class="contacts-details__address">
+            <span>
+
+
+
+
+
+
+
+
+
+
+<p>Softeq Development GmbH</p><p>Bretonischer Ring 12</p><p>D-85630 Grasbrunn</p><p>Deutschland</p>
+
+</span>
+          </div>
+          
+          <ul class="contacts-details__list">
+            
+            <li class="contacts-details__list-item">
+              <a class="contacts-details__link" href="tel:+49%2089%20800%2032%20780" onclick="ga('send', 'event', 'contact_phone_de', 'click');">
+                +49 89 800 32 780
+              </a>
+            </li>
+            
+            <li class="contacts-details__list-item">
+              <a class="contacts-details__link" href="tel:+44%2020%207193%201798" onclick="ga('send', 'event', 'contact_phone_de', 'click');">
+                +44 20 7193 1798 
+              </a>
+            </li>
+            
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+    
+    <div class="contacts-details__item ">
+      <div class="contacts-details__status accord-header js-accord " data-visible="xs">
+        
+
+
+
+
+
+
+
+
+
+
+Entwicklungszentrum
+
+
+      </div>
+      <div class="accord-content">
+        <div class="contacts-details__group">
+          <span class="h2 contacts-details__place">
+
+
+
+
+
+
+
+
+
+
+Vilnius, LT
+
+</span>
+          <div class="contacts-details__address">
+            <span>
+
+
+
+
+
+
+
+
+
+
+<p>Softeq Development, UAB</p><p>V. Gerulaicio str. 10,</p><p>Technopolis Nova, 2 floor,</p><p>LT-08200 Vilnius, Lithuania</p>
+
+</span>
+          </div>
+          
+          <ul class="contacts-details__list">
+            
+            <li class="contacts-details__list-item">
+              <a class="contacts-details__link" href="tel:+370%20668%2021%20211" onclick="ga('send', 'event', 'contact_phone_de', 'click');">
+                +370 668 21 211
+              </a>
+            </li>
+            
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+    
+    <div class="contacts-details__item ">
+      <div class="contacts-details__status accord-header js-accord " data-visible="xs">
+        
+
+
+
+
+
+
+
+
+
+
+Entwicklungszentrum
+
+
+      </div>
+      <div class="accord-content">
+        <div class="contacts-details__group">
+          <span class="h2 contacts-details__place">
+
+
+
+
+
+
+
+
+
+
+Monterrey, MX
+
+</span>
+          <div class="contacts-details__address">
+            <span>
+
+
+
+
+
+
+
+
+
+
+<p>Softeq Development</p><p>Av. Vasconcelos No. Ext. 755 No. Int. Piso 4 Oficina 415 Del Valle 66220 San Pedro Garza García Nuevo León</p>
+
+</span>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+          
+
+
+
+
+
+
+
+<div class="footer__default">
+  <div class="container">
+    <div class="footer__inner default2">
+      <div style="padding-top: 1px;">
+        <div id="hs_cos_wrapper_module_161460844836939" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+<div class="hs-search-field" id="hs-search-field"> 
+    <div class="hs-search-field__bar hs-search-field__bar--material-dark"> 
+      <form action="https://www.softeq.com/hs-search-results">
+        <label for="term">
+
+
+
+
+
+
+
+
+Suche
+
+</label>
+        <div style="position: relative;">
+         <input type="text" class="hs-search-field__input" name="term" autocomplete="off" aria-label="Search" placeholder="
+
+
+
+
+
+
+
+
+Zum Beispiel: Industrial IoT
+
+">
+        
+          <button aria-label="Search"><span id="hs_cos_wrapper_module_161460844836939_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_icon" style="" data-hs-cos-general-type="widget" data-hs-cos-type="icon"><svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" aria-hidden="true"><g id="search1_layer"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" /></g></svg></span></button>
+        
+        
+          <input type="hidden" name="type" value="SITE_PAGE">
+        
+        
+        
+          <input type="hidden" name="type" value="BLOG_POST">
+          <input type="hidden" name="type" value="LISTING_PAGE">
+        
+        
+        </div>
+      </form>
+    </div>
+    <ul class="hs-search-field__suggestions"></ul>
+</div></div>
+      </div>
+      <div class="certs footer__certs">
+          <ul class="certs__list">
+            <li class="certs__item">
+              <a target="_blank" rel="nofollow" href="https://partners.amazonaws.com/partners/0010L00001kVejGQAS/Softeq Development Corporation">
+              <figure class="certs__img">
+                <img src="../hubfs/static/images/certs/AWS.svg" alt="AWS" loading="lazy">
+              </figure>
+              <div class="certs__title">
+
+
+
+
+
+
+
+
+AWS-Zertifiziert<br>Partner
+
+</div>
+              </a>
+            </li>
+            <li class="certs__item">
+              <a target="_blank" rel="nofollow" href="https://www.microsoft.com/en-us/solution-providers/partnerdetails/softeq-development-corporation_16da2f80-342a-4235-9570-0666924b6a2f/9fd3052f-35ac-45fc-82b0-8715e9b96c15">
+              <figure class="certs__img">
+                <img src="../hubfs/static/images/certs/2.svg" alt="2" loading="lazy">
+              </figure>
+              <div class="certs__title">
+
+
+
+
+
+
+
+
+Microsoft Gold<br>Partner
+
+</div>
+              </a>
+            </li>
+            <li class="certs__item">
+              <a target="_blank" rel="nofollow" href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/softeqdevelopmentcorporation1610637093400.azure-consulting-service-softeq?page=1&amp;search=softeq">
+              <figure class="certs__img">
+                <img src="../hubfs/About-us/ISO-Certificates/Azure.svg" alt="Azure" loading="lazy">
+              </figure>
+              <div class="certs__title">
+
+
+
+
+
+
+
+
+
+
+</div>
+              </a>
+            </li>
+            <li class="certs__item">
+              <a target="_blank" rel="nofollow" href="https://docs.microsoft.com/en-us/xamarin/cross-platform/partners/">
+              <figure class="certs__img">
+                <img src="../hubfs/static/images/certs/1.svg" alt="1" loading="lazy">
+              </figure>
+              <div class="certs__title">
+
+
+
+
+
+
+
+
+Xamarin Partner
+
+</div>
+              </a>
+            </li>
+            <li class="certs__item">
+              <a target="_blank" rel="nofollow" href="https://smg-aw.com/softeq-global-inc/">
+              <figure class="certs__img">
+                <img src="../hubfs/static/images/certs/Information-Security.svg" alt="Information-Security" loading="lazy">
+              </figure>
+              <div class="certs__title">
+
+
+
+
+
+
+
+
+Nach ISO27001<br>zertifiziert
+
+</div>
+              </a>
+            </li>
+            <li class="certs__item">
+              <a target="_blank" rel="nofollow" href="https://smg-aw.com/softeq-global-inc/">
+              <figure class="certs__img">
+                <img src="../hubfs/static/images/certs/Quality-Management-System.svg" alt="Quality-Management-System" loading="lazy">
+              </figure>
+              <div class="certs__title">
+
+
+
+
+
+
+
+
+Qualitätsmanagement-<br>systeme
+
+</div>
+              </a>
+            </li>
+            <li class="certs__item">
+              <a target="_blank" rel="nofollow" href="https://www.inc.com/profile/softeq-development">
+              <figure class="certs__img">
+                <img src="../hubfs/Inc.5000_2021.svg" alt="Inc.5000_2021" loading="lazy">
+              </figure>
+              <div class="certs__title">
+
+
+
+
+
+
+
+
+Inc.5000<br>Preisträger im dritten<br>Jahr in Folge
+
+</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      <div class="footer__socials_container">
+        <div class="privacy-link">
+          <span class="footer__copyright">© 2022 
+
+Softeq Development Corp.
+
+</span>
+          <a class="footer__privacy" href="privacy-statement.html">
+
+Datenschutzerklärung
+
+</a>
+          
+          <a class="footer__privacy foooter__impressum" href="impressum.html">
+
+Impressum
+
+</a>
+          
+        </div>
+        <ul class="social footer__social">
+          
+          <li class="social__item">
+            
+            <a class="social__link social__link--xi" href="https://www.xing.com/companies/softeqdevelopment"></a>
+            
+          </li>
+          
+          <li class="social__item">
+            
+            <a class="social__link social__link--tw" href="https://twitter.com/softeq"></a>
+            
+          </li>
+          
+          <li class="social__item">
+            
+            <a class="social__link social__link--yt" href="https://www.youtube.com/user/Softeq"></a>
+            
+          </li>
+          
+          <li class="social__item">
+            
+            <a class="social__link social__link--in" href="https://www.linkedin.com/company/softeq-"></a>
+            
+          </li>
+          
+          <li class="social__item">
+            
+            <a class="social__link social__link--ig" href="https://web.facebook.com/softeq"></a>
+            
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
+        </footer>
+      </div>
+    
+    <div class="mb-menu js-mb-menu">
+      
+
+
+
+
+
+
+
+<div class="mb-menu__bar js-menu-box">
+  <div class="mb-menu__header">  
+    <div class="hide-gt-xs language-switcher js-language-switcher">
+      <span class="language-switcher__label">de</span>
+      <span id="hs_cos_wrapper_language_switcher" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_language_switcher" style="" data-hs-cos-general-type="widget" data-hs-cos-type="language_switcher"><div class="lang_switcher_class">
+   <div class="globe_class" onclick="">
+       <ul class="lang_list_class">
+           <li>
+               <a class="lang_switcher_link" data-language="de" lang="de" href="blog.html">Deutsch</a>
+           </li>
+           <li>
+               <a class="lang_switcher_link" data-language="en" lang="en" href="../blog.html">English</a>
+           </li>
+       </ul>
+   </div>
+</div></span>
+    </div>
+    <button class="menu-toggle active mb-menu__menu-toggle js-menu-toggle" data-action="close" type="button"><span></span></button>
+  </div>
+  <div class="mb-menu__content">
+    
+      <div class="mb-menu__search">
+        <div id="hs_cos_wrapper_module_161182529474712" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+<div class="hs-search-field" id="hs-search-field"> 
+    <div class="hs-search-field__bar"> 
+      <form action="https://www.softeq.com/hs-search-results">
+        
+        <div style="position: relative;">
+         <input type="text" class="hs-search-field__input" name="term" autocomplete="off" aria-label="Search" placeholder="
+
+
+
+
+
+
+
+
+Zum Beispiel: Industrial IoT
+
+">
+        
+          <button aria-label="Search"><span id="hs_cos_wrapper_module_161182529474712_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_icon" style="" data-hs-cos-general-type="widget" data-hs-cos-type="icon"><svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" aria-hidden="true"><g id="search1_layer"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" /></g></svg></span></button>
+        
+        
+          <input type="hidden" name="type" value="SITE_PAGE">
+        
+        
+        
+          <input type="hidden" name="type" value="BLOG_POST">
+          <input type="hidden" name="type" value="LISTING_PAGE">
+        
+        
+        </div>
+      </form>
+    </div>
+    <ul class="hs-search-field__suggestions"></ul>
+</div></div>
+      </div>
+    
+    <div class="mb-menu__inner js-menu-scroll">
+      <ul class="mb-menu__list js-accords">
+        
+        
+        <li class="mb-menu__list-item">
+          
+          <div class="mb-menu__menu-item accord-header js-accord">Services</div>
+          <div class="accord-content">
+            <ul class="mb-menu__submenu js-accords">
+              
+              <li class="mb-menu__submenu-item">
+                
+                <div class="mb-menu__submenu-link accord-header js-accord">Individuelle Softwareentwicklung</div>
+                <div class="accord-content">
+                  <ul class="mb-menu__submenu mb-menu__submenu--more">
+                    <li class="mb-menu__submenu-item hide-xl">
+                      <a class="mb-menu__submenu-link" href="custom_application_development.html">
+
+Hauptseite
+
+</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="web_app_development.html">Web-Systeme</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="mobile_application_development.html">Mobile Apps</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="cloud_app_development.html">Cloud-Systeme</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="softeq-amazon-web-services.html">AWS-Software</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="desktop_application_development.html">Desktop-Apps</a>
+                    </li>
+                    
+                  </ul>
+                </div>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <div class="mb-menu__submenu-link accord-header js-accord">Embedded-Systementwicklung</div>
+                <div class="accord-content">
+                  <ul class="mb-menu__submenu mb-menu__submenu--more">
+                    <li class="mb-menu__submenu-item hide-xl">
+                      <a class="mb-menu__submenu-link" href="embedded_system.html">
+
+Hauptseite
+
+</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="embedded.html">Embedded Software Entwicklung</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="firmware_development.html">Firmware</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="thunderbolt-solution-development.html">Thunderbolt</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="hmi_development.html">Human-Machine-Interfaces (HMIs)</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="middleware_development.html">Middleware</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="connectivity_solutions.html">Connectivity-Lösungen</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="proximity_solutions.html">Proximity-Lösungen</a>
+                    </li>
+                    
+                  </ul>
+                </div>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <div class="mb-menu__submenu-link accord-header js-accord">Hardwaredesign</div>
+                <div class="accord-content">
+                  <ul class="mb-menu__submenu mb-menu__submenu--more">
+                    <li class="mb-menu__submenu-item hide-xl">
+                      <a class="mb-menu__submenu-link" href="hardware_design.html">
+
+Hauptseite
+
+</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="electronics_system_design.html">Elektronisches Systemdesign</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="electronic_circuit_design.html">Design elektronischer Schaltungen</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="pcb_design_and_layout_services.html">PCB-Design und Layoutservices</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="expert_analysis_simulation_modeling_services.html">PCB-Designsimulationen</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="fpga_design_services.html">FPGA-Design</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="enclosure_design.html">Gehäusedesign</a>
+                    </li>
+                    
+                  </ul>
+                </div>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="../innovation-lab.html">Innovation in der Frühphase</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="ui_ux_design.html">UX/UI-Design</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="frontend_development.html">Frontend</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="backend_development.html">Backend</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="quality_assurance.html">Quality Assurance</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="application_maintenance_and_support.html">Wartung und Support</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="devops_as_a_service.html">DevOps</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="digital_transformation.html">Digitale Transformtion</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="business-analysis-and-it-consulting.html">Business Analyse</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="cybersecurity.html">Cybersicherheit</a>
+                
+              </li>
+              
+            </ul>
+          </div>
+          
+        </li>
+        
+        <li class="mb-menu__list-item">
+          
+          <div class="mb-menu__menu-item accord-header js-accord">Lösungen</div>
+          <div class="accord-content">
+            <ul class="mb-menu__submenu js-accords">
+              
+              <li class="mb-menu__submenu-item">
+                
+                <div class="mb-menu__submenu-link accord-header js-accord">IoT</div>
+                <div class="accord-content">
+                  <ul class="mb-menu__submenu mb-menu__submenu--more">
+                    <li class="mb-menu__submenu-item hide-xl">
+                      <a class="mb-menu__submenu-link" href="internet_of_things.html">
+
+Hauptseite
+
+</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="consumer-internet-of-things.html">Consumer IoT</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="industrial_iot.html">Industrial IoT (IIoT)</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="medical-internet-of-things.html">Healthcare IoT</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="smart-home.html">Smart Home</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="wearable_technology_solutions.html">Wearables</a>
+                    </li>
+                    
+                  </ul>
+                </div>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="nand_storage_memory_solutions.html">Storage</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="industrial_automation_and_robotics.html">Industrielle Automatisierung und Robotik</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="video_streaming.html">Verarbeitung und Distribution von Medieninhalten</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="video_analytics_and_camera_app_development.html">Computer Vision</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="machine_learning.html">KI/Machine Learning</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="ar_and_vr_development.html">AR/VR</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="blockchain_software_development.html">Blockchain</a>
+                
+              </li>
+              
+            </ul>
+          </div>
+          
+        </li>
+        
+        <li class="mb-menu__list-item">
+          
+          <div class="mb-menu__menu-item accord-header js-accord">Branchen</div>
+          <div class="accord-content">
+            <ul class="mb-menu__submenu js-accords">
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="healthcare-industry.html">Healthcare</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="consumer-electronics-industry.html">Verbraucherelektronik</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="digital-media-and-entertainment-industry.html">Medien und Unterhaltung</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="software-and-technology-industry.html">Software und Technologie</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="digital-solutions-for-industrial-manufacturing.html">Industrielle Fertigung</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="transportation-industry.html">Transport</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="automotive.html">Automotive</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="data-srorage-industry.html">Datenspeicherung</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="solutions-for-the-sports-industry.html">Sport</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="pet-tech-solutions.html">Pet Tech</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="baby-tech-software-solutions.html">Babytech</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="climatetech-solutions.html">Green Tech</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="elearning-industry.html">E-Learning</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="oil-and-gas-industry.html">Energie</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="construction-industry.html">Baugewerbe</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="game-development-services.html">Spiele</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="retail-solutions-industry.html">Einzelhandel</a>
+                
+              </li>
+              
+            </ul>
+          </div>
+          
+        </li>
+        
+        <li class="mb-menu__list-item">
+          
+          <div class="mb-menu__menu-item accord-header js-accord">Über uns</div>
+          <div class="accord-content">
+            <ul class="mb-menu__submenu js-accords">
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="testimonials.html">Was unsere Kunden sagen</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="25-anniversary.html">25 Jahre Innovation</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="../innovation-lab.html">Innovation Lab</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="services.html">Unser Verfahren</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="technology-capabilities-overview.html">Unsere Tech-Skills </a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="vision-mission-and-values.html">Unsere Vision, Mission und Werte</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="partnerships.html">Partnerschaften </a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="our-iso-certificates-your-piece-of-mind.html">ISO-Zertifizierungen</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="how-we-work.html">Kooperationsmodelle</a>
+                
+              </li>
+              
+            </ul>
+          </div>
+          
+        </li>
+        
+      </ul>
+      <ul class="mb-menu__list mb-menu__list--extra">
+        
+        
+        <li class="mb-menu__list-item">
+          <a class="mb-menu__menu-link" href="featured_projects.html">Portfolio</a>
+        </li>
+        
+        <li class="mb-menu__list-item">
+          <a class="mb-menu__menu-link" href="#">Medien</a>
+        </li>
+        
+      </ul>
+      <ul class="social social--light mb-menu__social">
+        
+        <li class="social__item">
+          
+        </li>
+        
+        <li class="social__item">
+          
+          <a class="social__link social__link--tw" href="https://twitter.com/softeq"></a>
+          
+        </li>
+        
+        <li class="social__item">
+          
+          <a class="social__link social__link--yt" href="https://www.youtube.com/user/Softeq"></a>
+          
+        </li>
+        
+        <li class="social__item">
+          
+          <a class="social__link social__link--in" href="https://www.linkedin.com/company/softeq-"></a>
+          
+        </li>
+        
+        <li class="social__item">
+          
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    </div>
+    
+<script>
+(function () {
+    window.addEventListener('load', function () {
+        setTimeout(function () {
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST.html', '/_hcms/perf', true /*async*/);
+            xhr.setRequestHeader("Content-type", "application/json");
+            xhr.onreadystatechange = function () {
+                // do nothing.
+            };
+            var connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+            function populateNetworkInfo(name, connection, info) {
+                if (name in connection) {
+                    info[name] = connection[name];
+                }
+            }
+            var networkInfo = {};
+            if (connection) {
+                ['type', 'effectiveType', 'downlink', 'rtt'].forEach(function(name) {
+                    populateNetworkInfo(name, connection, networkInfo);
+                });
+            }
+            var perfData = {
+                url: location.href,
+                portal: 2915353,
+                content: 69911499837,
+                group: -1,
+                connection: networkInfo,
+                timing: performance.timing
+            };
+            xhr.send(JSON.stringify(perfData));
+        }, 3000);  // Execute this 3 seconds after onload.
+    });
+})();
+</script>
+
+<script>
+var hsVars = hsVars || {}; hsVars['language'] = 'de';
+</script>
+
+<script src="../hs/hsstatic/cos-i18n/static-1.53/bundles/project.js"></script>
+<script src="../hs-fs/hub/2915353/hub_generated/module_assets/40993579460/1662031998507/module_40993579460_search_box.min.js"></script>
+<script src="../hs-fs/hub/2915353/hub_generated/template_assets/55303118339/1633615210720/softeq/js/libs/jquery-cookie.min.js"></script>
+<script src="../hs-fs/hub/2915353/hub_generated/template_assets/55301377328/1634477754264/softeq/js/ribbon.min.js"></script>
+
+    <!--[if lte IE 8]>
+    <script charset="utf-8" src="https://js.hsforms.net/forms/v2-legacy.js"></script>
+    <![endif]-->
+
+<script data-hs-allowed="true" src="../_hcms/forms/v2.js"></script>
+
+    <script data-hs-allowed="true">
+        var options = {
+            portalId: '2915353',
+            formId: 'f5b7ba60-b3a2-44dc-82f3-1dee48686d18',
+            formInstanceId: '2345',
+            pageId: '34994089632',
+            region: 'na1',
+            
+            
+            
+            
+            
+            
+            inlineMessage: "<p>Herzlich willkommen!</p>\n<p>Vielen Dank f\u00FCr Ihre Anmeldung. Sie werden ab sofort \u00FCber die neuesten Branchen-Updates und unsere News informiert.</p>\n<p>Stay tuned.</p>",
+            
+            
+            rawInlineMessage: "<p>Herzlich willkommen!</p>\n<p>Vielen Dank f\u00FCr Ihre Anmeldung. Sie werden ab sofort \u00FCber die neuesten Branchen-Updates und unsere News informiert.</p>\n<p>Stay tuned.</p>",
+            
+            
+            hsFormKey: "01c928729858ab27d9d7b51c06bf82a0",
+            
+            
+            css: '',
+            target: '#hs_form_target_form_461274822',
+            
+            
+            
+            
+            
+            contentType: "listing-page",
+            
+            
+            
+            formsBaseUrl: '/_hcms/forms/',
+            
+            
+            
+            formData: {
+                cssClass: 'hs-form stacked hs-custom-form'
+            }
+        };
+
+        options.getExtraMetaDataBeforeSubmit = function() {
+            var metadata = {};
+            
+
+            if (hbspt.targetedContentMetadata) {
+                var count = hbspt.targetedContentMetadata.length;
+                var targetedContentData = [];
+                for (var i = 0; i < count; i++) {
+                    var tc = hbspt.targetedContentMetadata[i];
+                     if ( tc.length !== 3) {
+                        continue;
+                     }
+                     targetedContentData.push({
+                        definitionId: tc[0],
+                        criterionId: tc[1],
+                        smartTypeId: tc[2]
+                     });
+                }
+                metadata["targetedContentMetadata"] = JSON.stringify(targetedContentData);
+            }
+
+            return metadata;
+        };
+
+        hbspt.forms.create(options);
+    </script>
+
+
+<!-- Start of HubSpot Analytics Code -->
+<script type="text/javascript">
+var _hsq = _hsq || [];
+_hsq.push(["setContentType", "listing-page"]);
+_hsq.push(["setCanonicalUrl", "https:\/\/www.softeq.com\/de\/blog"]);
+_hsq.push(["setPageId", "69911499837"]);
+_hsq.push(["setContentMetadata", {
+    "contentPageId": 69909728151,
+    "legacyPageId": "69911499837",
+    "contentFolderId": null,
+    "contentGroupId": 34994089632,
+    "abTestId": null,
+    "languageVariantId": 69911499837,
+    "languageCode": "de",
+    
+}]);
+</script>
+
+<script type="text/javascript-delayed" id="hs-script-loader-delayed" async defer src="../hs/scriptloader/2915353.js"></script>
+<!-- End of HubSpot Analytics Code -->
+
+
+<script type="text/javascript">
+var hsVars = {
+    ticks: 1665616559384,
+    page_id: 69911499837,
+    
+    content_group_id: 34994089632,
+    portal_id: 2915353,
+    app_hs_base_url: "https://app.hubspot.com",
+    cp_hs_base_url: "https://cp.hubspot.com",
+    language: "de",
+    analytics_page_type: "listing-page",
+    analytics_page_id: "69911499837",
+    category_id: 7,
+    folder_id: 0,
+    is_hubspot_user: false
+}
+</script>
+
+
+<script defer src="../hs/hsstatic/HubspotToolsMenu/static-1.138/js/index.js"></script>
+
+<script src="../hs-fs/hub/2915353/hub_generated/template_assets/18715822921/1665053405284/softeq/js/main.min.js"></script>
+<!-- Default Statcounter code for Softeq.com vt.edu -->
+<script type="text/javascript">
+var sc_project=8878194;
+var sc_invisible=1;
+var sc_security="14ac9dca";
+</script>
+<script type="text/javascript" src="../../www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><a title="Web Analytics
+Made Easy - Statcounter" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/8878194/0/14ac9dca/1/" alt="Web Analytics Made Easy - Statcounter" referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+<div id="fb-root"></div>
+ <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "../../connect.facebook.net/de_DE/all.js#xfbml=1&status=0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+ <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="../../platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+ 
+
+
+    <script src="../hs-fs/hub/2915353/hub_generated/template_assets/22842767851/1586512773404/softeq/js/libs/lozad.min.js"></script>
+    <script src="../hs-fs/hub/2915353/hub_generated/template_assets/24004730143/1665053399067/softeq-blog/js/blog-main.min.js"></script>
+  
+</body>
+<!-- Mirrored from www.softeq.com/de/blog by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Oct 2022 04:06:16 GMT -->
+</html>

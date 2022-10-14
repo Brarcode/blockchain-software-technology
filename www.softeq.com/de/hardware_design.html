@@ -1,0 +1,3544 @@
+<!doctype html><html lang="de">
+<!-- Mirrored from www.softeq.com/de/hardware_design by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Oct 2022 04:05:48 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Softeq verfügt über umfassende Erfahrung in der Hardwareentwicklung. Unsere Ingenieure erstellen sowohl einfache Boards als auch hochwertige Gadgets. Unsere Ingenieure bieten wir eine breite Palette von Hardwareservices – vom ersten Entwurf und Prototyping bis hin zur Serienproduktion">
+    <title>Hardwareentwicklung | Softeq GmbH</title>
+    <link rel="shortcut icon" href="../hubfs/favicon-32.png">
+    
+    <script src="../hs/hsstatic/jquery-libs/static-1.4/jquery/jquery-1.11.2.js"></script>
+<script>hsjQuery = window['jQuery'];</script>
+    <meta property="og:description" content="Softeq verfügt über umfassende Erfahrung in der Hardwareentwicklung. Unsere Ingenieure erstellen sowohl einfache Boards als auch hochwertige Gadgets. Unsere Ingenieure bieten wir eine breite Palette von Hardwareservices – vom ersten Entwurf und Prototyping bis hin zur Serienproduktion">
+    <meta property="og:title" content="Hardwareentwicklung | Softeq GmbH">
+    <meta name="twitter:description" content="Softeq verfügt über umfassende Erfahrung in der Hardwareentwicklung. Unsere Ingenieure erstellen sowohl einfache Boards als auch hochwertige Gadgets. Unsere Ingenieure bieten wir eine breite Palette von Hardwareservices – vom ersten Entwurf und Prototyping bis hin zur Serienproduktion">
+    <meta name="twitter:title" content="Hardwareentwicklung | Softeq GmbH">
+
+    
+
+    
+    <style>
+a.cta_button{-moz-box-sizing:content-box !important;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;vertical-align:middle}.hs-breadcrumb-menu{list-style-type:none;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px}.hs-breadcrumb-menu-item{float:left;padding:10px 0px 10px 10px}.hs-breadcrumb-menu-divider:before{content:'›';padding-left:10px}.hs-featured-image-link{border:0}.hs-featured-image{float:right;margin:0 0 20px 20px;max-width:50%}@media (max-width: 568px){.hs-featured-image{float:none;margin:0;width:100%;max-width:100%}}.hs-screen-reader-text{clip:rect(1px, 1px, 1px, 1px);height:1px;overflow:hidden;position:absolute !important;width:1px}
+</style>
+
+<link rel="stylesheet" href="../hs/hsstatic/cos-LanguageSwitcher/static-1.11/sass/LanguageSwitcher.css">
+<link rel="stylesheet" href="../hs-fs/hub/2915353/hub_generated/module_assets/40993579460/1662031999319/module_40993579460_search_box.min.css">
+<link rel="stylesheet" href="../hs-fs/hub/2915353/hub_generated/module_assets/55305265190/1665561600101/module_55305265190_Ribbon_global.min.css">
+<link rel="stylesheet" href="../hs-fs/hub/2915353/hub_generated/module_assets/55629555341/1665561570217/module_55629555341_about-hero-video.min.css">
+<link rel="stylesheet" href="../hs-fs/hub/2915353/hub_generated/module_assets/1615469062823/module_42225714444_search-field-footer.css">
+<link rel="stylesheet" href="../hs-fs/hub/2915353/hub_generated/module_assets/1615468549715/module_41053827494_search-field.css">
+    
+
+    
+<!--  Added by GoogleAnalytics integration -->
+<script>
+var _hsp = window._hsp = window._hsp || [];
+_hsp.push(['addPrivacyConsentListener', function(consent) { if (consent.allowed || (consent.categories && consent.categories.analytics)) {
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+  ga('create','UA-289784-1','auto');
+  ga('send','pageview');
+}}]);
+</script>
+
+<!-- /Added by GoogleAnalytics integration -->
+
+<!--  Added by GoogleTagManager integration -->
+<script>
+var _hsp = window._hsp = window._hsp || [];
+
+var hsLoadGtm = function loadGtm() {
+    if(window._hsGtmLoadOnce) {
+      return;
+    }
+
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P4V86H');
+
+    window._hsGtmLoadOnce = true;
+};
+
+var useGoogleConsentMode = false;
+
+if (!useGoogleConsentMode){
+    _hsp.push(['addPrivacyConsentListener', function(consent){
+      if(consent.allowed || (consent.categories && consent.categories.analytics)){
+        hsLoadGtm();
+      }
+  }]);
+} else{
+    if(!window._hsGoogleConsentRunOnce){
+      window._hsGoogleConsentRunOnce=true;
+
+      window.dataLayer=window.dataLayer||[];
+      function gtag(){dataLayer.push(arguments);}
+
+      gtag('consent','default',{
+        'ad_storage':'denied',
+        'analytics_storage':'denied'
+      });
+
+      gtag('set','developer_id.dZTQ1Zm',true);
+
+      _hsp.push(['addPrivacyConsentListener',function(consent){
+      var hasAnalyticsConsent=consent&&(consent.allowed||(consent.categories&&consent.categories.analytics));
+      var hasAdsConsent=consent&&(consent.allowed||(consent.categories&&consent.categories.advertisement));
+
+      gtag('consent','update',{
+        'ad_storage':hasAdsConsent?'granted':'denied',
+        'analytics_storage':hasAnalyticsConsent?'granted':'denied'
+      });
+    }]);
+  }
+
+  hsLoadGtm();
+}
+</script>
+
+<!-- /Added by GoogleTagManager integration -->
+
+    <link rel="canonical" href="hardware_design.html">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push(
+{'gtm.start': new Date().getTime(),event:'gtm.js'}
+);var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P4V86H');</script>
+<!-- End Google Tag Manager -->
+<meta name="facebook-domain-verification" content="dycyfc5ers49cougs4xdd4ryic75ya">
+
+<meta property="og:image" content="https://www.softeq.com/hubfs/Hardware-Development.png#keepProtocol">
+<meta property="og:image:width" content="527">
+<meta property="og:image:height" content="301">
+<meta property="og:image:alt" content="Hardware-Development">
+<meta name="twitter:image" content="https://www.softeq.com/hubfs/Hardware-Development.png#keepProtocol">
+<meta name="twitter:image:alt" content="Hardware-Development">
+
+<meta property="og:url" content="https://www.softeq.com/de/hardware_design">
+<meta name="twitter:card" content="summary_large_image">
+<meta http-equiv="content-language" content="de">
+<link rel="alternate" hreflang="de" href="hardware_design.html">
+<link rel="alternate" hreflang="en" href="../services/hardware_design.html">
+
+<link rel="stylesheet" href="../hs-fs/hub/2915353/hub_generated/template_assets/18851204580/1664962975104/softeq/css/main.min.css">
+<link rel="stylesheet" href="../hs-fs/hub/2915353/hub_generated/template_assets/37039861337/1655206432308/softeq/css/fonts.min.css">
+
+
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'../../connect.facebook.net/en_US/fbevents.js');
+fbq('init', '437139663685525');
+fbq('track', 'PageView');
+</script>
+<noscript>&lt;img  height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=437139663685525&amp;amp;ev=PageView&amp;amp;noscript=1"&gt;</noscript>
+<!-- End Facebook Pixel Code -->
+  <meta name="generator" content="HubSpot"></head>
+  <body class="page">
+<!--  Added by GoogleTagManager integration -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P4V86H" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- /Added by GoogleTagManager integration -->
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P4V86H" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="preloader js-preloader"></div>
+    <div class="page__inner">
+      <header class="header page__header">
+        
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+  <div class="header__inner">
+    <div class="header__group">
+      <span id="hs_cos_wrapper_default-logo" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_logo logo header__logo" style="" data-hs-cos-general-type="widget" data-hs-cos-type="logo"><a href="../index.html" id="hs-link-default-logo" style="border-width:0px;border:0px;"><img src="../hubfs/logo-solid-white.svg" class="hs-image-widget " style="width:130px;border-width:0px;border:0px;" width="130" alt="" title=""></a></span>
+      <nav class="header__nav">
+        <ul class="header-menu header__main-menu">
+          
+          
+          
+<li class="header-menu__item">
+  
+  <div class="header-menu__link header-menu__link--with-arrow">
+    Services
+  </div>
+  <ul class="header-submenu header-submenu_v2 header-menu__submenu">
+    <li class="header-submenu__title h3">Services</li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="custom_application_development.html">
+        Individuelle Softwareentwicklung
+      </a>
+      <ul class="header-submenu header-submenu--more">
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="web_app_development.html">
+            Web-Systeme
+          </a>
+        </li>
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="mobile_application_development.html">
+            Mobile Apps
+          </a>
+        </li>
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="cloud_app_development.html">
+            Cloud-Systeme
+          </a>
+        </li>
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="softeq-amazon-web-services.html">
+            AWS-Software
+          </a>
+        </li>
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="desktop_application_development.html">
+            Desktop-Apps
+          </a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="embedded_system.html">
+        Embedded-Systementwicklung
+      </a>
+      <ul class="header-submenu header-submenu--more">
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="embedded.html">
+            Embedded Software Entwicklung
+          </a>
+        </li>
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="firmware_development.html">
+            Firmware
+          </a>
+        </li>
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="thunderbolt-solution-development.html">
+            Thunderbolt
+          </a>
+        </li>
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="hmi_development.html">
+            Human-Machine-Interfaces (HMIs)
+          </a>
+        </li>
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="middleware_development.html">
+            Middleware
+          </a>
+        </li>
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="connectivity_solutions.html">
+            Connectivity-Lösungen
+          </a>
+        </li>
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="proximity_solutions.html">
+            Proximity-Lösungen
+          </a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="hardware_design.html">
+        Hardwaredesign
+      </a>
+      <ul class="header-submenu header-submenu--more">
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="electronics_system_design.html">
+            Elektronisches Systemdesign
+          </a>
+        </li>
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="electronic_circuit_design.html">
+            Design elektronischer Schaltungen
+          </a>
+        </li>
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="pcb_design_and_layout_services.html">
+            PCB-Design und Layoutservices
+          </a>
+        </li>
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="expert_analysis_simulation_modeling_services.html">
+            PCB-Designsimulationen
+          </a>
+        </li>
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="fpga_design_services.html">
+            FPGA-Design
+          </a>
+        </li>
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="enclosure_design.html">
+            Gehäusedesign
+          </a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="../innovation-lab.html">
+        Innovation in der Frühphase
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="ui_ux_design.html">
+        UX/UI-Design
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="frontend_development.html">
+        Frontend
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="backend_development.html">
+        Backend
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="quality_assurance.html">
+        Quality Assurance
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="application_maintenance_and_support.html">
+        Wartung und Support
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="devops_as_a_service.html">
+        DevOps
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="digital_transformation.html">
+        Digitale Transformtion
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="business-analysis-and-it-consulting.html">
+        Business Analyse
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="cybersecurity.html">
+        Cybersicherheit
+      </a>
+      
+    </li>
+    
+  </ul>
+  
+</li>
+
+          
+          
+<li class="header-menu__item">
+  
+  <div class="header-menu__link header-menu__link--with-arrow">
+    Lösungen
+  </div>
+  <ul class="header-submenu header-submenu_v2 header-menu__submenu">
+    <li class="header-submenu__title h3">Lösungen</li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="internet_of_things.html">
+        IoT
+      </a>
+      <ul class="header-submenu header-submenu--more">
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="consumer-internet-of-things.html">
+            Consumer IoT
+          </a>
+        </li>
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="industrial_iot.html">
+            Industrial IoT (IIoT)
+          </a>
+        </li>
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="medical-internet-of-things.html">
+            Healthcare IoT
+          </a>
+        </li>
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="smart-home.html">
+            Smart Home
+          </a>
+        </li>
+        
+        <li class="header-submenu__item">
+          <a class="header-submenu__link" href="wearable_technology_solutions.html">
+            Wearables
+          </a>
+        </li>
+        
+      </ul>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="nand_storage_memory_solutions.html">
+        Storage
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="industrial_automation_and_robotics.html">
+        Industrielle Automatisierung und Robotik
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="video_streaming.html">
+        Verarbeitung und Distribution von Medieninhalten
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="video_analytics_and_camera_app_development.html">
+        Computer Vision
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="machine_learning.html">
+        KI/Machine Learning
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="ar_and_vr_development.html">
+        AR/VR
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="blockchain_software_development.html">
+        Blockchain
+      </a>
+      
+    </li>
+    
+  </ul>
+  
+</li>
+
+          
+          
+<li class="header-menu__item">
+  
+  <div class="header-menu__link header-menu__link--with-arrow">
+    Branchen
+  </div>
+  <ul class="header-submenu header-submenu_v2 header-menu__submenu">
+    <li class="header-submenu__title h3">Branchen</li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="healthcare-industry.html">
+        Healthcare
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="consumer-electronics-industry.html">
+        Verbraucherelektronik
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="digital-media-and-entertainment-industry.html">
+        Medien und Unterhaltung
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="software-and-technology-industry.html">
+        Software und Technologie
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="digital-solutions-for-industrial-manufacturing.html">
+        Industrielle Fertigung
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="transportation-industry.html">
+        Transport
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="automotive.html">
+        Automotive
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="data-srorage-industry.html">
+        Datenspeicherung
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="solutions-for-the-sports-industry.html">
+        Sport
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="pet-tech-solutions.html">
+        Pet Tech
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="baby-tech-software-solutions.html">
+        Babytech
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="climatetech-solutions.html">
+        Green Tech
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="elearning-industry.html">
+        E-Learning
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="oil-and-gas-industry.html">
+        Energie
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="construction-industry.html">
+        Baugewerbe
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="game-development-services.html">
+        Spiele
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="retail-solutions-industry.html">
+        Einzelhandel
+      </a>
+      
+    </li>
+    
+  </ul>
+  
+</li>
+
+          
+          
+<li class="header-menu__item">
+  
+  <div class="header-menu__link header-menu__link--with-arrow">
+    Über uns
+  </div>
+  <ul class="header-submenu header-submenu_v2 header-menu__submenu">
+    <li class="header-submenu__title h3">Über uns</li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="testimonials.html">
+        Was unsere Kunden sagen
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="25-anniversary.html">
+        25 Jahre Innovation
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="../innovation-lab.html">
+        Innovation Lab
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="services.html">
+        Unser Verfahren
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="technology-capabilities-overview.html">
+        Unsere Tech-Skills 
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="vision-mission-and-values.html">
+        Unsere Vision, Mission und Werte
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="partnerships.html">
+        Partnerschaften 
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="our-iso-certificates-your-piece-of-mind.html">
+        ISO-Zertifizierungen
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="how-we-work.html">
+        Kooperationsmodelle
+      </a>
+      
+    </li>
+    
+  </ul>
+  
+</li>
+
+          
+        </ul>
+      </nav>
+    </div>
+    <div class="header__group">
+      <ul class="header-menu header-menu--extra header__extra-menu">
+        
+        
+        
+<li class="header-menu__item">
+  
+  <a class="header-menu__link" href="featured_projects.html">
+    Portfolio
+  </a>
+  
+</li>
+
+        
+        
+<li class="header-menu__item">
+  
+  <div class="header-menu__link header-menu__link--with-arrow">
+    Medien
+  </div>
+  <ul class="header-submenu header-submenu_v2 header-menu__submenu">
+    <li class="header-submenu__title h3">Medien</li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="news.html">
+        Softeq-News
+      </a>
+      
+    </li>
+    
+    <li class="header-submenu__item">
+      
+      <a class="header-submenu__link" href="blog.html">
+        Blog
+      </a>
+      
+    </li>
+    
+  </ul>
+  
+</li>
+
+        
+      </ul>
+
+      <div class="hide-xs language-switcher js-language-switcher">
+        <span class="language-switcher__label">de</span>
+        <span id="hs_cos_wrapper_language_switcher" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_language_switcher" style="" data-hs-cos-general-type="widget" data-hs-cos-type="language_switcher"><div class="lang_switcher_class">
+   <div class="globe_class" onclick="">
+       <ul class="lang_list_class">
+           <li>
+               <a class="lang_switcher_link" data-language="de" lang="de" href="hardware_design.html">Deutsch</a>
+           </li>
+           <li>
+               <a class="lang_switcher_link" data-language="en" lang="en" href="../services/hardware_design.html">English</a>
+           </li>
+       </ul>
+   </div>
+</div></span>
+      </div>
+      
+        <div class="hide-md" style="margin-left: 8px">
+          <div id="hs_cos_wrapper_module_161166177346253" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+
+
+<div class="hs-search-bar" id="hs-search-bar">
+  <button class="hs-search-bar__button" aria-label="Search"><span id="hs_cos_wrapper_module_161166177346253_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_icon" style="" data-hs-cos-general-type="widget" data-hs-cos-type="icon"><svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" aria-hidden="true"><g id="search1_layer"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" /></g></svg></span></button>
+  <div class="hs-search-bar__field">
+    <div class="hs-search-field">
+      <div class="hs-search-field__bar">
+        <form action="https://www.softeq.com/hs-search-results">
+          <input type="text" class="hs-search-field__input" name="term" autocomplete="off" aria-label="Frequent queries" placeholder="
+
+
+
+
+
+
+
+
+Zum Beispiel: Industrial IoT
+
+">
+          
+            <button class="hs-search-field__button" aria-label="
+
+
+
+
+
+
+
+
+Suche
+
+"><span id="hs_cos_wrapper_module_161166177346253_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_icon" style="" data-hs-cos-general-type="widget" data-hs-cos-type="icon"><svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" aria-hidden="true"><g id="search2_layer"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" /></g></svg></span></button>
+          
+          
+            <input type="hidden" name="type" value="SITE_PAGE">
+          
+          
+          
+            <input type="hidden" name="type" value="BLOG_POST">
+            <input type="hidden" name="type" value="LISTING_PAGE">
+          
+          
+        </form>
+      </div>
+      <ul class="hs-search-field__suggestions">
+        
+          
+  <li class="h5 hs-search-field__title">Häufig gestellte Fragen</li>
+  
+    
+    
+    <li>
+      <a href="internet_of_things.html">
+        Entwicklung von IoT-Lösungen
+      </a>
+    </li>
+  
+    
+    
+    <li>
+      <a href="digital_transformation.html">
+        Digitale Transformation
+      </a>
+    </li>
+  
+    
+    
+    <li>
+      <a href="embedded.html">
+        Entwicklung von Embedded Lösungen
+      </a>
+    </li>
+  
+    
+    
+    <li>
+      <a href="hardware_design.html">
+        Hardwaredesign
+      </a>
+    </li>
+  
+    
+    
+    <li>
+      <a href="../venture-studio.html">
+        Venture Studio
+      </a>
+    </li>
+  
+    
+    
+    <li>
+      <a href="contact.html">
+        Kontakt
+      </a>
+    </li>
+  
+    
+    
+    <li>
+      <a href="featured_projects/adas-solution-for-electric-vehicles.html">
+        ADAS-Lösung für Elektrofahrzeuge
+      </a>
+    </li>
+  
+    
+    
+    <li>
+      <a href="featured_projects/full_cycle_software_development_for_smart_bassinette.html">
+        Mobile App, Web und Firmware für ein intelligentes Babybett
+      </a>
+    </li>
+  
+    
+    
+    <li>
+      <a href="featured_projects/pcb-design-verification-for-an-automotive-radar-sensor-system.html">
+        PCB-Designverifizierung für ein automobiles Radarsensorsystem
+      </a>
+    </li>
+  
+    
+    
+    <li>
+      <a href="device-management-suite-for-daikin-smart-thermostats-and-indoor-air-quality-sensors.html">
+        Gerätemanagement-Suite für smarte Thermostate und Raumluftqualität-Sensoren von Daikin
+      </a>
+    </li>
+  
+
+        
+      </ul>
+    </div>
+  </div>
+</div></div>
+        </div>
+      
+      
+        <a class="btn btn-white header__action header__action_v2" href="contact.html">
+
+Kontakt
+
+</a>
+      
+      <button class="menu-toggle header__menu-toggle js-menu-toggle" data-action="open" type="button">
+        <span></span>
+      </button>
+    </div>
+  </div>
+</div>
+<div id="hs_cos_wrapper_module_16317066883226" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+  
+</div>
+      </header>
+      <div class="page__content">
+        <span id="hs_cos_wrapper_" class="hs_cos_wrapper hs_cos_wrapper_widget_container hs_cos_wrapper_type_widget_container" style="" data-hs-cos-general-type="widget_container" data-hs-cos-type="widget_container"><div id="hs_cos_wrapper_widget_16321331358182" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+<div class="comm-hero comm-hero_v2">
+  
+  <div class="comm-hero__videoBg comm-hero__videoBg_grad-blue">
+    
+  
+    <video class="video-player lazy" autoplay loop muted poster="noposter.html">
+      <source src="#" type="video/mp4" data-src="../hubfs/Main-Image/Main-Video/hardware-design-video.mp4">
+    </video>
+  
+
+  </div>
+  
+  <div class="container">
+    <div class="comm-hero__inner  ">
+      <div class="comm-hero__info comm-hero__info_full">
+          <h1 class="h1 comm-hero__title">Hardwareentwicklung</h1>
+          
+          <p class="comm-hero__sub">
+            Unsere Hardware Design Engineers verfügen über alle Fähigkeiten, um Ihre Hardwareanforderungen zu erfüllen. Im Rahmen unserer Hardwareservices entwerfen wir elektronische Hardware, PCB, FPGA oder ein Gehäuse und helfen Ihnen ein vollwertiges Gerät zusammenstellen - von der Konzeption bis zur Serienproduktion.
+          </p>
+          
+          
+          <a class="btn btn_brd btn_brd-white comm-hero__action" href="contact.html" onclick="ga('send', 'event', 'contact_button', 'click');">
+            Kontaktieren sie uns für Details
+          </a>
+          
+          
+      </div>
+    </div>
+  </div>
+</div></div>
+<div id="hs_cos_wrapper_widget_1571625212610315" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div class="brands">
+  <div class="container">
+    <div class="brands__scroll">
+      <div class="brands__inner">
+        
+        <a class="brands__img" href="../featured_projects/samsung_app_prototype.html">
+          <img loading="lazy" src="../hubfs/content/static/Samsung.svg" alt="Samsung">
+        </a>
+        
+        <a class="brands__img" href="../featured_projects/sandisk_test_labs.html">
+          <img loading="lazy" src="../hubfs/content/static/Sandisk.svg" alt="Sandisk">
+        </a>
+        
+        <a class="brands__img" href="../featured_projects/proof-of-concept_ios_app_for_omron.html">
+          <img loading="lazy" src="../hubfs/static/images/brands/6.svg" alt="6">
+        </a>
+        
+        <a class="brands__img" href="../en/featured_projects/nvidia_contacts.html">
+          <img loading="lazy" src="../hubfs/static/images/brands/2.svg" alt="2">
+        </a>
+        
+        <a class="brands__img" href="../featured_projects/lenovo-deployment-assistant-desktop-app.html">
+          <img loading="lazy" src="../hubfs/content/static/Lenovo.svg" alt="Lenovo">
+        </a>
+        
+      </div>
+    </div>
+  </div>
+</div></div>
+<div id="hs_cos_wrapper_widget_1571924917874379" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><section class="section" id="Services">
+  <div class="section__content">
+    <div class="container">
+      <div class="section__content-inner">
+        <div class="services">
+          <div class="tabs-nav services__tabs js-tabs" data-content="services-tabs" data-animate="in">
+            <ul class="tabs-nav__inner">
+              
+              <li class="tabs-nav__item">
+                <button class="tabs-nav__btn _link" type="button">
+                  
+                  <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5244 11.102H10.4753L12.1586 12.7262C12.2563 12.821 12.3881 12.8744 12.5257 12.875H14.3806C14.514 12.8752 14.6424 12.8257 14.7398 12.7364L18.7829 9.02631H34.4756C34.6147 9.02631 34.7481 8.97224 34.8464 8.87602C34.9447 8.77978 35 8.64925 35 8.51315C35 8.37706 34.9447 8.24653 34.8464 8.15031C34.7481 8.05406 34.6147 8 34.4756 8H18.5758C18.4424 7.99979 18.3139 8.04935 18.2166 8.13854L14.1734 11.8487H12.7407L11.0574 10.2245C10.9597 10.1297 10.8278 10.0763 10.6903 10.0757H7.5244C7.38534 10.0757 7.25195 10.1298 7.15357 10.226C7.05525 10.3223 7 10.4528 7 10.5889C7 10.725 7.05525 10.8555 7.15357 10.9517C7.25195 11.048 7.38534 11.102 7.5244 11.102ZM31.646 12.1579C32.009 11.8873 32.452 11.7403 32.9077 11.7391C33.3015 11.7397 33.6871 11.8492 34.0204 12.0551C34.3536 12.261 34.6211 12.555 34.7921 12.9033C34.9631 13.2516 35.0307 13.6402 34.9872 14.0244C34.9436 14.4088 34.7908 14.7733 34.546 15.0762C34.3013 15.3791 33.9746 15.6081 33.6034 15.7371C33.2323 15.8661 32.8316 15.8897 32.4473 15.8053C32.0631 15.7209 31.7108 15.532 31.4309 15.26C31.151 14.9881 30.9548 14.6442 30.8647 14.2678H29.4395L25.9244 17.7173C25.8267 17.8139 25.6939 17.8685 25.5551 17.8691H21.3643V25.5862H26.079C26.0988 25.5861 26.1185 25.5872 26.1381 25.5893C26.1527 25.5909 26.1673 25.5931 26.1817 25.5959C26.196 25.5987 26.2101 25.602 26.2241 25.6059C26.2474 25.6125 26.2703 25.6206 26.2925 25.6303C26.3598 25.6595 26.42 25.7023 26.4693 25.756L28.8266 28.3283C28.8946 28.4023 28.9392 28.494 28.9551 28.5924C28.971 28.6908 28.9575 28.7916 28.9161 28.8826C28.8748 28.9736 28.8075 29.0509 28.7223 29.105C28.6783 29.133 28.6304 29.1541 28.5805 29.168C28.5339 29.181 28.4854 29.1876 28.4363 29.1875H19.648C19.516 29.1878 19.3888 29.139 19.2918 29.0512L15.7741 25.8434H11.1766C11.064 26.3368 10.7718 26.7729 10.355 27.0697C9.93824 27.3666 9.42549 27.5038 8.91294 27.4557C8.40043 27.4076 7.92341 27.1775 7.57141 26.8084C7.21945 26.4394 7.01672 25.9569 7.00126 25.4515C6.98581 24.9461 7.15872 24.4525 7.48755 24.0634C7.81638 23.6744 8.27851 23.4165 8.78718 23.3383C9.29584 23.2601 9.81608 23.3669 10.2503 23.6387C10.6844 23.9105 11.0026 24.3286 11.1452 24.8145H15.981C16.113 24.8142 16.2402 24.8629 16.3372 24.9508L19.8549 28.1585H27.2603L25.8459 26.6151H20.8404C20.7015 26.6151 20.5683 26.5609 20.47 26.4644C20.3718 26.368 20.3166 26.2371 20.3166 26.1007V23.271H18.0764C17.9375 23.271 17.8042 23.2168 17.706 23.1204C17.6077 23.0239 17.5525 22.893 17.5525 22.7566V19.927H13.5369C13.4093 20.4169 13.104 20.8442 12.6783 21.1287C12.2527 21.4132 11.7359 21.5353 11.2251 21.4721C10.7143 21.409 10.2444 21.1649 9.90382 20.7857C9.56324 20.4064 9.37535 19.9182 9.37535 19.4125C9.37535 18.9068 9.56324 18.4186 9.90382 18.0393C10.2444 17.6601 10.7143 17.416 11.2251 17.3528C11.7359 17.2897 12.2527 17.4118 12.6783 17.6963C13.104 17.9808 13.4093 18.4081 13.5369 18.898H17.5525V14.7822C17.5525 14.6458 17.6077 14.5149 17.706 14.4184C17.8042 14.322 17.9375 14.2678 18.0764 14.2678H23.4964L26.1733 11.4664H19.4803L15.8317 15.1424C15.8229 15.1512 15.8138 15.1597 15.8045 15.1678C15.7966 15.1746 15.7885 15.1812 15.7802 15.1875C15.773 15.1931 15.7656 15.1984 15.7581 15.2036C15.7275 15.2246 15.6948 15.2424 15.6602 15.2566C15.596 15.2831 15.5269 15.2968 15.4571 15.2967H11.1452C11.0363 15.6683 10.824 16.0027 10.5321 16.2622C10.2401 16.5216 9.88022 16.6959 9.49287 16.7652C9.10552 16.8346 8.70618 16.7963 8.3398 16.6547C7.97337 16.5131 7.65456 16.2739 7.41919 15.9639C7.18387 15.6539 7.04134 15.2855 7.00773 14.9002C6.97411 14.5149 7.05071 14.1281 7.22896 13.7833C7.40716 13.4385 7.67989 13.1495 8.01645 12.9487C8.35295 12.748 8.73984 12.6435 9.13356 12.6472C9.61119 12.6482 10.0741 12.8094 10.4457 13.1041C10.8172 13.3989 11.0751 13.8094 11.1766 14.2678H15.2371L18.8858 10.5918C18.9346 10.5429 18.9929 10.5041 19.0572 10.4776C19.0887 10.4646 19.1213 10.4547 19.1546 10.448C19.1893 10.441 19.2247 10.4375 19.2603 10.4375H27.3887C27.4909 10.4374 27.591 10.4666 27.6766 10.5217C27.7621 10.5768 27.8294 10.6553 27.8701 10.7475C27.9108 10.8396 27.923 10.9415 27.9054 11.0405C27.8879 11.1395 27.8411 11.2312 27.771 11.3044L24.1041 15.1346C24.0709 15.1693 24.033 15.1993 23.9916 15.2236C23.9718 15.2352 23.9512 15.2456 23.9299 15.2546C23.8642 15.2825 23.7933 15.2968 23.7216 15.2967H18.6003V22.2421H20.3166V17.3546C20.3166 17.2181 20.3718 17.0873 20.47 16.9908C20.5683 16.8943 20.7015 16.8401 20.8404 16.8401H25.3377L28.8528 13.3906C28.9506 13.294 29.0834 13.2394 29.2221 13.2388H30.8961C31.0198 12.808 31.283 12.4285 31.646 12.1579ZM26.1989 20.3217C26.1018 20.4189 25.9701 20.4734 25.8328 20.4734H23.7616V23.0633H27.3861C27.4605 23.0626 27.5342 23.078 27.6021 23.1084C27.67 23.1388 27.7305 23.1835 27.7796 23.2394L29.4365 25.1352H30.2979C30.4104 24.6387 30.7003 24.2004 31.113 23.9025C31.5257 23.6047 32.0329 23.4678 32.5393 23.5175C33.0458 23.5671 33.5167 23.8001 33.8637 24.1725C34.2107 24.5449 34.4099 25.0311 34.4239 25.54C34.4379 26.0489 34.2657 26.5454 33.9397 26.9363C33.6137 27.3272 33.1563 27.5857 32.6533 27.6631C32.1504 27.7406 31.6364 27.6318 31.2079 27.3571C30.7795 27.0823 30.466 26.6606 30.3263 26.1711H29.1983C29.1244 26.1714 29.0512 26.1558 28.9838 26.1254C28.9164 26.0951 28.8563 26.0506 28.8074 25.995L27.1505 24.0992H23.2438C23.1065 24.0992 22.9748 24.0447 22.8777 23.9475C22.7806 23.8504 22.726 23.7186 22.726 23.5813V19.9555C22.726 19.8181 22.7806 19.6863 22.8777 19.5892C22.9748 19.4921 23.1065 19.4375 23.2438 19.4375H25.8328C25.9701 19.4375 26.1018 19.4921 26.1989 19.5892C26.296 19.6863 26.3505 19.8181 26.3505 19.9555C26.3505 20.0928 26.296 20.2246 26.1989 20.3217ZM18.7829 30.9737H34.4756C34.6147 30.9737 34.7481 31.0278 34.8464 31.124C34.9447 31.2202 35 31.3508 35 31.4868C35 31.6229 34.9447 31.7535 34.8464 31.8497C34.7481 31.9459 34.6147 32 34.4756 32H18.5758C18.4424 32.0002 18.3139 31.9507 18.2166 31.8614L14.1734 28.1513H12.7407L11.06 29.7755C10.9617 29.8709 10.8288 29.9244 10.6903 29.9243H7.5244C7.38534 29.9243 7.25195 29.8702 7.15357 29.774C7.05525 29.6777 7 29.5472 7 29.4111C7 29.275 7.05525 29.1445 7.15357 29.0483C7.25195 28.952 7.38534 28.898 7.5244 28.898H10.4727L12.156 27.2738C12.2543 27.1784 12.3872 27.1249 12.5257 27.125H14.3806C14.514 27.1248 14.6424 27.1743 14.7398 27.2635L18.7829 30.9737Z" fill="#2D2D2D" />
+                  </svg>
+                  
+                  Elektronik
+                </button>
+              </li>
+              
+              <li class="tabs-nav__item">
+                <button class="tabs-nav__btn _link" type="button">
+                  
+                  <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30.3101 8H9.68991C8.75799 8 8 8.75799 8 9.68993V30.3101C8 31.242 8.75799 32 9.68991 32H30.3101C31.242 32 32 31.242 32 30.3101V27H30.8734V30.3101C30.8734 30.6206 30.6206 30.8734 30.3101 30.8734H9.68991C9.37941 30.8734 9.12664 30.6206 9.12664 30.3101V18.1395H10.2532V17.0129H9.12664V15.8863H10.2532V14.7597H9.12664V13.6331H10.2532V12.5064H9.12664V11.3798H10.2532V10.2532H9.12664V9.68993C9.12664 9.37943 9.37941 9.12661 9.68991 9.12661H30.3101C30.6206 9.12661 30.8734 9.37943 30.8734 9.68993V22H32V9.68993C32 8.75799 31.242 8 30.3101 8ZM11.907 21.1163H17.4884V11.3488H11.907V21.1163ZM13.0233 12.4651H16.3721V20H13.0233V12.4651ZM11.907 24.9302V26.0465V27.7209H17.4884V26.0465V24.9302V22.5H11.907V24.9302ZM13.0233 23.6163H16.3721V24.9302H13.0233V23.6163ZM13.0233 26.0465H16.3721V26.6047H13.0233V26.0465ZM24.5581 13.0233H25.6744V17.5H24.5581V13.0233ZM24 13.0233H22.8837V17.5H24V13.0233ZM26.2326 13.0233H27.3488V17.5H26.2326V13.0233ZM29.0233 13.0233H27.907V17.5H29.0233V13.0233ZM24.5581 26.6047H25.6744V27.7209H24.5581V26.6047ZM29.0233 26.6047H27.907V27.7209H29.0233V26.6047ZM26.2326 26.6047H27.3488V27.7209H26.2326V26.6047ZM25.6744 24.9302H24.5581V26.0465H25.6744V24.9302ZM27.907 24.9302H29.0233V26.0465H27.907V24.9302ZM27.3488 24.9302H26.2326V26.0465H27.3488V24.9302ZM13.5814 28.2791H14.6977V29.3953H13.5814V28.2791ZM24 26.6047H22.8837V27.7209H24V26.6047ZM19.5349 26.6047H20.6512V27.7209H19.5349V26.6047ZM24 24.9302H22.8837V26.0465H24V24.9302ZM24.5581 11.3488H25.6744V12.4651H24.5581V11.3488ZM29.0233 11.3488H27.907V12.4651H29.0233V11.3488ZM26.2326 11.3488H27.3488V12.4651H26.2326V11.3488ZM24 11.3488H22.8837V12.4651H24V11.3488ZM24.5581 18.1395H25.6744V19.4419H24.5581V18.1395ZM29.0233 18.1395H27.907V19.4419H29.0233V18.1395ZM26.2326 18.1395H27.3488V19.4419H26.2326V18.1395ZM24 18.1395H22.8837V19.4419H24V18.1395ZM21.2093 13.0233H22.3256V17.5H21.2093V13.0233ZM22.3256 11.3488H21.2093V12.4651H22.3256V11.3488ZM21.2093 18.1395H22.3256V19.4419H21.2093V18.1395ZM20.6512 13.0233H19.5349V17.5H20.6512V13.0233ZM19.5349 11.3488H20.6512V12.4651H19.5349V11.3488ZM20.6512 18.1395H19.5349V19.4419H20.6512V18.1395ZM13.0233 28.2791H11.907V29.3953H13.0233V28.2791Z" fill="black" />
+                  </svg>
+                  
+                  PCB Layout 
+                </button>
+              </li>
+              
+              <li class="tabs-nav__item">
+                <button class="tabs-nav__btn _link" type="button">
+                  
+                  <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.56215 8C7.69209 8 7 8.71542 7 9.56994V17.8966H8.02826V9.56994C8.02826 9.29172 8.26555 9.05326 8.54238 9.05326H33.4181C33.6949 9.05326 33.9322 9.29172 33.9322 9.56994V23.1234H8.02826V23.1032H7V26.2232C7 27.0976 7.71187 27.7931 8.56215 27.7931H17.3618V31.9662H15.799V32.9996H17.3618V33H24.6189V32.9996H26.1606V31.9662H24.6189V27.7931H33.4379C34.3079 27.7931 35 27.0777 35 26.2232V9.56994C35 8.69555 34.2881 8 33.4379 8H8.56215ZM23.5709 31.9662V27.7934H18.3901V31.9662H23.5709ZM8.02826 24.1567H33.9322V26.2232C33.9322 26.5014 33.6949 26.7399 33.4181 26.7399H8.54238C8.26555 26.7399 8.02826 26.5014 8.02826 26.2232V24.1567ZM13.1476 20.3426C12.9732 20.0361 12.8391 19.7116 12.7389 19.3875C12.6783 19.1916 12.6417 19.0359 12.6243 18.9391L12.5367 18.4502L13.5097 18.274L13.5974 18.763C13.5993 18.7739 13.6051 18.8017 13.615 18.8439C13.6324 18.9181 13.655 19.0019 13.683 19.0926C13.7632 19.352 13.8703 19.6111 14.0058 19.8492C14.3685 20.4864 14.8508 20.8439 15.4988 20.8439C16.1551 20.8439 16.5293 20.1743 17.1534 18.0979C17.5117 16.9057 17.6882 16.4044 17.9813 15.879C18.4147 15.102 18.9827 14.6625 19.7413 14.6625C20.3473 14.6625 20.8687 14.8726 21.3445 15.2648C21.6812 15.5425 21.9108 15.8106 22.3962 16.4445C23.1357 17.4104 23.4934 17.7261 24.054 17.7878C24.6504 17.8533 25.0896 16.9235 25.5178 14.7464C25.5614 14.5249 25.7072 13.7556 25.7069 13.7569C25.9214 12.6393 26.0695 12.0568 26.2936 11.6128C26.5805 11.0445 26.9853 10.6129 27.4741 10.3065C27.8362 10.0797 28.2212 9.9349 28.606 9.85453C28.8401 9.80562 29.0277 9.78882 29.1479 9.78882H29.6422V10.7825H29.1479C29.14 10.7825 29.1132 10.7836 29.0704 10.7874C28.9923 10.7944 28.9036 10.8072 28.8072 10.8274C28.53 10.8853 28.2531 10.9894 27.9973 11.1497C27.6575 11.3626 27.3783 11.6603 27.1753 12.0624C27.0093 12.3913 26.8731 12.9268 26.6777 13.9451C26.6785 13.9407 26.5321 14.7135 26.4877 14.9391C26.2563 16.1161 26.0522 16.8778 25.7614 17.4934C25.3436 18.3779 24.7503 18.8639 23.9465 18.7755C23.0184 18.6735 22.5151 18.2292 21.5963 17.0291C20.7906 15.9769 20.4016 15.6561 19.7413 15.6561C19.0915 15.6561 18.7197 16.3226 18.0973 18.3937C17.7386 19.5872 17.561 20.0911 17.2664 20.6182C16.8311 21.3971 16.2605 21.8376 15.4988 21.8376C14.4478 21.8376 13.6706 21.2615 13.1476 20.3426Z" fill="black" />
+                  </svg>
+                  
+                  PCB-Simulationen
+                </button>
+              </li>
+              
+              <li class="tabs-nav__item">
+                <button class="tabs-nav__btn _link" type="button">
+                  
+                  <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8712 7H14.0076V9.84091H15.9015V7H17.0379V9.84091H18.9318V7H20.0682V9.84091H21.9621V7H23.0985V9.84091H24.9924V7H26.1288V9.84091H27.2652C28.3111 9.84091 29.1591 10.6889 29.1591 11.7348V12.8712H32V14.0076H29.1591V15.9015H32V17.0379H29.1591V18.9318H32V20.0682H29.1591V21.9621H32V23.0985H29.1591V24.9924H32V26.1288H29.1591V27.2652C29.1591 28.3111 28.3111 29.1591 27.2652 29.1591H26.1288V32H24.9924V29.1591H23.0985V32H21.9621V29.1591H20.0682V32H18.9318V29.1591H17.0379V32H15.9015V29.1591H14.0076V32H12.8712V29.1591H11.7348C10.6889 29.1591 9.84091 28.3111 9.84091 27.2652V26.1288H7V24.9924H9.84091V23.0985H7V21.9621H9.84091V20.0682H7V18.9318H9.84091V17.0379H7V15.9015H9.84091V14.0076H7V12.8712H9.84091V11.7348C9.84091 10.6889 10.6889 9.84091 11.7348 9.84091H12.8712V7ZM11.7348 10.9773C11.3164 10.9773 10.9773 11.3165 10.9773 11.7348V27.2652C10.9773 27.6835 11.3164 28.0227 11.7348 28.0227H27.2652C27.6835 28.0227 28.0227 27.6835 28.0227 27.2652V11.7348C28.0227 11.3165 27.6835 10.9773 27.2652 10.9773H11.7348ZM14.197 16.0909C14.197 15.0449 15.0449 14.197 16.0909 14.197H22.9091C23.9551 14.197 24.803 15.0449 24.803 16.0909V22.9091C24.803 23.9551 23.9551 24.803 22.9091 24.803H16.0909C15.0449 24.803 14.197 23.9551 14.197 22.9091V21.4886H15.3333V22.9091C15.3333 23.3275 15.6725 23.6667 16.0909 23.6667H22.9091C23.3275 23.6667 23.6667 23.3275 23.6667 22.9091V16.0909C23.6667 15.6725 23.3275 15.3333 22.9091 15.3333H16.0909C15.6725 15.3333 15.3333 15.6725 15.3333 16.0909V17.7008H14.197V16.0909Z" fill="black" />
+                  </svg>
+                  
+                  FPGA
+                </button>
+              </li>
+              
+              <li class="tabs-nav__item">
+                <button class="tabs-nav__btn _link" type="button">
+                  
+                  <svg width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.7434 8.05124C19.8092 8.02347 19.8793 8.00696 19.9507 8.00241C20.0552 7.9933 20.1603 8.01008 20.2566 8.05124L31.625 13.0517C31.7374 13.1012 31.8328 13.182 31.8994 13.2844C31.966 13.3868 32.001 13.5062 32 13.6279V27.3792C31.9991 27.4993 31.9632 27.6166 31.8967 27.717C31.8302 27.8175 31.7359 27.8969 31.625 27.9457L20.2566 32.9461C20.1758 32.9817 20.0884 33 20 33C19.9116 33 19.8242 32.9817 19.7434 32.9461L8.37504 27.9457C8.26416 27.8969 8.16981 27.8175 8.10331 27.717C8.03681 27.6166 8.00094 27.4993 8.00002 27.3792V25.6871H9.2632V26.969L19.3685 31.4128V19.0288L9.2632 14.5851V20.415H8.00002V13.6279C7.99905 13.5062 8.034 13.3868 8.10062 13.2844C8.16725 13.182 8.26261 13.1012 8.37504 13.0517L19.7434 8.05124ZM29.8092 13.6182L20 9.31114L10.1908 13.6182L20 17.9349L29.8092 13.6182ZM30.7368 26.969V14.5851L20.6316 19.0288V31.4128L30.7368 26.969Z" fill="black" />
+                  </svg>
+                  
+                  Gehäuse
+                </button>
+              </li>
+              
+            </ul>
+          </div>
+          <div class="services-details" id="services-tabs">
+            
+            <div class="services-details__item">
+              <div class="services-details__item-inner">
+                <div class="services-cta services-details__cta">
+                  <h2 class="services-cta__text">Neu entwickelte digitale, analoge und gemischte Elektroniksysteme. </h2>
+                  
+                  <div class="services-cta__actions">
+                    
+                    
+                    <a class="btn btn_brd btn_brd-black services-cta__link" href="../contact.html">
+                      Kontaktieren sie uns
+                    </a>
+                    
+                  </div>
+                  
+                </div>
+                <div class="services-descript services-details__descript ">
+                  <p class="services-descript__text">Um das Projekt zum Erfolg zu führen, beginnen wir mit den Grundlagen – Elektroniksystem und Schaltungsdesign. Dies bildet die Grundlage für die nächsten kritischen Implementierungsphasen: Leiterplattendesign und -simulation, Leiterplattenmusterfertigung, Test- und Serienproduktion.</p>
+
+                  <div class="services-descript__options  extra ">
+                    <div>
+                      
+                      <p class="services-descript__text">Elektronisches Systemdesign</p>
+                      
+                      <ul class="b-list b-list--wide services-descript__list">
+                        
+                        <li class="b-list__item">Systemanforderungserfassung und Architekturdesign</li>
+                        
+                        <li class="b-list__item">Funktionales Systemdesign</li>
+                        
+                        <li class="b-list__item">Prozessdesign</li>
+                        
+                      </ul>
+                      
+                      <a class="feat-case__link" href="electronics_system_design.html">
+                        Mehr erfahren
+                      </a>
+                      
+                    </div>
+                    
+                    <div>
+                      
+                      <p class="services-descript__text">Elektronisches Design</p>
+                      
+                      <ul class="b-list b-list--wide services-descript__list">
+                        
+                        <li class="b-list__item">System-on-Chip (SoC), System-on-Module (SoM), und Single-Board-Computer (SBC)-Entwicklung</li>
+                        
+                        <li class="b-list__item">SoC-, SoM- und SBC-basierte Elektronikentwicklung</li>
+                        
+                        <li class="b-list__item">FPGA-basierte Elektronik</li>
+                        
+                        <li class="b-list__item">DSP-basierte Elektronik</li>
+                        
+                      </ul>
+                      
+                      <a class="feat-case__link" href="electronic_circuit_design.html">
+                        Mehr erfahren
+                      </a>
+                      
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="services-details__item">
+              <div class="services-details__item-inner">
+                <div class="services-cta services-details__cta">
+                  <h2 class="services-cta__text">Full-Cycle PCB-Designservices, um ein bestehendes Produkt zu überarbeiten oder ein elektronisches System völlig neu zu entwickeln.</h2>
+                  
+                  <div class="services-cta__actions">
+                    
+                    <a class="btn btn_brd btn_brd-black services-cta__link" href="pcb_design_and_layout_services.html">
+                      Mehr anzeigen
+                    </a>
+                    
+                    
+                    <a class="btn btn-gradient services-cta__link" href="../contact.html">
+                      Kontaktieren sie uns
+                    </a>
+                    
+                  </div>
+                  
+                </div>
+                <div class="services-descript services-details__descript ">
+                  <p class="services-descript__text">Das PCB-Design ist eine wesentliche Phase in der Hardwareentwicklung. Unser Team von PCB Design und Layout Engineers liefert zuverlässige und kostengünstige kundenspezifische PCB- und IPC-qualifizierte Embedded Hardwarelösungen.</p>
+
+                  <div class="services-descript__options  extra ">
+                    <div>
+                      
+                      <ul class="b-list b-list--wide services-descript__list">
+                        
+                        <li class="b-list__item">Stack-up-/Build-up-Entwicklung</li>
+                        
+                        <li class="b-list__item">Konfiguration und Anordnung von Übertragungsleitungen</li>
+                        
+                        <li class="b-list__item">Mehrschichtiges PCB-Design</li>
+                        
+                        <li class="b-list__item">Hochgeschwindigkeits-PCB-Layout</li>
+                        
+                      </ul>
+                      
+                    </div>
+                    
+                    <div>
+                      
+                      <ul class="b-list b-list--wide services-descript__list">
+                        
+                        <li class="b-list__item">Hochfrequenz-(RF)-PCB-Design</li>
+                        
+                        <li class="b-list__item">High-Density Interconnect (HDI)</li>
+                        
+                        <li class="b-list__item">Flexibles und starr/flexibles PCB-Design</li>
+                        
+                      </ul>
+                      
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="services-details__item">
+              <div class="services-details__item-inner">
+                <div class="services-cta services-details__cta">
+                  <h2 class="services-cta__text">Mehrere Ansätze zur Designverifizierung für präzise Simulationen.</h2>
+                  
+                  <div class="services-cta__actions">
+                    
+                    <a class="btn btn_brd btn_brd-black services-cta__link" href="expert_analysis_simulation_modeling_services.html">
+                      Mehr anzeigen
+                    </a>
+                    
+                    
+                    <a class="btn btn-gradient services-cta__link" href="../contact.html">
+                      Kontaktieren sie uns
+                    </a>
+                    
+                  </div>
+                  
+                </div>
+                <div class="services-descript services-details__descript ">
+                  <p class="services-descript__text">Bei Softeq nutzen wir vielfältige PCB-Analyse- und Verifikationstechniken, die bereits in der Designphase beginnen. Dies erhöht die Produktleistung, eliminiert Layout-Iterationen und bringt Ihre Hardwarelösung schneller auf den Markt.</p>
+
+                  <div class="services-descript__options  extra ">
+                    <div>
+                      
+                      <ul class="b-list b-list--wide services-descript__list">
+                        
+                        <li class="b-list__item">Signalintegritätsanalyse (SI)</li>
+                        
+                        <li class="b-list__item">Power Integrity-Analyse AC/DC (PI)</li>
+                        
+                      </ul>
+                      
+                    </div>
+                    
+                    <div>
+                      
+                      <ul class="b-list b-list--wide services-descript__list">
+                        
+                        <li class="b-list__item">Thermische Analyse (PCB)</li>
+                        
+                        <li class="b-list__item">Design für die Fertigung (DFM), Design für die Montage (EDA)</li>
+                        
+                      </ul>
+                      
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="services-details__item">
+              <div class="services-details__item-inner">
+                <div class="services-cta services-details__cta">
+                  <h2 class="services-cta__text">Die beste Technologiewahl für Hochgeschwindigkeitsdurchsatz und komplexe Datenverarbeitung. </h2>
+                  
+                  <div class="services-cta__actions">
+                    
+                    <a class="btn btn_brd btn_brd-black services-cta__link" href="fpga_design_services.html">
+                      Mehr anzeigen
+                    </a>
+                    
+                    
+                    <a class="btn btn-gradient services-cta__link" href="../contact.html">
+                      Kontaktieren sie uns
+                    </a>
+                    
+                  </div>
+                  
+                </div>
+                <div class="services-descript services-details__descript ">
+                  <p class="services-descript__text">Unsere FPGA-Design-Services umfassen programmierbare Architektur, Mikroprozessoren und Filter sowie Phasenregelkreise, die in einem hochdichten Einzelchip integriert sind. </p>
+
+                  <div class="services-descript__options  extra ">
+                    <div>
+                      
+                      <ul class="b-list b-list--wide services-descript__list">
+                        
+                        <li class="b-list__item">Videoformatkonvertierung</li>
+                        
+                        <li class="b-list__item">Interkonvertierung von Videoschnittstellen</li>
+                        
+                        <li class="b-list__item">Moderne Verbesserung der Videoqualität</li>
+                        
+                        <li class="b-list__item">Audio- und Videobearbeitung</li>
+                        
+                        <li class="b-list__item">DSP-Coprozessoren</li>
+                        
+                      </ul>
+                      
+                    </div>
+                    
+                    <div>
+                      
+                      <ul class="b-list b-list--wide services-descript__list">
+                        
+                        <li class="b-list__item">Internet und Netzwerk</li>
+                        
+                        <li class="b-list__item">Kundenspezifische FPGA-IP-Cores    </li>
+                        
+                        <li class="b-list__item">RTL-Codierung</li>
+                        
+                        <li class="b-list__item">Software Defined Radio (SDR)</li>
+                        
+                      </ul>
+                      
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="services-details__item">
+              <div class="services-details__item-inner">
+                <div class="services-cta services-details__cta">
+                  <h2 class="services-cta__text">Verleihen Sie Ihrem Produkt ein außergewöhnliches, professionelles Finish.</h2>
+                  
+                  <div class="services-cta__actions">
+                    
+                    <a class="btn btn_brd btn_brd-black services-cta__link" href="enclosure_design.html">
+                      Mehr anzeigen
+                    </a>
+                    
+                    
+                    <a class="btn btn-gradient services-cta__link" href="../contact.html">
+                      Kontaktieren sie uns
+                    </a>
+                    
+                  </div>
+                  
+                </div>
+                <div class="services-descript services-details__descript ">
+                  <p class="services-descript__text">Wir erstellen ein 3D-Design und ein 3D-Modell des erforderlichen Gehäuses, überprüfen, ob das Muster alle Anforderungen an Ergonomie, Bestückbarkeit, Haltbarkeit, Flexibilität, Stoß- und Wasserdichtigkeit erfüllt und koordinieren die Serienproduktion.</p>
+
+                  <div class="services-descript__options  extra ">
+                    <div>
+                      
+                      <ul class="b-list b-list--wide services-descript__list">
+                        
+                        <li class="b-list__item">Skizzieren</li>
+                        
+                        <li class="b-list__item">Modelldetaillierung</li>
+                        
+                        <li class="b-list__item">Design der Innenstruktur</li>
+                        
+                      </ul>
+                      
+                    </div>
+                    
+                    <div>
+                      
+                      <ul class="b-list b-list--wide services-descript__list">
+                        
+                        <li class="b-list__item">Gehäusemusterfertigung</li>
+                        
+                        <li class="b-list__item">Unterstützung der Serienproduktion</li>
+                        
+                      </ul>
+                      
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section></div>
+<div id="hs_cos_wrapper_widget_15976746963541" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div class="section__anchor" id="Featured-Projects"></div>
+<div class="section__anchor" id="Projects"></div>
+
+<div class="section section--featured2 section--white section--box section--slim">
+
+  <div class="section__header">
+    <div class="container">
+      <div class="section__header-inner">
+        <h2 class="h2 section__title">
+          <span>Ausgewählte Projekte</span>
+        </h2>
+        
+        
+        <a class="section-link" href="../featured_projects.html">
+          Zum Portfolio</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section__content">
+    <div class="container">
+      <div class="section__content-inner">
+        <div class="main-slider main-slider--tabs-top">
+          <div class="ms-tabs ms-tabs--btns js-ms-nav">
+            <div class="ms-tabs__scroll" id="ms-tabs__scroll">
+              <ul class="ms-tabs__list" id="ms-tabs__list">
+                
+                <li class="ms-tabs__menu-item">
+                  <button class="ms-tabs__menu-btn active" data-slide="0" type="button">Smart-Hundehalsband
+                  </button>
+                </li>
+                
+                <li class="ms-tabs__menu-item">
+                  <button class="ms-tabs__menu-btn " data-slide="1" type="button">Training-Tracker &amp; -Recorder
+                  </button>
+                </li>
+                
+                <li class="ms-tabs__menu-item">
+                  <button class="ms-tabs__menu-btn " data-slide="2" type="button">Digitales Haustier
+                  </button>
+                </li>
+                
+                <li class="ms-tabs__menu-item">
+                  <button class="ms-tabs__menu-btn " data-slide="3" type="button">Robotermontage
+                  </button>
+                </li>
+                
+                <li class="ms-tabs__menu-item">
+                  <button class="ms-tabs__menu-btn " data-slide="4" type="button">Roboter im Baugewerbe
+                  </button>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+          <div class="main-slider__inner slick-slider_clr-white">
+            <button class="main-slider__arrow main-slider__arrow--left js-feat-prev"></button>
+            <div class="main-slider__slides js-ms-slides">
+              
+              <div>
+                <div class="featured">
+                  <figure class="featured__logo">
+                    
+                    <img srcset="https://www.softeq.com/hubfs/Featured-Work/Customer-Logos-SVG/Wagz.svg 2x" loading="lazy" src="../hubfs/Featured-Work/Customer-Logos-SVG/Wagz.svg" alt="Wagz">
+                    
+                  </figure>
+                  <div class="feat-review featured__review">
+                    <div class="h4 feat-review__title feat-review__quotes"><p>Ich war von Anfang an beeindruckt von Softeqs Professionalität und Referenzen. Ich habe den Eindruck, dass Softeq echtes Interesse und Begeisterung für unser Projekt hat. Das Unternehmen versteht wirklich, worum es geht!</p>
+<p>Sie gaben sich grosse Mühe, um den Markt, die Wettbewerbslandschaft und die spezifischen Anforderungen zu verstehen, die mein Produkt von anderen unterscheiden. Es war ein sehr kollaborativer Prozess.</p></div>
+                    
+                    
+                    <div class="feat-reviewer feat-review__author">
+                      
+                        <figure class="feat-reviewer__photo">
+                          <img srcset="https://www.softeq.com/hubfs/Featured-Work/Customer-Avatars/WAGZ.png 2x" loading="lazy" src="../hubfs/Featured-Work/Customer-Avatars/WAGZ.png" alt="WAGZ">
+                        </figure>
+                      
+                      
+                        <div class="feat-reviewer__details">
+                          
+                            <span class="feat-reviewer__name">Terry Anderton</span>
+                          
+                          
+                            <span class="feat-reviewer__post">Mehrfachunternehmer, WAGZ-Projekt</span>
+                          
+                        </div>
+                      
+                    </div>
+                    
+                  </div>
+                  
+                  <div class="feat-case featured__case">
+                    <span class="feat-case__category">Case study</span>
+                    <h4 class="feat-case__title">Smart-Hundehalsband: Präzise Überwachung der Aktivität von Haustieren mit Sicherheitskontrolle</h4>
+                    <p class="feat-case__text">Das intelligente Halsband ist ein Multisensor-Wearable, das den Standort, die körperliche Aktivität und das Verhalten eines Hundes überwacht und Autounfälle verhindert.</p>
+                    
+                    
+                    <a class="btn btn-gradient" href="../featured_projects/smart_dog_collar_for_precise_pet_activity_monitoring_and_safety_control.html">
+                      Case Study anzeigen
+                    </a>
+                  </div>
+                  
+                </div>
+              </div>
+              
+              <div>
+                <div class="featured">
+                  <figure class="featured__logo">
+                    
+                    <img srcset="https://www.softeq.com/hubfs/Featured-Work/Customer-Logos-SVG/NDA.svg 2x" loading="lazy" src="../hubfs/Featured-Work/Customer-Logos-SVG/NDA.svg" alt="NDA">
+                    
+                  </figure>
+                  <div class="feat-review featured__review">
+                    <div class="h4 feat-review__title "><p>Wir haben ein lasergestütztes Gerät gebaut, das Sportwettkämpfe verfolgt, aufnimmt und streamt. Der Laser bleibt trotz externer Störungen präzise. Design, Leistung und Dokumentation des Geräts entsprechen bestimmten Industriestandards.</p></div>
+                    
+                    
+                  </div>
+                  
+                  <div class="feat-case featured__case">
+                    <span class="feat-case__category">Case study</span>
+                    <h4 class="feat-case__title">Lasermessgerät</h4>
+                    <p class="feat-case__text">Das Softeq-Team führt eine umfassende F&amp;E-Session durch und fertigte ein Muster eines neuen lasergesteuerten Geräts zum Tracking, Monitoring, zur Videoaufzeichnung und zum Streaming von Sportarten an.</p>
+                    
+                    
+                    <a class="btn btn-gradient" href="featured_projects/laser_measuring_device_development">
+                      Case Study anzeigen
+                    </a>
+                  </div>
+                  
+                </div>
+              </div>
+              
+              <div>
+                <div class="featured">
+                  <figure class="featured__logo">
+                    
+                    <img srcset="https://www.softeq.com/hubfs/Featured-Work/Customer-Logos-SVG/Lil-Watch.png 2x" loading="lazy" src="../hubfs/Featured-Work/Customer-Logos-SVG/Lil-Watch.png" alt="Lil-Watch">
+                    
+                  </figure>
+                  <div class="feat-review featured__review">
+                    <div class="h4 feat-review__title "><p>Ein am Handgelenk getragenes Gerät mit einemHaustier-Simulationsspiel. Um dem Kunden zu helfen, seine Idee umzusetzen, entwickelte unser Team die Spiellogik und -grafik, die Firmware, das 3D-Gehäusemodell, den Schaltplan und die Leiterplatte.</p></div>
+                    
+                    
+                  </div>
+                  
+                  <div class="feat-case featured__case">
+                    <span class="feat-case__category">Case study</span>
+                    <h4 class="feat-case__title">Wearable mit einem Haustiersimulationsspiel</h4>
+                    <p class="feat-case__text">Eine Firma für Verbraucherelektronik wendet sich an Softeq zur Entwicklung eines Wearables mit vorinstallierten Game, das Kindern beibringt, wie man sich um ein virtuelles Haustier kümmert.</p>
+                    
+                    
+                    <a class="btn btn-gradient" href="featured_projects/wearable-device-with-a-pet-simulation-game">
+                      Case Study anzeigen
+                    </a>
+                  </div>
+                  
+                </div>
+              </div>
+              
+              <div>
+                <div class="featured">
+                  <figure class="featured__logo">
+                    
+                    <img srcset="https://www.softeq.com/hubfs/Featured-Work/Customer-Logos-SVG/Revolution-Robotics.svg 2x" loading="lazy" src="../hubfs/Featured-Work/Customer-Logos-SVG/Revolution-Robotics.svg" alt="Revolution-Robotics">
+                    
+                  </figure>
+                  <div class="feat-review featured__review">
+                    <div class="h4 feat-review__title "><p><span>Ein Lego-ähnliches elektronisches Kit für die Montage von Robotern, die über ein Smartphone programmiert und gesteuert werden können. Das Kit enthält über 530 Kunststoffteile, Open-Source-Hardware-Design, Firmware und eine Teilebibliothek, die mittels 3D-Drucker gedruckt werden können.</span></p></div>
+                    
+                    
+                  </div>
+                  
+                  <div class="feat-case featured__case">
+                    <span class="feat-case__category">Case study</span>
+                    <h4 class="feat-case__title">Ein elektronisches Kit für die Robotermontage: Ermöglicht die Sensor- und Motorsteuerung des Roboters über ein Smartphone. </h4>
+                    <p class="feat-case__text">Der Kunde wendet sich an Softeq zur Entwicklung eines elektronischen Kit, mit dem User über ein Smartphone Roboter zusammenbauen, programmieren und steuern können. </p>
+                    
+                    
+                    <a class="btn btn-gradient" href="featured-projects/electronic-kit-for-revolution-robotics">
+                      Case Study anzeigen
+                    </a>
+                  </div>
+                  
+                </div>
+              </div>
+              
+              <div>
+                <div class="featured">
+                  <figure class="featured__logo">
+                    
+                    <img srcset="https://www.softeq.com/hubfs/Featured-Work/Customer-Logos/rugged-robotics-svg.svg 2x" loading="lazy" src="../hubfs/Featured-Work/Customer-Logos/rugged-robotics-svg.svg" alt="rugged-robotics-svg">
+                    
+                  </figure>
+                  <div class="feat-review featured__review">
+                    <div class="h4 feat-review__title "><p>Ein industrielles Startup im Bereich der Bautechnologie erstellte einen Roboter-Prototyp, der Baustellen nach schematischen Zeichnungen markiert. Der Prototyp wird mit acht Batterien betrieben. Wir entwickelten ein PCB, das die Stromversorgung des Roboters verwaltet, Ströme und Spannungen der Platine überwacht und Batteriensicherheit kontrolliert.</p></div>
+                    
+                    
+                  </div>
+                  
+                  <div class="feat-case featured__case">
+                    <span class="feat-case__category">Case study</span>
+                    <h4 class="feat-case__title">Hardware für kommerzielle Roboter-Rover im Baugewerbe</h4>
+                    <p class="feat-case__text">Softeq wurde beauftragt, den Schaltplan des Systems zu ändern und den Leistungsschalter des Bauroboter-Rovers des Kunden mit zusätzlichen Schaltkreisen zu versehen.</p>
+                    
+                    
+                    <a class="btn btn-gradient" href="featured_projects/hardware-for-commercial-construction-robot-rovers">
+                      Case Study anzeigen
+                    </a>
+                  </div>
+                  
+                </div>
+              </div>
+              
+            </div>
+            <button class="main-slider__arrow main-slider__arrow--right js-feat-next slick-next"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div></div>
+<div id="hs_cos_wrapper_widget_1571926451737302" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div class="section" id="Industry-Experience">
+
+  <div class="section__header section__header--description">
+    <div class="container">
+      <div class="section__header-inner">
+        <h2 class="h2 section__title">
+          Branchen im Fokus
+        </h2>
+        
+        <div class="section-description">
+          <p class="section-description__text">Unsere Engineers bieten personalisierte Hardwareservices zusammen mit hoch entwickelten Geräten, die für viele Bereiche geeignet sind:</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="section__content">
+    <div class="container">
+      <div class="section__content-inner">
+        
+          <div class="focus focus--x3 spoiler js-focus-video" id="focus" data-aos>
+            
+            <div class="focus__inner">
+              
+              <a class="focus__item" data-bg="video" href="consumer-electronics-industry.html">
+                <div class="focus__bg">
+                  <div class="focus__img" style="background-image: url('../hubfs/Industry-Experience/posters/Industry-Experience-Consumer-Electronics-Poster.jpg')"></div>
+                  <video class="focus__video" preload="none" muted loop>
+                    <source src="https://cdn2.hubspot.net/hubfs/2915353/Industry-Experience/videos/Home-Industry-Experience-Consumer-Electronics-video.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <h3 class="h4 h4-md focus__title">Unterhaltungselektronik</h3>
+                <p class="focus__text">Wir helfen bei der Erstellung und Prüfung von IoT-Lösungen und einzigartigen elektronischen Geräten, inklusive sensorreicher Leistungstrackinggeräte, Lösungen zur Aktivitätsverfolgung von Haustieren einschließlich Datenvisualisierung und -analyse.</p>
+              </a>
+              
+              <a class="focus__item" data-bg="video" href="industrial_automation_and_robotics.html">
+                <div class="focus__bg">
+                  <div class="focus__img" style="background-image: url('../hubfs/Industry-Experience/posters/Industry-Experience-Industrial-Manufacturing-Poster.jpg')"></div>
+                  <video class="focus__video" preload="none" muted loop>
+                    <source src="https://cdn2.hubspot.net/hubfs/2915353/Industry-Experience/videos/Home-Industry-Experience-Industrial-Automation-video.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <h3 class="h4 h4-md focus__title">Industrielle Automatisierung</h3>
+                <p class="focus__text">Wir unterstützen Elektronikhersteller bei der Fernsteuerung technischer Prozesse, der Überwachung von Geräten, der Automatisierung von Produktionslinien mit HMI-Einheiten, Motion-Control-Systemen, M2M und Lösungen zur Automatisierung von Serviceprozessen.</p>
+              </a>
+              
+              <a class="focus__item" data-bg="video" href="transportation-industry.html">
+                <div class="focus__bg">
+                  <div class="focus__img" style="background-image: url('../hubfs/Industry-Experience/posters/Industry-Experience-Transportation-Poster.jpg')"></div>
+                  <video class="focus__video" preload="none" muted loop>
+                    <source src="https://cdn2.hubspot.net/hubfs/2915353/Industry-Experience/videos/Home-Industry-Experience-Transportation-video.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <h3 class="h4 h4-md focus__title">Transport</h3>
+                <p class="focus__text">Unsere Transportlösungen umfassen Embedded Systems und IoT-Lösungen. Sie verfolgen die Wartung und Ausfallzeiten des Fahrzeugs, gewährleisten die Fahrersicherheit, verfolgen die Ladung innerhalb der Logistikzentren und Lager oder sorgen für eine bessere.</p>
+              </a>
+              
+              <a class="focus__item" data-bg="video" href="digital-media-and-entertainment-industry.html">
+                <div class="focus__bg">
+                  <div class="focus__img" style="background-image: url('../hubfs/Industry-Experience/posters/Industry-Experience-Media-Entertainment-Poster.jpg')"></div>
+                  <video class="focus__video" preload="none" muted loop>
+                    <source src="https://cdn2.hubspot.net/hubfs/2915353/Industry-Experience/videos/Home-Industry-Experience-Media-Entertainment-video.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <h3 class="h4 h4-md focus__title">Medien und Unterhaltung</h3>
+                <p class="focus__text">Wir entwickeln zahlreiche Geräte für eine verbesserte Benutzererfahrung: Navigation durch die Veranstaltungsorte, Authentifizierung der Besucher, Fernkonfiguration der Bühnenausrüstung, Einsatz von unterstützender Technik beim Besuch öffentlicher. </p>
+              </a>
+              
+              <a class="focus__item" data-bg="video" href="automotive-industry">
+                <div class="focus__bg">
+                  <div class="focus__img" style="background-image: url('../hubfs/Industry-Experience/posters/Industry-Experience-Automotive-Poster.jpg')"></div>
+                  <video class="focus__video" preload="none" muted loop>
+                    <source src="https://cdn2.hubspot.net/hubfs/2915353/Industry-Experience/videos/Home-Industry-experience-Automotive-video.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <h3 class="h4 h4-md focus__title">Automotive</h3>
+                <p class="focus__text">Wir unterstützen Unternehmen bei der Verbesserung des Kundenservice mit HMI-/Multimedia-Geräten, Fahrassistenzsystemen und Hardware für Elektrostapler und Transporter.</p>
+              </a>
+              
+              <a class="focus__item" data-bg="video" href="solutions-for-the-sports-industry.html">
+                <div class="focus__bg">
+                  <div class="focus__img" style="background-image: url('../hubfs/Industry-Experience/posters/Industry-Experience-Sports-Poster.jpg')"></div>
+                  <video class="focus__video" preload="none" muted loop>
+                    <source src="https://cdn2.hubspot.net/hubfs/2915353/Industry-Experience/videos/Home-Industry-Experience-Sport-video.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <h3 class="h4 h4-md focus__title">Sport</h3>
+                <p class="focus__text">Unser Portfolio an Sportlösungen umfasst Sporttracker, intelligente Sportbekleidung und die Entwicklung von Sportgeräten sowie Tracking-Geräte für Spielerleistung und Rehabilitation.</p>
+              </a>
+              
+            </div>
+            
+            <button class="show-more focus__more" data-spoiler="focus" type="button">
+              <span class="show-more__inner">Show more</span>
+            </button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div></div>
+<div id="hs_cos_wrapper_widget_1571934940431437" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div class="section__anchor" id="Services"></div>
+
+<div class="js-lazy section section--timeline section--white section--slim" data-toggle-class="js-lazy-loaded">
+  <div class="section__header">
+    <div class="container">
+      <div class="section__header-inner">
+        <h2 class="h2 section__title">
+          Unser Ansatz zur Hardwareentwicklung
+        </h2>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="section__content">
+    <div class="container">
+      <div class="section__content-inner">
+        <div class="timeline">
+          
+          <div class="timeline__item" data-aos>
+            <div class="timeline__details">
+              <h3 class="timeline__title">Anforderungserfassung</h3>
+              <div class="static static--white timeline__content">
+                <p>Bewertung der Erwartungen an das Produkt, seiner Anwendungsfälle, Fertigungs- und Logistikmöglichkeiten.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="timeline__item" data-aos>
+            <div class="timeline__details">
+              <h3 class="timeline__title">Funktionales Design</h3>
+              <div class="static static--white timeline__content">
+                <p>Definition der wichtigsten Funktionsmerkmale: Technologie, Methoden, Anbieter, voraussichtliches Design und Produktionskosten.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="timeline__item" data-aos>
+            <div class="timeline__details">
+              <h3 class="timeline__title">Entwicklung von Komponentenbibliotheken</h3>
+              <div class="static static--white timeline__content">
+                <p>Der zeitaufwändige Prozess der manuellen Eingabe von Teilen mit Symbolen, Footprints und Pin Mapping entfällt.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="timeline__item" data-aos>
+            <div class="timeline__details">
+              <h3 class="timeline__title">Schematisches Design</h3>
+              <div class="static static--white timeline__content">
+                <p>Ausarbeitung des Schaltungsentwurfs mit realen elektronischen Verbindungen basierend auf einem Funktionsplan und Auswahl relevanter elektronischer Komponenten basierend auf den erforderlichen Funktionen.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="timeline__item" data-aos>
+            <div class="timeline__details">
+              <h3 class="timeline__title">PCB-Design</h3>
+              <div class="static static--white timeline__content">
+                <ul>
+<li>Komponentenplatzierung und PCB-Layout</li>
+<li>Überprüfung der PCB-Signale und der Power Integrity, der thermischen Bedingungen sowie der elektromagnetischen Störungen und der elektromagnetischen Kompatibilität durch unterschiedliche Modellierungen</li>
+<li>DFM/DFA-Prüfung</li>
+</ul>
+              </div>
+            </div>
+          </div>
+          
+          <div class="timeline__item" data-aos>
+            <div class="timeline__details">
+              <h3 class="timeline__title">Platten- und Musterproduktion, Tests und Bring-Up</h3>
+              <div class="static static--white timeline__content">
+                <ul>
+<li>Unterstützung der Kunden bei der Herstellerauswahl</li>
+<li>Überwachung des Produktionsprozesses mit dem kundenseitig gewählten Hersteller</li>
+<li>Identifizierung von Fehlern und Ausarbeitung von Lösungen für die Fehlerbehebung</li>
+</ul>
+              </div>
+            </div>
+          </div>
+          
+          <div class="timeline__item" data-aos>
+            <div class="timeline__details">
+              <h3 class="timeline__title">Gehäusemodellierung</h3>
+              <div class="static static--white timeline__content">
+                <p>Sicherstellung der vollen Kompatibilität von Gehäuse und PCB.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="timeline__item" data-aos>
+            <div class="timeline__details">
+              <h3 class="timeline__title">Testproduktion von Pilotchargen</h3>
+              <div class="static static--white timeline__content">
+                <p>Wir können die Vorbereitung der Serienproduktion überwachen, die Folgendes beinhaltet: Optimierung der Stückliste, der Komponentenlogistik und der Serienproduktion.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="timeline__item" data-aos>
+            <div class="timeline__details">
+              <h3 class="timeline__title">Serienproduktion</h3>
+              <div class="static static--white timeline__content">
+                <p>Sobald das Plattenlayout optimiert und auf korrekten Betrieb überprüft wurde, unterstützt Softeq Sie bei der Überwachung des Produktionsprozesses mit dem Hersteller Ihrer Wahl.</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div></div>
+<div id="hs_cos_wrapper_widget_1571950816056355" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+<div class="section__anchor" id="Expertise"></div>
+
+<div class="section section--slim">
+
+  <div class="section__header">
+    <div class="container">
+      <div class="section__header-inner">
+        <h2 class="h2 section__title">
+          Technologien &amp; geprüfte Expertise
+        </h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="section__content">
+    <div class="container">
+      <div class="section__content-inner">
+
+        <div class="dev">
+          
+          
+          <div class="dev__item">
+            <div class="dev__header">
+              <span class="dev__title">AUTOMOTIVE</span>
+            </div>
+            <div class="dev__details">
+              <p class="dev__text"><strong>Kameras und Aufzeichnung:</strong> Rundumsicht, Rückansicht, Videoaufzeichnung<br><strong>Infotainment:</strong> HMI-Einheit, IVI, Digital Cluster, Head-up- und Rear-seat-Entertainment <br><strong>Konnektivität:</strong> V2x, Navigation, Bluetooth, WiFi, GPS, Handy <br><strong>Multimedia:</strong> AM/FM/DAB/DAB+ Radio, Rauschunterdrückung, High-End-Audioverstärker</p>
+              
+  
+
+            </div>
+            <div class="dev__logos">
+              <div class="dev__scroll">
+                <figure class="dev__logos-inner">
+                  
+                  <img src="../hubfs/Tech-Stack/Hardware-Design-services-automotive.svg" alt="Hardware-Design-services-automotive" loading="lazy">
+                  
+                </figure>
+              </div>
+            </div>
+          </div>
+          
+          
+          
+          <div class="dev__item">
+            <div class="dev__header">
+              <span class="dev__title">INDUSTRIAL</span>
+            </div>
+            <div class="dev__details">
+              <p class="dev__text">Industriemonitore, Industrie-Panel-PC mit Display, Industrie-Computer-Plattform, kompakter industrietauglicher Box-PC, Industrie-IoT-Gateway</p>
+              
+  
+
+            </div>
+            <div class="dev__logos">
+              <div class="dev__scroll">
+                <figure class="dev__logos-inner">
+                  
+                  <img src="../hubfs/Tech-Stack/Hardware-Design-services-industrial.svg" alt="Hardware-Design-services-industrial" loading="lazy">
+                  
+                </figure>
+              </div>
+            </div>
+          </div>
+          
+          
+          
+          <div class="dev__item">
+            <div class="dev__header">
+              <span class="dev__title">SoC TECHNOLOGIES </span>
+            </div>
+            <div class="dev__details">
+              <p class="dev__text">SoC, SoM und Erweiterungsboards</p>
+              
+  
+
+            </div>
+            <div class="dev__logos">
+              <div class="dev__scroll">
+                <figure class="dev__logos-inner">
+                  
+                  <img src="../hubfs/Tech-Stack/Hardware-Design-services-SoC-technologies.svg" alt="Hardware-Design-services-SoC-technologies" loading="lazy">
+                  
+                </figure>
+              </div>
+            </div>
+          </div>
+          
+          
+          
+          <div class="dev__item">
+            <div class="dev__header">
+              <span class="dev__title">IoT </span>
+            </div>
+            <div class="dev__details">
+              <p class="dev__text">IIoT, IoT für Verbraucher, Fitness und Sport, Haustiergadgets</p>
+              
+  
+
+            </div>
+            <div class="dev__logos">
+              <div class="dev__scroll">
+                <figure class="dev__logos-inner">
+                  
+                  <img src="../hubfs/Tech-Stack/Hardware-Design-services-IoT.svg" alt="Hardware-Design-services-IoT" loading="lazy">
+                  
+                </figure>
+              </div>
+            </div>
+          </div>
+          
+          
+          
+          <div class="dev__item">
+            <div class="dev__header">
+              <span class="dev__title">Geprüfte Expertise</span>
+            </div>
+            <div class="dev__details">
+              <p class="dev__text">Alle unsere Hardware-Designs entsprechen den RoHS-, CE-, FCC- und UL- Anforderungen und Normen. Die Qualität sowie der Zustand und die Sicherheit unserer Designs können mit einer international anerkannten Zertifizierung nachgewiesen werden.</p>
+              
+  
+
+            </div>
+            <div class="dev__logos">
+              <div class="dev__scroll">
+                <figure class="dev__logos-inner">
+                  
+                  <img src="../hubfs/Tech-Stack/Hardware-Design-services-Verified-Expertises.svg" alt="Hardware-Design-services-Verified-Expertises" loading="lazy">
+                  
+                </figure>
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div></div>
+<div id="hs_cos_wrapper_widget_16575454056902" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><hr class="separator"></div>
+<div id="hs_cos_wrapper_widget_1571944478134378" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div class="section__anchor" id="Benefits"></div>
+
+<section class="section section--slim module_value bg_white">
+
+  <div class="section__header">
+    <div class="container">
+      <div class="section__header-inner">
+        <h2 class="h2 section__title">
+          Warum Softeq?
+        </h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="section__content">
+    <div class="container">
+      <div class="section__content-inner">
+        <div class="values">
+          <div class="row">
+            
+            <div class="col-md-6 col-xs-12">
+              <div class="values__item">
+                <figure class="values__icon">
+                  <img loading="lazy" src="../hubfs/Icons/icon-Transparent-and-Supervised-Processes.svg">
+                </figure>
+                <div class="values__details">
+                  <h3 class="values__title">Transparente und überwachte Prozesse</h3>
+                  <div class="values__text"><p>Wir sorgen für Transparenz in der Implementierung, damit Sie einen vollständigen Überblick über den Fortschritt des Entwicklungsteams haben. Unsere Führungskräfte legen Wert auf termingerechte Produktlieferung und Prozesseffizienz.</p></div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-6 col-xs-12">
+              <div class="values__item">
+                <figure class="values__icon">
+                  <img loading="lazy" src="../hubfs/Icons/icon-Development-from-Scratch.svg">
+                </figure>
+                <div class="values__details">
+                  <h3 class="values__title">Völlige Neuentwicklung</h3>
+                  <div class="values__text">Jedes Projekt beginnt mit einer F&amp;E- und PoC-Implementierung, um unvorhergesehene Engpässe zu vermeiden und unsere ersten Projektschätzungen zu bestätigen.</div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-6 col-xs-12">
+              <div class="values__item">
+                <figure class="values__icon">
+                  <img loading="lazy" src="../hubfs/Icons/icon-Smooth-Integration.svg">
+                </figure>
+                <div class="values__details">
+                  <h3 class="values__title">Reibungslose Integration</h3>
+                  <div class="values__text"><p>Wir wählen und nutzen nur relevante Technologien, die mit der aktuellen Technologie-umgebung des Kunden kompatibel sind. Dieses Vorgehen ist am kostengünstigsten zu integrieren und zu warten, da sich die neu entwickelte Hardwarelösung nahtlos in die bestehende Systemlandschaft integriert.</p></div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-6 col-xs-12">
+              <div class="values__item">
+                <figure class="values__icon">
+                  <img loading="lazy" src="../hubfs/Icons/icon-Expert-Engineers.svg">
+                </figure>
+                <div class="values__details">
+                  <h3 class="values__title">Expert Engineers</h3>
+                  <div class="values__text"><p>Wir sind ein starkes Team mit jahrelanger praktischer Erfahrung im Bereich elektronisches Hardware-Design und sorgen dafür, dass nur hochqualifizierte Engineers an Ihren Projekten arbeiten.</p></div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-6 col-xs-12">
+              <div class="values__item">
+                <figure class="values__icon">
+                  <img loading="lazy" src="../hubfs/Icons/icon-Comprehensive-Approach.svg">
+                </figure>
+                <div class="values__details">
+                  <h3 class="values__title">Umfassender Ansatz</h3>
+                  <div class="values__text"><p>Wir achten bei Hardwareprodukten auf jedes Detail und stellen sicher, dass alle Systemkomponenten nahtlos miteinander verbunden sind und die Systemarchitektur konsequent optimiert wird.</p></div>
+                </div>
+              </div>
+            </div>
+            
+            
+              
+              <div class="col-md-6 col-xs-12">
+                <a class="cta-common cta-common--contact values__cta  bg_purple" href="contact.html" style="color: rgba(255, 255, 255, 1.0)">
+                  <h3 class="cta-common__title"><p>Fragen?</p>
+<p>Wir helfen gern.</p></h3>
+                  <span class="btn btn_clr-white cta-common__action" onclick="ga('send', 'event', 'contact_button', 'click');">Kontaktieren</span>
+                  <img loading="lazy" class="cta-common__img" srcset="https://www.softeq.com/hubfs/CTA-People/2x/Margarita-S.png 2x" src="../hubfs/CTA-People/2x/Margarita-S.png" alt="Margarita-S">
+                  
+                  <figcaption class="cta-discuss__person-info">
+                  <span class="cta-discuss__person-name">Margarita</span>
+                    <span class="cta-discuss__person-post">Account Manager</span>
+                  </figcaption>
+                  
+                </a>
+              </div>
+              
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section></div>
+<div id="hs_cos_wrapper_widget_1572413800752520" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div class="section section--gray section--slim">
+   
+   <div class="section__header">
+    <div class="container">
+      <div class="section__header-inner">
+        <h2 class="h2 section__title">
+          Wie können wir helfen?
+        </h2>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="section__content">
+    <div class="container">
+      <div class="section__content-inner">
+        
+          <div class="extra">
+            
+            
+            <div class="extra__section">
+              
+              <div class="extra__item">
+                <h2 class="h4 h4-md extra__title">Full-Cycle-Hardwaredesign</h2>
+                <div class="static extra__content"><p>Softeq verfügt über hohe Expertise im Bereich elektronisches Hardware-Design und der Entwicklung komplexer High-End-Lösungen und Gadgets, die von der Konzeption und den Anforderungen über Feldversuche bis zur Produktion reichen. Unsere moderne Hardware ist das Ergebnis einer Zusammenarbeit zwischen den Engineers unserer Hardwareentwicklungsfirma und unseren Soft- und Firmware-Spezialisten.</p></div>
+              </div>
+              
+              <div class="extra__item">
+                <h2 class="h4 h4-md extra__title"></h2>
+                <div class="static extra__content"><p><span>Gemeinsam entwickeln und integrieren sie Hardware-, Software- und Firmware-Komponenten und optimieren deren Leistung und Zuverlässigkeit. Unsere Hardware Board Design Engineers liefern alle notwendigen Unterlagen, um unser Hardware-Design und unsere Hardwareentwicklung in jeder Phase zu unterstützen: Funktionsdiagramme, Komponentenbibliotheken, Stückliste, CAD und Gerber sowie Spezifikationen für Gehäusedesigns.</span></p></div>
+              </div>
+              
+            </div>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div></div></span>
+      </div>
+      <div class="back-to-top js-back-to-top">
+        <div class="svg-icon s32" data-icon-source="material" data-icon-name="expand_less">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24"><path d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z" /></svg>
+        </div>
+      </div>
+      <footer class="footer page__footer" id="footer">
+        
+
+<div class="footer__info">
+  <div class="container">
+    <div class="footer__inner">
+      
+      
+      <div id="contacts-form"></div>
+      <div class="contacts-form contacts__form">
+        <div class="contacts__form-title--small">
+
+Senden Sie Ihre Anforderungen und erhalten Sie eine profunde Einschätzung
+
+</div>
+        <div id="hs_cos_wrapper_module_157865030967185" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+
+
+
+
+<div id="contact-form-site"></div>
+
+<script id="hbspt-forms-script" charset="utf-8" src="../../js.hsforms.net/forms/v2.js" type="text/javascript" data-script-no-autoload="true"></script>
+<script id="contact-form-script" type="text/javascript" data-script-dependency="hbspt-forms-script" data-script-no-autoload="true">
+  hbspt.forms.create({
+    portalId: "2915353",
+    formId: "1ab510ca-5280-4cf5-9a20-615c3e6e4bf6",
+    pageId: "23272983754",
+    redirectUrl: "",
+    target: "#contact-form-site",
+    css: "",
+    formData: {
+      cssClass: 'hs-form stacked hs-custom-form'
+    },
+    onFormReady: function($form) {
+      $form.attr("autocomplete", "off");
+      $form.find("input, textarea").attr("autocomplete", "off");
+
+      var $attachment = $form.find('.hs_attachment');
+      var $input = $form.find('.hs_attachment input');
+      var $text = $form.find('.hs_attachment label span');
+      var $message = $form.find(".hs_message textarea");
+
+      $text.css({
+        "white-space": "nowrap",
+        "overflow": "hidden",
+        "text-overflow": "ellipsis",
+        "width": "20ch",
+        "display": "block"
+      });
+
+      if ($message) {
+        function setTextareaHeight() {
+          $message.height('auto');
+          $message.height($message[0].scrollHeight - parseInt($message.css("padding-top")) - parseInt($message.css("padding-bottom")));
+        }
+        $message.attr("rows", "1");
+        setTextareaHeight();
+        $(window).resize(setTextareaHeight);
+      }
+
+      startText = $text.html();
+      $input.change(function(ev) {
+        const files = Array.prototype.slice.call(ev.target.files);
+        if (files.length) {
+          $text.html(files.map(function (file) {
+            return file.name;
+          }).join(", "));
+        } else {
+          $text.html(startText);
+        }
+      });
+
+      $attachment.click(function() {
+        $input.click();
+      });
+      $input.click(function(ev) {
+        ev.stopPropagation();
+      });
+    },
+    onFormSubmit: function($form) {
+      $form.addClass("has-spinner");
+    }
+  });
+</script></div>
+      </div>
+      
+
+<div class="covid__content">        
+  <div class="covid-icon">
+    <svg width="50" height="52" viewbox="0 0 36 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.708 3.25091C18.5454 3.25091 19.2243 2.57203 19.2243 1.73459C19.2243 0.897143 18.5454 0.218262 17.708 0.218262C16.8705 0.218262 16.1917 0.897143 16.1917 1.73459C16.1917 2.57203 16.8705 3.25091 17.708 3.25091Z" fill="#00ADFF" />
+      <path d="M35.7472 10.0491C35.7636 9.54455 35.5906 9.05212 35.2623 8.66864C34.934 8.28515 34.4741 8.03836 33.9731 7.97679C29.9296 7.47135 25.8304 5.34849 22.7927 3.42781C22.6763 3.3508 22.5458 3.29773 22.4087 3.27169C22.2716 3.24566 22.1306 3.24719 21.9941 3.27618C21.8156 3.31466 21.6509 3.40077 21.5174 3.52536C21.3839 3.64995 21.2866 3.80837 21.236 3.9838C21.1736 4.19324 21.1807 4.41725 21.2564 4.62228C21.332 4.8273 21.472 5.0023 21.6555 5.12104C24.8751 7.1883 29.2624 9.44762 33.7254 10.0087C33.6243 12.637 33.1189 17.752 30.8646 22.584C28.3627 27.9266 22.8332 34.0424 17.9152 34.0576C12.9973 34.0727 7.45764 27.9266 4.9557 22.5638C2.70144 17.752 2.19599 12.642 2.09996 9.98339C6.47203 9.43246 10.8037 7.23884 14.0385 5.20191C14.1497 5.12923 14.2454 5.03536 14.3203 4.92567C14.3952 4.81597 14.4478 4.6926 14.475 4.56259C14.5023 4.43258 14.5036 4.29849 14.479 4.16796C14.4544 4.03743 14.4043 3.91302 14.3316 3.80184C14.259 3.69066 14.1651 3.59489 14.0554 3.51998C13.9457 3.44508 13.8223 3.39252 13.6923 3.3653C13.5623 3.33808 13.4282 3.33673 13.2977 3.36133C13.1672 3.38593 13.0427 3.436 12.9316 3.50869C9.89892 5.42431 5.85539 7.4764 1.85735 7.97679C1.35539 8.0372 0.894271 8.28348 0.564933 8.66709C0.235594 9.05069 0.0619339 9.54377 0.0781954 10.0491C0.184338 12.8594 0.72516 18.2676 3.11084 23.413C6.00197 29.6198 12.1734 36.049 17.895 36.0793C23.6166 36.0793 29.788 29.6198 32.6842 23.413C35.0952 18.2676 35.636 12.8594 35.7472 10.0491Z" fill="#00ADFF" />
+      <path d="M23.1668 17.2314H18.8756V12.9402C18.8756 12.6721 18.7691 12.415 18.5795 12.2254C18.3899 12.0358 18.1328 11.9293 17.8647 11.9293C17.5966 11.9293 17.3395 12.0358 17.1499 12.2254C16.9603 12.415 16.8538 12.6721 16.8538 12.9402V17.2314H12.5626C12.2945 17.2314 12.0374 17.3379 11.8478 17.5275C11.6582 17.7171 11.5517 17.9742 11.5517 18.2423C11.5517 18.5104 11.6582 18.7675 11.8478 18.9571C12.0374 19.1467 12.2945 19.2532 12.5626 19.2532H16.8538V23.5444C16.8538 23.8125 16.9603 24.0696 17.1499 24.2592C17.3395 24.4488 17.5966 24.5553 17.8647 24.5553C18.1328 24.5553 18.3899 24.4488 18.5795 24.2592C18.7691 24.0696 18.8756 23.8125 18.8756 23.5444V19.2532H23.1668C23.4349 19.2532 23.692 19.1467 23.8816 18.9571C24.0711 18.7675 24.1776 18.5104 24.1776 18.2423C24.1776 17.9742 24.0711 17.7171 23.8816 17.5275C23.692 17.3379 23.4349 17.2314 23.1668 17.2314Z" fill="#00ADFF" />
+    </svg>
+  </div>
+  <div>
+    <h3>
+
+
+
+
+
+
+
+
+COVID-19 UPDATE
+
+</h3>
+    <p>
+
+
+
+
+
+
+
+
+Softeq steht auch während der aktuellen Pandemie uneingeschränkt zu Ihrer Verfügung! Alle Mitarbeiter können remote arbeiten und Ihre Projekte pünktlich bearbeiten. Sie haben eine Projektidee?
+
+ <a href="contact.html">
+
+
+
+
+
+
+
+
+Schreiben Sie uns
+
+</a>
+
+
+
+
+
+
+
+
+, wir melden uns binnen 24 Stunden.
+
+</p>
+    <p>
+
+
+
+
+
+
+
+
+Bleiben Sie gesund und achten Sie aufeinander. Das Softeq-Team fühlt sich Ihren Wünschen stets verpflichtet.
+
+</p>
+  </div>
+</div>
+    </div>
+    <div class="contacts footer__contacts">
+      
+
+
+<div class="contacts-details contacts__details">
+  <div class="contacts-details__inner js-accords">
+    
+    <div class="contacts-details__item contacts-details__item--main">
+      <div class="contacts-details__status accord-header js-accord active" data-visible="xs">
+        
+
+
+
+
+
+
+
+
+
+
+Hauptsitz
+
+
+      </div>
+      <div class="accord-content">
+        <div class="contacts-details__group">
+          <span class="h2 contacts-details__place">
+
+
+
+
+
+
+
+
+
+
+Houston, US
+
+</span>
+          <div class="contacts-details__address">
+            <span>
+
+
+
+
+
+
+
+
+
+
+<p>Softeq Development Corp.</p><p>1155 Dairy Ashford Rd., Suite 125</p><p>Houston, Texas 77079 USA</p>
+
+</span>
+          </div>
+          
+          <ul class="contacts-details__list">
+            
+            <li class="contacts-details__list-item">
+              <a class="contacts-details__link" href="tel:+1%20888%20552-5001" onclick="ga('send', 'event', 'contact_phone_de', 'click');">
+                +1 888 552-5001
+              </a>
+            </li>
+            
+            <li class="contacts-details__list-item">
+              <a class="contacts-details__link" href="tel:+%201%20281%20552-5000" onclick="ga('send', 'event', 'contact_phone_de', 'click');">
+                + 1 281 552-5000
+              </a>
+            </li>
+            
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+    
+    <div class="contacts-details__item ">
+      <div class="contacts-details__status accord-header js-accord " data-visible="xs">
+        
+
+
+
+
+
+
+
+
+
+
+Kundenlieferzentrum
+
+
+      </div>
+      <div class="accord-content">
+        <div class="contacts-details__group">
+          <span class="h2 contacts-details__place">
+
+
+
+
+
+
+
+
+
+
+München, DE
+
+</span>
+          <div class="contacts-details__address">
+            <span>
+
+
+
+
+
+
+
+
+
+
+<p>Softeq Development GmbH</p><p>Bretonischer Ring 12</p><p>D-85630 Grasbrunn</p><p>Deutschland</p>
+
+</span>
+          </div>
+          
+          <ul class="contacts-details__list">
+            
+            <li class="contacts-details__list-item">
+              <a class="contacts-details__link" href="tel:+49%2089%20800%2032%20780" onclick="ga('send', 'event', 'contact_phone_de', 'click');">
+                +49 89 800 32 780
+              </a>
+            </li>
+            
+            <li class="contacts-details__list-item">
+              <a class="contacts-details__link" href="tel:+44%2020%207193%201798" onclick="ga('send', 'event', 'contact_phone_de', 'click');">
+                +44 20 7193 1798 
+              </a>
+            </li>
+            
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+    
+    <div class="contacts-details__item ">
+      <div class="contacts-details__status accord-header js-accord " data-visible="xs">
+        
+
+
+
+
+
+
+
+
+
+
+Entwicklungszentrum
+
+
+      </div>
+      <div class="accord-content">
+        <div class="contacts-details__group">
+          <span class="h2 contacts-details__place">
+
+
+
+
+
+
+
+
+
+
+Vilnius, LT
+
+</span>
+          <div class="contacts-details__address">
+            <span>
+
+
+
+
+
+
+
+
+
+
+<p>Softeq Development, UAB</p><p>V. Gerulaicio str. 10,</p><p>Technopolis Nova, 2 floor,</p><p>LT-08200 Vilnius, Lithuania</p>
+
+</span>
+          </div>
+          
+          <ul class="contacts-details__list">
+            
+            <li class="contacts-details__list-item">
+              <a class="contacts-details__link" href="tel:+370%20668%2021%20211" onclick="ga('send', 'event', 'contact_phone_de', 'click');">
+                +370 668 21 211
+              </a>
+            </li>
+            
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+    
+    <div class="contacts-details__item ">
+      <div class="contacts-details__status accord-header js-accord " data-visible="xs">
+        
+
+
+
+
+
+
+
+
+
+
+Entwicklungszentrum
+
+
+      </div>
+      <div class="accord-content">
+        <div class="contacts-details__group">
+          <span class="h2 contacts-details__place">
+
+
+
+
+
+
+
+
+
+
+Monterrey, MX
+
+</span>
+          <div class="contacts-details__address">
+            <span>
+
+
+
+
+
+
+
+
+
+
+<p>Softeq Development</p><p>Av. Vasconcelos No. Ext. 755 No. Int. Piso 4 Oficina 415 Del Valle 66220 San Pedro Garza García Nuevo León</p>
+
+</span>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+        
+
+
+
+
+
+
+
+<div class="footer__default">
+  <div class="container">
+    <div class="footer__inner default2">
+      <div style="padding-top: 1px;">
+        <div id="hs_cos_wrapper_module_161460844836939" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+<div class="hs-search-field" id="hs-search-field"> 
+    <div class="hs-search-field__bar hs-search-field__bar--material-dark"> 
+      <form action="https://www.softeq.com/hs-search-results">
+        <label for="term">
+
+
+
+
+
+
+
+
+Suche
+
+</label>
+        <div style="position: relative;">
+         <input type="text" class="hs-search-field__input" name="term" autocomplete="off" aria-label="Search" placeholder="
+
+
+
+
+
+
+
+
+Zum Beispiel: Industrial IoT
+
+">
+        
+          <button aria-label="Search"><span id="hs_cos_wrapper_module_161460844836939_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_icon" style="" data-hs-cos-general-type="widget" data-hs-cos-type="icon"><svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" aria-hidden="true"><g id="search1_layer"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" /></g></svg></span></button>
+        
+        
+          <input type="hidden" name="type" value="SITE_PAGE">
+        
+        
+        
+          <input type="hidden" name="type" value="BLOG_POST">
+          <input type="hidden" name="type" value="LISTING_PAGE">
+        
+        
+        </div>
+      </form>
+    </div>
+    <ul class="hs-search-field__suggestions"></ul>
+</div></div>
+      </div>
+      <div class="certs footer__certs">
+          <ul class="certs__list">
+            <li class="certs__item">
+              <a target="_blank" rel="nofollow" href="https://partners.amazonaws.com/partners/0010L00001kVejGQAS/Softeq Development Corporation">
+              <figure class="certs__img">
+                <img src="../hubfs/static/images/certs/AWS.svg" alt="AWS" loading="lazy">
+              </figure>
+              <div class="certs__title">
+
+
+
+
+
+
+
+
+AWS-Zertifiziert<br>Partner
+
+</div>
+              </a>
+            </li>
+            <li class="certs__item">
+              <a target="_blank" rel="nofollow" href="https://www.microsoft.com/en-us/solution-providers/partnerdetails/softeq-development-corporation_16da2f80-342a-4235-9570-0666924b6a2f/9fd3052f-35ac-45fc-82b0-8715e9b96c15">
+              <figure class="certs__img">
+                <img src="../hubfs/static/images/certs/2.svg" alt="2" loading="lazy">
+              </figure>
+              <div class="certs__title">
+
+
+
+
+
+
+
+
+Microsoft Gold<br>Partner
+
+</div>
+              </a>
+            </li>
+            <li class="certs__item">
+              <a target="_blank" rel="nofollow" href="https://azuremarketplace.microsoft.com/en-us/marketplace/consulting-services/softeqdevelopmentcorporation1610637093400.azure-consulting-service-softeq?page=1&amp;search=softeq">
+              <figure class="certs__img">
+                <img src="../hubfs/About-us/ISO-Certificates/Azure.svg" alt="Azure" loading="lazy">
+              </figure>
+              <div class="certs__title">
+
+
+
+
+
+
+
+
+
+
+</div>
+              </a>
+            </li>
+            <li class="certs__item">
+              <a target="_blank" rel="nofollow" href="https://docs.microsoft.com/en-us/xamarin/cross-platform/partners/">
+              <figure class="certs__img">
+                <img src="../hubfs/static/images/certs/1.svg" alt="1" loading="lazy">
+              </figure>
+              <div class="certs__title">
+
+
+
+
+
+
+
+
+Xamarin Partner
+
+</div>
+              </a>
+            </li>
+            <li class="certs__item">
+              <a target="_blank" rel="nofollow" href="https://smg-aw.com/softeq-global-inc/">
+              <figure class="certs__img">
+                <img src="../hubfs/static/images/certs/Information-Security.svg" alt="Information-Security" loading="lazy">
+              </figure>
+              <div class="certs__title">
+
+
+
+
+
+
+
+
+Nach ISO27001<br>zertifiziert
+
+</div>
+              </a>
+            </li>
+            <li class="certs__item">
+              <a target="_blank" rel="nofollow" href="https://smg-aw.com/softeq-global-inc/">
+              <figure class="certs__img">
+                <img src="../hubfs/static/images/certs/Quality-Management-System.svg" alt="Quality-Management-System" loading="lazy">
+              </figure>
+              <div class="certs__title">
+
+
+
+
+
+
+
+
+Qualitätsmanagement-<br>systeme
+
+</div>
+              </a>
+            </li>
+            <li class="certs__item">
+              <a target="_blank" rel="nofollow" href="https://www.inc.com/profile/softeq-development">
+              <figure class="certs__img">
+                <img src="../hubfs/Inc.5000_2021.svg" alt="Inc.5000_2021" loading="lazy">
+              </figure>
+              <div class="certs__title">
+
+
+
+
+
+
+
+
+Inc.5000<br>Preisträger im dritten<br>Jahr in Folge
+
+</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      <div class="footer__socials_container">
+        <div class="privacy-link">
+          <span class="footer__copyright">© 2022 
+
+Softeq Development Corp.
+
+</span>
+          <a class="footer__privacy" href="privacy-statement.html">
+
+Datenschutzerklärung
+
+</a>
+          
+          <a class="footer__privacy foooter__impressum" href="impressum.html">
+
+Impressum
+
+</a>
+          
+        </div>
+        <ul class="social footer__social">
+          
+          <li class="social__item">
+            
+            <a class="social__link social__link--xi" href="https://www.xing.com/companies/softeqdevelopment"></a>
+            
+          </li>
+          
+          <li class="social__item">
+            
+            <a class="social__link social__link--tw" href="https://twitter.com/softeq"></a>
+            
+          </li>
+          
+          <li class="social__item">
+            
+            <a class="social__link social__link--yt" href="https://www.youtube.com/user/Softeq"></a>
+            
+          </li>
+          
+          <li class="social__item">
+            
+            <a class="social__link social__link--in" href="https://www.linkedin.com/company/softeq-"></a>
+            
+          </li>
+          
+          <li class="social__item">
+            
+            <a class="social__link social__link--ig" href="https://web.facebook.com/softeq"></a>
+            
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
+      </footer>
+    </div>
+    <div class="mb-menu js-mb-menu">
+      
+
+
+
+
+
+
+
+<div class="mb-menu__bar js-menu-box">
+  <div class="mb-menu__header">  
+    <div class="hide-gt-xs language-switcher js-language-switcher">
+      <span class="language-switcher__label">de</span>
+      <span id="hs_cos_wrapper_language_switcher" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_language_switcher" style="" data-hs-cos-general-type="widget" data-hs-cos-type="language_switcher"><div class="lang_switcher_class">
+   <div class="globe_class" onclick="">
+       <ul class="lang_list_class">
+           <li>
+               <a class="lang_switcher_link" data-language="de" lang="de" href="hardware_design.html">Deutsch</a>
+           </li>
+           <li>
+               <a class="lang_switcher_link" data-language="en" lang="en" href="../services/hardware_design.html">English</a>
+           </li>
+       </ul>
+   </div>
+</div></span>
+    </div>
+    <button class="menu-toggle active mb-menu__menu-toggle js-menu-toggle" data-action="close" type="button"><span></span></button>
+  </div>
+  <div class="mb-menu__content">
+    
+      <div class="mb-menu__search">
+        <div id="hs_cos_wrapper_module_161182529474712" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+<div class="hs-search-field" id="hs-search-field"> 
+    <div class="hs-search-field__bar"> 
+      <form action="https://www.softeq.com/hs-search-results">
+        
+        <div style="position: relative;">
+         <input type="text" class="hs-search-field__input" name="term" autocomplete="off" aria-label="Search" placeholder="
+
+
+
+
+
+
+
+
+Zum Beispiel: Industrial IoT
+
+">
+        
+          <button aria-label="Search"><span id="hs_cos_wrapper_module_161182529474712_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_icon" style="" data-hs-cos-general-type="widget" data-hs-cos-type="icon"><svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" aria-hidden="true"><g id="search1_layer"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" /></g></svg></span></button>
+        
+        
+          <input type="hidden" name="type" value="SITE_PAGE">
+        
+        
+        
+          <input type="hidden" name="type" value="BLOG_POST">
+          <input type="hidden" name="type" value="LISTING_PAGE">
+        
+        
+        </div>
+      </form>
+    </div>
+    <ul class="hs-search-field__suggestions"></ul>
+</div></div>
+      </div>
+    
+    <div class="mb-menu__inner js-menu-scroll">
+      <ul class="mb-menu__list js-accords">
+        
+        
+        <li class="mb-menu__list-item">
+          
+          <div class="mb-menu__menu-item accord-header js-accord">Services</div>
+          <div class="accord-content">
+            <ul class="mb-menu__submenu js-accords">
+              
+              <li class="mb-menu__submenu-item">
+                
+                <div class="mb-menu__submenu-link accord-header js-accord">Individuelle Softwareentwicklung</div>
+                <div class="accord-content">
+                  <ul class="mb-menu__submenu mb-menu__submenu--more">
+                    <li class="mb-menu__submenu-item hide-xl">
+                      <a class="mb-menu__submenu-link" href="custom_application_development.html">
+
+Hauptseite
+
+</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="web_app_development.html">Web-Systeme</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="mobile_application_development.html">Mobile Apps</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="cloud_app_development.html">Cloud-Systeme</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="softeq-amazon-web-services.html">AWS-Software</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="desktop_application_development.html">Desktop-Apps</a>
+                    </li>
+                    
+                  </ul>
+                </div>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <div class="mb-menu__submenu-link accord-header js-accord">Embedded-Systementwicklung</div>
+                <div class="accord-content">
+                  <ul class="mb-menu__submenu mb-menu__submenu--more">
+                    <li class="mb-menu__submenu-item hide-xl">
+                      <a class="mb-menu__submenu-link" href="embedded_system.html">
+
+Hauptseite
+
+</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="embedded.html">Embedded Software Entwicklung</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="firmware_development.html">Firmware</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="thunderbolt-solution-development.html">Thunderbolt</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="hmi_development.html">Human-Machine-Interfaces (HMIs)</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="middleware_development.html">Middleware</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="connectivity_solutions.html">Connectivity-Lösungen</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="proximity_solutions.html">Proximity-Lösungen</a>
+                    </li>
+                    
+                  </ul>
+                </div>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <div class="mb-menu__submenu-link accord-header js-accord">Hardwaredesign</div>
+                <div class="accord-content">
+                  <ul class="mb-menu__submenu mb-menu__submenu--more">
+                    <li class="mb-menu__submenu-item hide-xl">
+                      <a class="mb-menu__submenu-link" href="hardware_design.html">
+
+Hauptseite
+
+</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="electronics_system_design.html">Elektronisches Systemdesign</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="electronic_circuit_design.html">Design elektronischer Schaltungen</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="pcb_design_and_layout_services.html">PCB-Design und Layoutservices</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="expert_analysis_simulation_modeling_services.html">PCB-Designsimulationen</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="fpga_design_services.html">FPGA-Design</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="enclosure_design.html">Gehäusedesign</a>
+                    </li>
+                    
+                  </ul>
+                </div>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="../innovation-lab.html">Innovation in der Frühphase</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="ui_ux_design.html">UX/UI-Design</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="frontend_development.html">Frontend</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="backend_development.html">Backend</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="quality_assurance.html">Quality Assurance</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="application_maintenance_and_support.html">Wartung und Support</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="devops_as_a_service.html">DevOps</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="digital_transformation.html">Digitale Transformtion</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="business-analysis-and-it-consulting.html">Business Analyse</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="cybersecurity.html">Cybersicherheit</a>
+                
+              </li>
+              
+            </ul>
+          </div>
+          
+        </li>
+        
+        <li class="mb-menu__list-item">
+          
+          <div class="mb-menu__menu-item accord-header js-accord">Lösungen</div>
+          <div class="accord-content">
+            <ul class="mb-menu__submenu js-accords">
+              
+              <li class="mb-menu__submenu-item">
+                
+                <div class="mb-menu__submenu-link accord-header js-accord">IoT</div>
+                <div class="accord-content">
+                  <ul class="mb-menu__submenu mb-menu__submenu--more">
+                    <li class="mb-menu__submenu-item hide-xl">
+                      <a class="mb-menu__submenu-link" href="internet_of_things.html">
+
+Hauptseite
+
+</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="consumer-internet-of-things.html">Consumer IoT</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="industrial_iot.html">Industrial IoT (IIoT)</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="medical-internet-of-things.html">Healthcare IoT</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="smart-home.html">Smart Home</a>
+                    </li>
+                    
+                    <li class="mb-menu__submenu-item">
+                      <a class="mb-menu__submenu-link" href="wearable_technology_solutions.html">Wearables</a>
+                    </li>
+                    
+                  </ul>
+                </div>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="nand_storage_memory_solutions.html">Storage</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="industrial_automation_and_robotics.html">Industrielle Automatisierung und Robotik</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="video_streaming.html">Verarbeitung und Distribution von Medieninhalten</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="video_analytics_and_camera_app_development.html">Computer Vision</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="machine_learning.html">KI/Machine Learning</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="ar_and_vr_development.html">AR/VR</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="blockchain_software_development.html">Blockchain</a>
+                
+              </li>
+              
+            </ul>
+          </div>
+          
+        </li>
+        
+        <li class="mb-menu__list-item">
+          
+          <div class="mb-menu__menu-item accord-header js-accord">Branchen</div>
+          <div class="accord-content">
+            <ul class="mb-menu__submenu js-accords">
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="healthcare-industry.html">Healthcare</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="consumer-electronics-industry.html">Verbraucherelektronik</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="digital-media-and-entertainment-industry.html">Medien und Unterhaltung</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="software-and-technology-industry.html">Software und Technologie</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="digital-solutions-for-industrial-manufacturing.html">Industrielle Fertigung</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="transportation-industry.html">Transport</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="automotive.html">Automotive</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="data-srorage-industry.html">Datenspeicherung</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="solutions-for-the-sports-industry.html">Sport</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="pet-tech-solutions.html">Pet Tech</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="baby-tech-software-solutions.html">Babytech</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="climatetech-solutions.html">Green Tech</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="elearning-industry.html">E-Learning</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="oil-and-gas-industry.html">Energie</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="construction-industry.html">Baugewerbe</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="game-development-services.html">Spiele</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="retail-solutions-industry.html">Einzelhandel</a>
+                
+              </li>
+              
+            </ul>
+          </div>
+          
+        </li>
+        
+        <li class="mb-menu__list-item">
+          
+          <div class="mb-menu__menu-item accord-header js-accord">Über uns</div>
+          <div class="accord-content">
+            <ul class="mb-menu__submenu js-accords">
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="testimonials.html">Was unsere Kunden sagen</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="25-anniversary.html">25 Jahre Innovation</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="../innovation-lab.html">Innovation Lab</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="services.html">Unser Verfahren</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="technology-capabilities-overview.html">Unsere Tech-Skills </a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="vision-mission-and-values.html">Unsere Vision, Mission und Werte</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="partnerships.html">Partnerschaften </a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="our-iso-certificates-your-piece-of-mind.html">ISO-Zertifizierungen</a>
+                
+              </li>
+              
+              <li class="mb-menu__submenu-item">
+                
+                <a class="mb-menu__submenu-link" href="how-we-work.html">Kooperationsmodelle</a>
+                
+              </li>
+              
+            </ul>
+          </div>
+          
+        </li>
+        
+      </ul>
+      <ul class="mb-menu__list mb-menu__list--extra">
+        
+        
+        <li class="mb-menu__list-item">
+          <a class="mb-menu__menu-link" href="featured_projects.html">Portfolio</a>
+        </li>
+        
+        <li class="mb-menu__list-item">
+          <a class="mb-menu__menu-link" href="#">Medien</a>
+        </li>
+        
+      </ul>
+      <ul class="social social--light mb-menu__social">
+        
+        <li class="social__item">
+          
+        </li>
+        
+        <li class="social__item">
+          
+          <a class="social__link social__link--tw" href="https://twitter.com/softeq"></a>
+          
+        </li>
+        
+        <li class="social__item">
+          
+          <a class="social__link social__link--yt" href="https://www.youtube.com/user/Softeq"></a>
+          
+        </li>
+        
+        <li class="social__item">
+          
+          <a class="social__link social__link--in" href="https://www.linkedin.com/company/softeq-"></a>
+          
+        </li>
+        
+        <li class="social__item">
+          
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    </div>
+
+    
+<script>
+(function () {
+    window.addEventListener('load', function () {
+        setTimeout(function () {
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST.html', '/_hcms/perf', true /*async*/);
+            xhr.setRequestHeader("Content-type", "application/json");
+            xhr.onreadystatechange = function () {
+                // do nothing.
+            };
+            var connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+            function populateNetworkInfo(name, connection, info) {
+                if (name in connection) {
+                    info[name] = connection[name];
+                }
+            }
+            var networkInfo = {};
+            if (connection) {
+                ['type', 'effectiveType', 'downlink', 'rtt'].forEach(function(name) {
+                    populateNetworkInfo(name, connection, networkInfo);
+                });
+            }
+            var perfData = {
+                url: location.href,
+                portal: 2915353,
+                content: 23272983754,
+                group: -1,
+                connection: networkInfo,
+                timing: performance.timing
+            };
+            xhr.send(JSON.stringify(perfData));
+        }, 3000);  // Execute this 3 seconds after onload.
+    });
+})();
+</script>
+
+<script>
+var hsVars = hsVars || {}; hsVars['language'] = 'de';
+</script>
+
+<script src="../hs/hsstatic/cos-i18n/static-1.53/bundles/project.js"></script>
+<script src="../hs-fs/hub/2915353/hub_generated/module_assets/40993579460/1662031998507/module_40993579460_search_box.min.js"></script>
+<script src="../hs-fs/hub/2915353/hub_generated/template_assets/55303118339/1633615210720/softeq/js/libs/jquery-cookie.min.js"></script>
+<script src="../hs-fs/hub/2915353/hub_generated/template_assets/55301377328/1634477754264/softeq/js/ribbon.min.js"></script>
+<script src="../hs-fs/hub/2915353/hub_generated/module_assets/19216722425/1661780077053/module_19216722425_services.min.js"></script>
+<script src="../hs-fs/hub/2915353/hub_generated/module_assets/31623462479/1665561582850/module_31623462479_featured2.min.js"></script>
+<script src="../hs-fs/hub/2915353/hub_generated/module_assets/19224445303/1663682429425/module_19224445303_timeline.min.js"></script>
+<script src="../hs-fs/hub/2915353/hub_generated/module_assets/19254831091/1660034873168/module_19254831091_values.min.js"></script>
+
+<!-- Start of HubSpot Analytics Code -->
+<script type="text/javascript">
+var _hsq = _hsq || [];
+_hsq.push(["setContentType", "standard-page"]);
+_hsq.push(["setCanonicalUrl", "https:\/\/www.softeq.com\/de\/hardware_design"]);
+_hsq.push(["setPageId", "23272983754"]);
+_hsq.push(["setContentMetadata", {
+    "contentPageId": 20181182349,
+    "legacyPageId": "23272983754",
+    "contentFolderId": null,
+    "contentGroupId": null,
+    "abTestId": null,
+    "languageVariantId": 23272983754,
+    "languageCode": "de",
+    
+}]);
+</script>
+
+<script type="text/javascript-delayed" id="hs-script-loader-delayed" async defer src="../hs/scriptloader/2915353.js"></script>
+<!-- End of HubSpot Analytics Code -->
+
+
+<script type="text/javascript">
+var hsVars = {
+    ticks: 1665615973208,
+    page_id: 23272983754,
+    
+    content_group_id: 0,
+    portal_id: 2915353,
+    app_hs_base_url: "https://app.hubspot.com",
+    cp_hs_base_url: "https://cp.hubspot.com",
+    language: "de",
+    analytics_page_type: "standard-page",
+    analytics_page_id: "23272983754",
+    category_id: 1,
+    folder_id: 0,
+    is_hubspot_user: false
+}
+</script>
+
+
+<script defer src="../hs/hsstatic/HubspotToolsMenu/static-1.138/js/index.js"></script>
+
+<script src="../hs-fs/hub/2915353/hub_generated/template_assets/18715822921/1665053405284/softeq/js/main.min.js"></script>
+<!-- Default Statcounter code for Softeq.com vt.edu -->
+<script type="text/javascript">
+var sc_project=8878194;
+var sc_invisible=1;
+var sc_security="14ac9dca";
+</script>
+<script type="text/javascript" src="../../www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><a title="Web Analytics
+Made Easy - Statcounter" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/8878194/0/14ac9dca/1/" alt="Web Analytics Made Easy - Statcounter" referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+
+
+    
+
+    <script type="text/javascript">
+      _linkedin_partner_id = "2041529";
+      window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+      window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+      </script><script type="text/javascript">
+      (function()
+
+      {var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript";b.async = true; b.src = "../../snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s);}
+      )();
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=2041529&amp;fmt=gif">
+    </noscript>
+  
+  
+</body>
+<!-- Mirrored from www.softeq.com/de/hardware_design by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 14 Oct 2022 04:05:48 GMT -->
+</html>
