@@ -27,7 +27,7 @@
                                              </div>
                                              <div class="solutions__content">
                                                 <div class="static solutions__text">
-                                                   <p>The Softeq team writes all types of smart contracts, including Ethereum, Hyperledger, EOS, and NEO-based. To make sure there are no flaws, misbehaviors and security holes in the smart contract code, we perform full-scale pre-release functional and non-functional testing.</p>
+                                                   <p>The Virtual Dinero LTD team writes all types of smart contracts, including Ethereum, Hyperledger, EOS, and NEO-based. To make sure there are no flaws, misbehaviors and security holes in the smart contract code, we perform full-scale pre-release functional and non-functional testing.</p>
                                                 </div>
                                                 <div class="solutions__info">
                                                 </div>
@@ -83,7 +83,7 @@
                                              </div>
                                              <div class="solutions__content">
                                                 <div class="static solutions__text">
-                                                   <p>Blockchain ecosystems span a full range of cryptocurrency trading apps allowing for transparent and immutable transactions. Softeq crafts any blockchain ecosystem element from scratch including crypto wallets, analytics tools, multiplatform exchanges, blockchain explorers, oracle applications, and portfolio monitor solutions.</p>
+                                                   <p>Blockchain ecosystems span a full range of cryptocurrency trading apps allowing for transparent and immutable transactions. Virtual Dinero LTD crafts any blockchain ecosystem element from scratch including crypto wallets, analytics tools, multiplatform exchanges, blockchain explorers, oracle applications, and portfolio monitor solutions.</p>
                                                 </div>
                                                 <div class="solutions__info">
                                                 </div>

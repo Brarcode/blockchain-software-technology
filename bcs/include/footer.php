@@ -215,7 +215,7 @@
                      <div class="footer__socials_container">
                         <div class="privacy-link">
                            <span class="footer__copyright">© 2022 
-                           Softeq Development Corp.
+                           Virtual Dinero LTD Corp.
                            </span>
                            <a class="footer__privacy" href="privacy-statement.html">
                            Privacy Policy

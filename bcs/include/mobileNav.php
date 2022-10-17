@@ -11,27 +11,27 @@
                                  <div class="accord-content">
                                     <ul class="mb-menu__submenu mb-menu__submenu--more">
                                        <li class="mb-menu__submenu-item hide-xl">
-                                          <a class="mb-menu__submenu-link" href="custom_application_development">
+                                          <a class="mb-menu__submenu-link" href="custom_application_development.php">
                                           Main
                                           </a>
                                        </li>
                                        <li class="mb-menu__submenu-item">
-                                          <a class="mb-menu__submenu-link" href="custom_application_development">Web Systems</a>
+                                          <a class="mb-menu__submenu-link" href="custom_application_development.php">Web Systems</a>
                                        </li>
                                        <li class="mb-menu__submenu-item">
-                                          <a class="mb-menu__submenu-link" href="custom_application_development">Mobile Apps</a>
+                                          <a class="mb-menu__submenu-link" href="custom_application_development.php">Mobile Apps</a>
                                        </li>
                                        <li class="mb-menu__submenu-item">
-                                          <a class="mb-menu__submenu-link" href="custom_application_development">Cloud Systems</a>
+                                          <a class="mb-menu__submenu-link" href="custom_application_development.php">Cloud Systems</a>
                                        </li>
                                        <li class="mb-menu__submenu-item">
-                                          <a class="mb-menu__submenu-link" href="custom_application_development">AWS Software</a>
+                                          <a class="mb-menu__submenu-link" href="custom_application_development.php">AWS Software</a>
                                        </li>
                                        <li class="mb-menu__submenu-item">
-                                          <a class="mb-menu__submenu-link" href="custom_application_development">Desktop Apps</a>
+                                          <a class="mb-menu__submenu-link" href="custom_application_development.php">Desktop Apps</a>
                                        </li>
                                        <li class="mb-menu__submenu-item">
-                                          <a class="mb-menu__submenu-link" href="custom_application_development"> QT Development  ‌</a>
+                                          <a class="mb-menu__submenu-link" href="custom_application_development.php"> QT Development  ‌</a>
                                        </li>
                                     </ul>
                                  </div>
@@ -41,96 +41,96 @@
                                  <div class="accord-content">
                                     <ul class="mb-menu__submenu mb-menu__submenu--more">
                                        <li class="mb-menu__submenu-item hide-xl">
-                                          <a class="mb-menu__submenu-link" href="custom_application_development">
+                                          <a class="mb-menu__submenu-link" href="custom_application_development.php">
                                           Main
                                           </a>
                                        </li>
                                        <li class="mb-menu__submenu-item">
-                                          <a class="mb-menu__submenu-link" href="custom_application_development">Firmware</a>
+                                          <a class="mb-menu__submenu-link" href="custom_application_development.php">Firmware</a>
                                        </li>
                                        <li class="mb-menu__submenu-item">
-                                          <a class="mb-menu__submenu-link" href="custom_application_development">Middleware</a>
+                                          <a class="mb-menu__submenu-link" href="custom_application_development.php">Middleware</a>
                                        </li>
                                        <li class="mb-menu__submenu-item">
-                                          <a class="mb-menu__submenu-link" href="custom_application_development">Embedded Apps</a>
+                                          <a class="mb-menu__submenu-link" href="custom_application_development.php">Embedded Apps</a>
                                        </li>
                                        <li class="mb-menu__submenu-item">
-                                          <a class="mb-menu__submenu-link" href="custom_application_development">Thunderbolt Solutions</a>
+                                          <a class="mb-menu__submenu-link" href="custom_application_development.php">Thunderbolt Solutions</a>
                                        </li>
                                        <li class="mb-menu__submenu-item">
-                                          <a class="mb-menu__submenu-link" href="custom_application_development">Human-Machine Interfaces (HMIs)</a>
+                                          <a class="mb-menu__submenu-link" href="custom_application_development.php">Human-Machine Interfaces (HMIs)</a>
                                        </li>
                                        <li class="mb-menu__submenu-item">
-                                          <a class="mb-menu__submenu-link" href="custom_application_development">Connectivity Solutions</a>
+                                          <a class="mb-menu__submenu-link" href="custom_application_development.php">Connectivity Solutions</a>
                                        </li>
                                        <li class="mb-menu__submenu-item">
-                                          <a class="mb-menu__submenu-link" href="custom_application_development">Proximity Solutions</a>
+                                          <a class="mb-menu__submenu-link" href="custom_application_development.php">Proximity Solutions</a>
                                        </li>
                                     </ul>
                                  </div>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="custom_application_development">Digital Transformation</a>
+                                 <a class="mb-menu__submenu-link" href="custom_application_development.php">Digital Transformation</a>
                               </li>
                               <li class="mb-menu__submenu-item">
                                  <div class="mb-menu__submenu-link accord-header js-accord">Hardware Design</div>
                                  <div class="accord-content">
                                     <ul class="mb-menu__submenu mb-menu__submenu--more">
                                        <li class="mb-menu__submenu-item hide-xl">
-                                          <a class="mb-menu__submenu-link" href="custom_application_development">
+                                          <a class="mb-menu__submenu-link" href="custom_application_development.php">
                                           Main
                                           </a>
                                        </li>
                                        <li class="mb-menu__submenu-item">
-                                          <a class="mb-menu__submenu-link" href="custom_application_development">Electronic System Design</a>
+                                          <a class="mb-menu__submenu-link" href="custom_application_development.php">Electronic System Design</a>
                                        </li>
                                        <li class="mb-menu__submenu-item">
-                                          <a class="mb-menu__submenu-link" href="custom_application_development">Electronic Circuit Design</a>
+                                          <a class="mb-menu__submenu-link" href="custom_application_development.php">Electronic Circuit Design</a>
                                        </li>
                                        <li class="mb-menu__submenu-item">
-                                          <a class="mb-menu__submenu-link" href="custom_application_development">PCB Design and Layout Services</a>
+                                          <a class="mb-menu__submenu-link" href="custom_application_development.php">PCB Design and Layout Services</a>
                                        </li>
                                        <li class="mb-menu__submenu-item">
-                                          <a class="mb-menu__submenu-link" href="custom_application_development">PCB Design Simulations</a>
+                                          <a class="mb-menu__submenu-link" href="custom_application_development.php">PCB Design Simulations</a>
                                        </li>
                                        <li class="mb-menu__submenu-item">
-                                          <a class="mb-menu__submenu-link" href="custom_application_development">FPGA Design</a>
+                                          <a class="mb-menu__submenu-link" href="custom_application_development.php">FPGA Design</a>
                                        </li>
                                        <li class="mb-menu__submenu-item">
-                                          <a class="mb-menu__submenu-link" href="custom_application_development">Enclosure Design</a>
+                                          <a class="mb-menu__submenu-link" href="custom_application_development.php">Enclosure Design</a>
                                        </li>
                                     </ul>
                                  </div>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="custom_application_development">Early Stage Innovation</a>
+                                 <a class="mb-menu__submenu-link" href="custom_application_development.php">Early Stage Innovation</a>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="custom_application_development">Venture Studio for Startups</a>
+                                 <a class="mb-menu__submenu-link" href="custom_application_development.php">Venture Studio for Startups</a>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="custom_application_development">Business Analysis</a>
+                                 <a class="mb-menu__submenu-link" href="custom_application_development.php">Business Analysis</a>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="custom_application_development">Front End</a>
+                                 <a class="mb-menu__submenu-link" href="custom_application_development.php">Front End</a>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="custom_application_development">UX/UI Design</a>
+                                 <a class="mb-menu__submenu-link" href="custom_application_development.php">UX/UI Design</a>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="custom_application_development">Back End</a>
+                                 <a class="mb-menu__submenu-link" href="custom_application_development.php">Back End</a>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="custom_application_development">Cyber Security</a>
+                                 <a class="mb-menu__submenu-link" href="custom_application_development.php">Cyber Security</a>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="custom_application_development">Maintenance and Support</a>
+                                 <a class="mb-menu__submenu-link" href="custom_application_development.php">Maintenance and Support</a>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="custom_application_development">Quality Assurance</a>
+                                 <a class="mb-menu__submenu-link" href="custom_application_development.php">Quality Assurance</a>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="custom_application_development">DevOps</a>
+                                 <a class="mb-menu__submenu-link" href="custom_application_development.php">DevOps</a>
                               </li>
                            </ul>
                         </div>
@@ -144,48 +144,48 @@
                                  <div class="accord-content">
                                     <ul class="mb-menu__submenu mb-menu__submenu--more">
                                        <li class="mb-menu__submenu-item hide-xl">
-                                          <a class="mb-menu__submenu-link" href="custom_application_development">
+                                          <a class="mb-menu__submenu-link" href="custom_application_development.php">
                                           Main
                                           </a>
                                        </li>
                                        <li class="mb-menu__submenu-item">
-                                          <a class="mb-menu__submenu-link" href="custom_application_development">Consumer IoT</a>
+                                          <a class="mb-menu__submenu-link" href="custom_application_development.php">Consumer IoT</a>
                                        </li>
                                        <li class="mb-menu__submenu-item">
-                                          <a class="mb-menu__submenu-link" href="custom_application_development">Industrial IoT (IIoT)</a>
+                                          <a class="mb-menu__submenu-link" href="custom_application_development.php">Industrial IoT (IIoT)</a>
                                        </li>
                                        <li class="mb-menu__submenu-item">
-                                          <a class="mb-menu__submenu-link" href="custom_application_development">Healthcare IoT</a>
+                                          <a class="mb-menu__submenu-link" href="custom_application_development.php">Healthcare IoT</a>
                                        </li>
                                        <li class="mb-menu__submenu-item">
-                                          <a class="mb-menu__submenu-link" href="custom_application_development">Smart Home</a>
+                                          <a class="mb-menu__submenu-link" href="custom_application_development.php">Smart Home</a>
                                        </li>
                                        <li class="mb-menu__submenu-item">
-                                          <a class="mb-menu__submenu-link" href="custom_application_development">Wearables</a>
+                                          <a class="mb-menu__submenu-link" href="custom_application_development.php">Wearables</a>
                                        </li>
                                     </ul>
                                  </div>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="custom_application_development">AI/Machine Learning</a>
+                                 <a class="mb-menu__submenu-link" href="custom_application_development.php">AI/Machine Learning</a>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="custom_application_development">Storage</a>
+                                 <a class="mb-menu__submenu-link" href="custom_application_development.php">Storage</a>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="custom_application_development">Industrial Automation and Robotics</a>
+                                 <a class="mb-menu__submenu-link" href="custom_application_development.php">Industrial Automation and Robotics</a>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="custom_application_development">Computer Vision</a>
+                                 <a class="mb-menu__submenu-link" href="custom_application_development.php">Computer Vision</a>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="custom_application_development">Content Processing and Distribution</a>
+                                 <a class="mb-menu__submenu-link" href="custom_application_development.php">Content Processing and Distribution</a>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="custom_application_development">AR/VR</a>
+                                 <a class="mb-menu__submenu-link" href="custom_application_development.php">AR/VR</a>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="custom_application_development">Blockchain</a>
+                                 <a class="mb-menu__submenu-link" href="custom_application_development.php">Blockchain</a>
                               </li>
                            </ul>
                         </div>
@@ -195,55 +195,55 @@
                         <div class="accord-content">
                            <ul class="mb-menu__submenu js-accords">
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="custom_application_development">Consumer Electronics</a>
+                                 <a class="mb-menu__submenu-link" href="custom_application_development.php">Consumer Electronics</a>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="custom_application_development">Automotive</a>
+                                 <a class="mb-menu__submenu-link" href="custom_application_development.php">Automotive</a>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="custom_application_development">Healthcare</a>
+                                 <a class="mb-menu__submenu-link" href="custom_application_development.php">Healthcare</a>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="custom_application_development">Oil and Gas</a>
+                                 <a class="mb-menu__submenu-link" href="custom_application_development.php">Oil and Gas</a>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="custom_application_development">Media and Entertainment</a>
+                                 <a class="mb-menu__submenu-link" href="custom_application_development.php">Media and Entertainment</a>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="custom_application_development">Software and Technology</a>
+                                 <a class="mb-menu__submenu-link" href="custom_application_development.php">Software and Technology</a>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="custom_application_development">Industrial Manufacturing</a>
+                                 <a class="mb-menu__submenu-link" href="custom_application_development.php">Industrial Manufacturing</a>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="custom_application_development">Transportation</a>
+                                 <a class="mb-menu__submenu-link" href="custom_application_development.php">Transportation</a>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="custom_application_development">Data Storage</a>
+                                 <a class="mb-menu__submenu-link" href="custom_application_development.php">Data Storage</a>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="custom_application_development">Games</a>
+                                 <a class="mb-menu__submenu-link" href="custom_application_development.php">Games</a>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="custom_application_development">Sports</a>
+                                 <a class="mb-menu__submenu-link" href="custom_application_development.php">Sports</a>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="custom_application_development">Pet Tech</a>
+                                 <a class="mb-menu__submenu-link" href="custom_application_development.php">Pet Tech</a>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="custom_application_development">Climate Tech</a>
+                                 <a class="mb-menu__submenu-link" href="custom_application_development.php">Climate Tech</a>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="custom_application_development">Baby Tech</a>
+                                 <a class="mb-menu__submenu-link" href="custom_application_development.php">Baby Tech</a>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="custom_application_development">e-Learning</a>
+                                 <a class="mb-menu__submenu-link" href="custom_application_development.php">e-Learning</a>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="custom_application_development">Construction</a>
+                                 <a class="mb-menu__submenu-link" href="custom_application_development.php">Construction</a>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="custom_application_development">Retail</a>
+                                 <a class="mb-menu__submenu-link" href="custom_application_development.php">Retail</a>
                               </li>
                            </ul>
                         </div>
@@ -253,37 +253,37 @@
                         <div class="accord-content">
                            <ul class="mb-menu__submenu js-accords">
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="about">About Softeq</a>
+                                 <a class="mb-menu__submenu-link" href="about.php">About Softeq</a>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="about">25 Years of Innovation</a>
+                                 <a class="mb-menu__submenu-link" href="about.php">25 Years of Innovation</a>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="about">What Our Customers Say</a>
+                                 <a class="mb-menu__submenu-link" href="about.php">What Our Customers Say</a>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="about">Innovation Lab</a>
+                                 <a class="mb-menu__submenu-link" href="about.php">Innovation Lab</a>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="about">Our Process</a>
+                                 <a class="mb-menu__submenu-link" href="about.php">Our Process</a>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="about">Our Tech Skills</a>
+                                 <a class="mb-menu__submenu-link" href="about.php">Our Tech Skills</a>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="about">Our Vision, Mission, and Values</a>
+                                 <a class="mb-menu__submenu-link" href="about.php">Our Vision, Mission, and Values</a>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="about">Collaboration Models</a>
+                                 <a class="mb-menu__submenu-link" href="about.php">Collaboration Models</a>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="about">Partnerships</a>
+                                 <a class="mb-menu__submenu-link" href="about.php">Partnerships</a>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="about">ISO Certificates</a>
+                                 <a class="mb-menu__submenu-link" href="about.php">ISO Certificates</a>
                               </li>
                               <li class="mb-menu__submenu-item">
-                                 <a class="mb-menu__submenu-link" href="about">Careers</a>
+                                 <a class="mb-menu__submenu-link" href="about.php">Careers</a>
                               </li>
                            </ul>
                         </div>

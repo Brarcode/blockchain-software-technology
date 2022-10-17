@@ -4,7 +4,7 @@
                   <div class="comm-hero comm-hero_v2">
                      <div class="comm-hero__videoBg comm-hero__videoBg_grad-violet">
                         <video class="video-player lazy" autoplay loop muted poster="noposter.html">
-                           <source src="#" type="video/mp4" data-src="hubfs/Services-and-Solutions/Blockchain%20Software%20Development/Control%20center.mp4">
+                           <source src="#" type="video/mp4" data-src="video/banner.mp4">
                         </video>
                      </div>
                      <div class="container">

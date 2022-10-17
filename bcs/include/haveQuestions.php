@@ -7,13 +7,7 @@
                               <span class="cta-discuss__sub">Send your requirements and get an assessment</span>
                               <a class="btn btn_clr-white cta-discuss__action" onclick="ga('send', 'event', 'contact_button', 'click');" href="contact.html">Ask a Question</a>
                            </div>
-                           <figure class="cta-discuss__person">
-                              <img class="cta-discuss__img js-lazy" data-srcset="https://www.softeq.com/hubfs/CTA-People/2x/Rodion-L.png 2x" data-src="https://www.softeq.com/hubfs/CTA-People/2x/Rodion-L.png" alt="Rodion-L">
-                              <figcaption class="cta-discuss__person-info">
-                                 <span class="cta-discuss__person-name">Rodion</span>
-                                 <span class="cta-discuss__person-post">Account Manager</span>
-                              </figcaption>
-                           </figure>
+                           
                         </div>
                      </div>
                   </div>
