@@ -1,3 +1,7 @@
+
+
+
+
 <div class="page__inner">
          <div class="page__content">
             <span id="hs_cos_wrapper_" class="hs_cos_wrapper hs_cos_wrapper_widget_container hs_cos_wrapper_type_widget_container" style="" data-hs-cos-general-type="widget_container" data-hs-cos-type="widget_container">
@@ -440,7 +444,7 @@
                            <div class="section__content-inner">
                               <div class="cta-set">
                                  <div class="cta-set__inner">
-                                    <a class="cta-common cta-common--next cta-common--tall cta-set__item" href="featured_projects.html">
+                                    <a class="cta-common cta-common--next cta-common--tall cta-set__item" href="#">
                                        <span class="cta-common__label"></span>
                                        <h3 class="cta-common__title"><span style="color: #ffffff;">Browse through our project portfolio as proof</span></h3>
                                        <span class="btn btn_clr-white cta-common__action">Browse</span>

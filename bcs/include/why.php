@@ -8,54 +8,101 @@
                         <div class="container">
                            <div class="section__header-inner">
                               <h2 class="h2 section__title">
-                                 <p>Why Softeq?</p>
+                                 <p>VDB Coin private limited services</p>
                               </h2>
                            </div>
                         </div>
                      </div>
+<!-- 
+
+
+ -->
                      <div class="section__content">
                         <div class="container">
                            <div class="section__content-inner">
                               <div class="values">
                                  <div class="row">
-                                    <div class="col-md-6 col-xs-12">
+                                    <div class="col-md-4 col-xs-12">
+                                       <a class="hoverIcon"href="custom_application_development.php">
                                        <div class="values__item">
-                                          <figure class="values__icon">
-                                             <img loading="lazy" src="hubfs/Icons/icon-Expertise-in-Blockchain.svg">
+                                          <figure class="">
+                                             <img class="sIcon" loading="lazy" src="images/icon/coding.png">
                                           </figure>
                                           <div class="values__details">
-                                             <h3 class="values__title">Expertise in Blockchain</h3>
-                                             <div class="values__text">
-                                                <p>The Virtual Dinero LTD team architects solutions for all major blockchain platforms and cryptosystems, such as Bitcoin, Ethereum, and Hyperledger. If you need to build an entire blockchain infrastructure or any of its separate elements — blockchain core, nodes, or ecosystem apps, we are at your service.</p>
-                                             </div>
+                                             <h3 class="values__title">Custom Software Development</h3>
+                                             
                                           </div>
                                        </div>
+                                       </a>
                                     </div>
-                                    <div class="col-md-6 col-xs-12">
+                                    <div class="col-md-4 col-xs-12">
+                                    <a class="hoverIcon"href="digital-transformation.php">
                                        <div class="values__item">
-                                          <figure class="values__icon">
-                                             <img loading="lazy" src="hubfs/Icons/icon-Quality-Control-2.svg">
+                                          <figure class="">
+                                             <img class="sIcon" loading="lazy" src="images/icon/technology.png">
                                           </figure>
                                           <div class="values__details">
-                                             <h3 class="values__title">Quality Control</h3>
-                                             <div class="values__text">
-                                                <p>Our QA team joins the project team at the analysis stage to develop a QA strategy, test each implemented feature, and run a Bug Bounty Program, which helps reduce the number of malfunctions in the solution and meet your needs.</p>
-                                             </div>
+                                             <h3 class="values__title">Digital Transformation</h3>
+                                            
                                           </div>
                                        </div>
+                                    </a>
                                     </div>
-                                    <div class="col-md-6 col-xs-12">
+                                    <div class="col-md-4 col-xs-12">
+                                    <a class="hoverIcon"href="Early-stage-innovation.php">
                                        <div class="values__item">
-                                          <figure class="values__icon">
-                                             <img loading="lazy" src="hubfs/Icons/icon-Expertise-in-Cryptography.svg">
+                                          <figure class="">
+                                             <img class="sIcon" loading="lazy" src="images/icon/convergence.png">
                                           </figure>
                                           <div class="values__details">
-                                             <h3 class="values__title">Expertise in Cryptography</h3>
-                                             <div class="values__text">
-                                                <p>With hands-on experience in data protection, we offer clients a wide spectrum of secure cryptographic solutions including encryption, digital signature and hashing algorithms (RSA, DES, AES, Diffie-Hellmann, ECC, TLS, SSL, SHA-1, SHA-2, SHA-3, MD5, etc.).</p>
-                                             </div>
+                                             <h3 class="values__title">Early Stage Innovation</h3>
+                                             
                                           </div>
                                        </div>
+                                    </a>
+                                    </div>
+                                 </div>
+                                 <br><br>
+                                 <br>
+                                 <div class="row">
+                                    <div class="col-md-4 col-xs-12">
+                                    <a class="hoverIcon"href="business-analysis.php">
+                                       <div class="values__item">
+                                          <figure class="">
+                                             <img class="sIcon" loading="lazy" src="images/icon/dashboard.png">
+                                          </figure>
+                                          <div class="values__details">
+                                             <h3 class="values__title">Business Analysis</h3>
+                                             
+                                          </div>
+                                       </div>
+</a>
+                                    </div>
+                                    <div class="col-md-4 col-xs-12">
+                                    <a class="hoverIcon"href="quality-assurance.php">
+                                       <div class="values__item">
+                                          <figure class="">
+                                             <img class="sIcon" loading="lazy" src="images/icon/quality-assurance.png">
+                                          </figure>
+                                          <div class="values__details">
+                                             <h3 class="values__title">Quality assurance</h3>
+                                            
+                                          </div>
+                                       </div>
+</a>
+                                    </div>
+                                    <div class="col-md-4 col-xs-12">
+                                    <a class="hoverIcon"href="cyber-security.php">
+                                       <div class="values__item">
+                                          <figure class="">
+                                             <img class="sIcon" loading="lazy" src="images/icon/cyber-security.png">
+                                          </figure>
+                                          <div class="values__details">
+                                             <h3 class="values__title">Cyber Security</h3>
+                                             
+                                          </div>
+                                       </div>
+</a>
                                     </div>
                                  </div>
                               </div>

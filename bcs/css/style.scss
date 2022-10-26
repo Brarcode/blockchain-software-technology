@@ -1,0 +1,107 @@
+.header-submenu_v2{
+    width: 330px !important;
+}
+
+.header-submenu_v2>.header-submenu__item {
+    flex: none !important;
+    margin: 0 0 8px;
+    width: 100% !important;
+}
+
+.values__item{
+    display: block !important;
+
+    text-align: center;
+
+    &:hover{
+        cursor: pointer;
+            box-shadow: 0 33px 12px rgb(0 92 136 / 20%);
+            border-top-left-radius: 106px !important;
+            border-bottom-right-radius: 106px !important;
+        
+    }
+}
+
+
+
+.aboutIcon{
+    border: 2px solid transparent;
+    padding: 15px;
+    &:hover{
+        border-radius: 15px;
+        cursor: pointer;
+        //background-color: #00adff;
+        border: 2px solid #00adff;
+    }
+}
+
+.comm-hero__info_full{
+    h2{
+        color: #fff;
+    font-weight: 100 !important;
+    font-size: 25px;
+    margin-bottom: 10px;
+    }
+    p{
+        font-weight: 100;
+    }
+}
+
+
+.hoverIcon{
+    .sIcon{
+        width: 80px;
+        transition: width 2s, height 1s, transform 1s;
+    }
+    
+    &:hover{
+        .sIcon{
+        transform: rotate(360deg);
+        width: 90px;
+    }
+}
+}
+
+
+.solutionDiv{
+    background-color: #000;
+
+    .solutionUl{
+
+        display: flex;
+        li{
+            color: #fff;
+            width: 20%;
+            text-align: center;
+            font-size: 24px;
+            border-right: 1px solid #fff;
+            padding: 20px;
+            
+            &:last-child {
+                border: none;
+              }
+              .sIcon{
+                filter: contrast(0);
+                width: 88px;
+                display: block;
+                margin: auto;
+                transition: width 2s, height 1s, transform 1s;
+                
+              }
+              &:hover{
+                color: #fff;
+                cursor: pointer;
+                background-color: #00adff;
+
+                transform: rotate(360deg);
+
+              }
+
+        }
+    }
+    .section__title{
+        color: #fff;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+}

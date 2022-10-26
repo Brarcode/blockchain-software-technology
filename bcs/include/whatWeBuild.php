@@ -1,103 +1,82 @@
-<div id="hs_cos_wrapper_widget_1571926363059292" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
-                  <div class="section__anchor" id="Solutions"></div>
-                  <section class="section section--solutions section--box">
-                     <div class="section__header">
-                        <div class="container">
-                           <div class="section__header-inner">
-                              <h2 class="h2 section__title">
-                                 <p>What We Build</p>
-                              </h2>
-                           </div>
-                        </div>
+<div id="hs_cos_wrapper_widget_54094747053" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+   <section class="mission" style="--primary-color: #00ADFF">
+      <div class="container">
+         <div class="mission__row">
+            <div class="mission__col mission__col_side">
+               <h2 class="h1 mission__title" style="bottom: calc(100% - px + 30px)">About <span class="mission__accent">Company</span></h2>
+            </div>
+            <div class="mission__col mission__col_main">
+               <h4 class="h5 mission__subtitle"> <span class="mission__accent">CREATING A BETTER FUTURE WITH YOU</span></h4>
+               <hr class="mission__divider">
+               <div class="mission__missions">
+                    
+                  <div class="mission__mission aboutIcon">
+                    <a href="vision.php">
+                     <div class="h2 mission__mission-number">Vision
+                        <img class="mission__mission-icon" src="hubfs/commitment%20(master)1-2.png" alt="commitment (master)1-2" loading="">
                      </div>
-                     <div class="section__content">
-                        <div class="container">
-                           <div class="section__content-inner">
-                              <div class="solutions spoiler">
-                                 <div class="solutions__inner">
-                                    <ul class="solutions__list">
-                                       <li class="solutions__list-item">
-                                          <div class="solutions__item">
-                                             <div class="solutions__header">
-                                                <h3 class="h4 h4-md solutions__title ">
-                                                   <p>
-                                                      Smart Contracts: Writing and Testing
-                                                   </p>
-                                                </h3>
-                                             </div>
-                                             <div class="solutions__content">
-                                                <div class="static solutions__text">
-                                                   <p>The Virtual Dinero LTD team writes all types of smart contracts, including Ethereum, Hyperledger, EOS, and NEO-based. To make sure there are no flaws, misbehaviors and security holes in the smart contract code, we perform full-scale pre-release functional and non-functional testing.</p>
-                                                </div>
-                                                <div class="solutions__info">
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </li>
-                                       <li class="solutions__list-item">
-                                          <div class="solutions__item">
-                                             <div class="solutions__header">
-                                                <h3 class="h4 h4-md solutions__title ">
-                                                   <p>
-                                                      Decentralized Apps (Dapps)
-                                                   </p>
-                                                </h3>
-                                             </div>
-                                             <div class="solutions__content">
-                                                <div class="static solutions__text">
-                                                   <p>Dapps combine a number of interrelated smart contracts, united by a business logic and frontend. These apps help customers enable faster payment processing, and provide secure and reliable data records. Our team builds up a complete Dapp architecture, including communication with oracles, and creates a comprehensive UX/UI design.</p>
-                                                </div>
-                                                <div class="solutions__info">
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </li>
-                                    </ul>
-                                    <ul class="solutions__list">
-                                       <li class="solutions__list-item">
-                                          <div class="solutions__item">
-                                             <div class="solutions__header">
-                                                <h3 class="h4 h4-md solutions__title">
-                                                   <p>
-                                                      Technical Development for ICO
-                                                   </p>
-                                                </h3>
-                                             </div>
-                                             <div class="solutions__content">
-                                                <div class="static solutions__text">
-                                                   <p>If you have a business idea and need a platform for project monetization, our team is well-versed in delivering Initial Coin Offerings (ICO). We will provide an accurate technical realization of your ICO ecosystem: develop an ERC20-compliant token, build your wallet and oracles, and review the technical and QA parts of your Whitepaper.</p>
-                                                </div>
-                                                <div class="solutions__info">
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </li>
-                                       <li class="solutions__list-item">
-                                          <div class="solutions__item">
-                                             <div class="solutions__header">
-                                                <h3 class="h4 h4-md solutions__title">
-                                                   <p>
-                                                      Blockchain Ecosystems
-                                                   </p>
-                                                </h3>
-                                             </div>
-                                             <div class="solutions__content">
-                                                <div class="static solutions__text">
-                                                   <p>Blockchain ecosystems span a full range of cryptocurrency trading apps allowing for transparent and immutable transactions. Virtual Dinero LTD crafts any blockchain ecosystem element from scratch including crypto wallets, analytics tools, multiplatform exchanges, blockchain explorers, oracle applications, and portfolio monitor solutions.</p>
-                                                </div>
-                                                <div class="solutions__info">
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </li>
-                                    </ul>
-                                 </div>
-                                 <button class="show-more solutions__more" data-spoiler="solutions" type="button">
-                                 <span class="show-more__inner">Show more</span>
-                                 </button>
-                              </div>
-                           </div>
-                        </div>
+                     <div></div>
+                     <p>Our vision is to reduce the remarkably high rate of software project failures worldwide, by transforming the way companies manage them...</p>
+                     </a>
+                    </div>
+                
+                  <div class="mission__mission aboutIcon">
+                  <a href="mission.php">
+                     <div class="h2 mission__mission-number">Mission
+                        <img class="mission__mission-icon" src="hubfs/innovation%20(master)2.png" alt="innovation (master)2" loading="">
                      </div>
-                  </section>
-               </div>
+                     <div></div>
+                     <p>Our mission is to develop a standardized approach, guidance, and tools that help decrease the failure rates of software projects, and encourage companies to adopt these...</p>
+                    </a>
+                    </div>
+                    <div class="mission__mission aboutIcon">
+                  <a href="goals.php">
+                     <div class="h2 mission__mission-number">Goals
+                        <img class="mission__mission-icon" src="hubfs/empathy%20(master)5.png" alt="empathy (master)5" loading="lazy">
+                     </div>
+                     <div></div>
+                     <p>In order to achieve our vision and mission, we are following these goals... </p>
+</a>
+                  </div>
+
+                  <div class="mission__mission aboutIcon">
+                  <a href="goals.php">
+                     <div class="h2 mission__mission-number">Research
+                        <img class="mission__mission-icon" src="hubfs/collaboration%20(master)3.png" alt="collaboration (master)3" loading="lazy">
+                     </div>
+                     <div></div>
+                     <p>Research & Development
+                        15 years exp , innovation...
+                     </p>
+</a>
+                  </div>
+                
+                  <div class="mission__mission aboutIcon">
+                  <a href="our-team.php">
+                     <div class="h2 mission__mission-number">Meet the team
+                        <img class="mission__mission-icon" src="hubfs/trust%20(master)4.png" alt="trust (master)4" loading="lazy">
+                     </div>
+                     <div></div>
+                     <p>Meet our best minds...</p>
+</a>
+                  </div>
+                
+                  <div class="mission__mission aboutIcon">
+                  <a href="our-team.php">
+                     <div class="h2 mission__mission-number">Careers
+                        <img class="mission__mission-icon" src="hubfs/empathy%20(master)5.png" alt="empathy (master)5" loading="lazy">
+                     </div>
+                     <div></div>
+                     <p>We are committed to hiring, training and retaining the best talent... </p>
+</a>
+                  </div>
+
+
+                  
+               
+                </div>
+            </div>
+         </div>
+      </div>
+   </section>
+</div>

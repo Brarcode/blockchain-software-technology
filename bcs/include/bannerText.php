@@ -10,9 +10,12 @@
                      <div class="container">
                         <div class="comm-hero__inner  ">
                            <div class="comm-hero__info comm-hero__info_full">
-                              <h1 class="h1 comm-hero__title">Blockchain Software Development </h1>
+                              <h1 class="h1 comm-hero__title">Innovation meets experience</h1>
+                              <h2>One-stop platform for customized software development.</h2>
                               <p class="comm-hero__sub">
-                                 Whether you want to build solutions for secure peer-to-peer payments and immediate microtransactions, or develop self-executing smart contracts, we will put our knowledge and blockchain technology skills into action. As an experienced blockchain development company, Virtual Dinero LTD helps both startups and enterprises take advantage of the decentralized network built on blockchain. 
+                              Corporate and consumer applications are developed here based on our profound understanding of technologies and the markets they operate in. 
+                              With our professional mindset, we look beyond technology to offer viable solutions to assist in promoting business expansion on a global scale.
+
                               </p>
                               <a class="btn btn_brd btn_brd-white comm-hero__action" href="contact.html" onclick="ga('send', 'event', 'contact_button', 'click');">
                               Get in Touch for Details

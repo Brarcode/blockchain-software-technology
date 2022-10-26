@@ -7,13 +7,18 @@
       
             <?php include 'include/header.php';?>
             <?php include 'include/bannerText.php'?>
-            <?php include 'include/logos.php'?>
+            <!-- <?php include 'include/logos.php'?> -->
             <?php include 'include/whatWeBuild.php'?>
-            <?php include 'include/blockchain.php'?>
-            <?php include 'include/IndustryExperience.php'?>
-            <?php include 'include/haveQuestions.php'?>
-            <?php include 'include/techStack.php'?>
+            
             <?php include 'include/why.php'?>
+            <?php include 'include/IndustryExperience.php'?>
+            
+
+
+
+
+            <?php include 'include/haveQuestions.php'?>
+
             <?php include 'include/backToTop.php'?>
             <?php include 'include/footer.php';?>
       </div>

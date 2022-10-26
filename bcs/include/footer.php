@@ -138,86 +138,13 @@
                <div class="container">
                   <div class="footer__inner default2">
                      
-                     <div class="certs footer__certs">
-                        <ul class="certs__list">
-                           <li class="certs__item">
-                              <a target="_blank" rel="nofollow" href="#">
-                                 <figure class="certs__img">
-                                    <img src="hubfs/static/images/certs/AWS.svg" alt="AWS" loading="lazy">
-                                 </figure>
-                                 <div class="certs__title">
-                                    AWS Certified<br>Partner
-                                 </div>
-                              </a>
-                           </li>
-                           <li class="certs__item">
-                              <a target="_blank" rel="nofollow" href="#">
-                                 <figure class="certs__img">
-                                    <img src="hubfs/static/images/certs/2.svg" alt="2" loading="lazy">
-                                 </figure>
-                                 <div class="certs__title">
-                                    Microsoft Gold<br>Partner
-                                 </div>
-                              </a>
-                           </li>
-                           <li class="certs__item">
-                              <a target="_blank" rel="nofollow" href="#">
-                                 <figure class="certs__img">
-                                    <img src="hubfs/About-us/ISO-Certificates/Azure.svg" alt="Azure" loading="lazy">
-                                 </figure>
-                                 <div class="certs__title">
-                                    Microsoft Azure Partner
-                                 </div>
-                              </a>
-                           </li>
-                           <li class="certs__item">
-                              <a target="_blank" rel="nofollow" href="#">
-                                 <figure class="certs__img">
-                                    <img src="hubfs/static/images/certs/1.svg" alt="1" loading="lazy">
-                                 </figure>
-                                 <div class="certs__title">
-                                    Xamarin Partner
-                                 </div>
-                              </a>
-                           </li>
-                           <li class="certs__item">
-                              <a target="_blank" rel="nofollow" href="#">
-                                 <figure class="certs__img">
-                                    <img src="hubfs/static/images/certs/Information-Security.svg" alt="Information-Security" loading="lazy">
-                                 </figure>
-                                 <div class="certs__title">
-                                    Information<br>Security
-                                 </div>
-                              </a>
-                           </li>
-                           <li class="certs__item">
-                              <a target="_blank" rel="nofollow" href="#">
-                                 <figure class="certs__img">
-                                    <img src="hubfs/static/images/certs/Quality-Management-System.svg" alt="Quality-Management-System" loading="lazy">
-                                 </figure>
-                                 <div class="certs__title">
-                                    Quality Management<br>Systems
-                                 </div>
-                              </a>
-                           </li>
-                           <li class="certs__item">
-                              <a target="_blank" rel="nofollow" href="#">
-                                 <figure class="certs__img">
-                                    <img src="hubfs/Inc.5000_2021.svg" alt="Inc.5000_2021" loading="lazy">
-                                 </figure>
-                                 <div class="certs__title">
-                                    Fourth consecutive<br>year<br>Inc 5000 honoree
-                                 </div>
-                              </a>
-                           </li>
-                        </ul>
-                     </div>
+
                      <div class="footer__socials_container">
                         <div class="privacy-link">
                            <span class="footer__copyright">© 2022 
-                           Virtual Dinero LTD Corp.
+                           Virtual Dinero Private Limited Corp.
                            </span>
-                           <a class="footer__privacy" href="privacy-statement.html">
+                           <a class="footer__privacy" href="privacy-statement.php">
                            Privacy Policy
                            </a>
                         </div>

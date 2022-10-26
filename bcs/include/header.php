@@ -18,171 +18,58 @@
                                     </a>
                                     <ul class="header-submenu header-submenu--more">
                                        <li class="header-submenu__item">
-                                          <a class="header-submenu__link" href="custom_application_development.php">
+                                          <a class="header-submenu__link" href="web-systems.php">
                                           Web Systems
                                           </a>
                                        </li>
                                        <li class="header-submenu__item">
-                                          <a class="header-submenu__link" href="custom_application_development.php">
+                                          <a class="header-submenu__link" href="mobile-apps.php">
                                           Mobile Apps
                                           </a>
                                        </li>
                                        <li class="header-submenu__item">
-                                          <a class="header-submenu__link" href="custom_application_development.php">
+                                          <a class="header-submenu__link" href="cloud-system.php">
                                           Cloud Systems
                                           </a>
                                        </li>
+                                       
                                        <li class="header-submenu__item">
-                                          <a class="header-submenu__link" href="custom_application_development.php">
-                                          AWS Software
-                                          </a>
-                                       </li>
-                                       <li class="header-submenu__item">
-                                          <a class="header-submenu__link" href="custom_application_development.php">
+                                          <a class="header-submenu__link" href="desktop-apps.php">
                                           Desktop Apps
                                           </a>
                                        </li>
-                                       <li class="header-submenu__item">
-                                          <a class="header-submenu__link" href="custom_application_development.php">
-                                          QT Development  ‌
-                                          </a>
-                                       </li>
+                                       
                                     </ul>
                                  </li>
+
                                  <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="#embedded_system.html">
-                                    Embedded System Development
-                                    </a>
-                                    <ul class="header-submenu header-submenu--more">
-                                       <li class="header-submenu__item">
-                                          <a class="header-submenu__link" href="#firmware_development.html">
-                                          Firmware
-                                          </a>
-                                       </li>
-                                       <li class="header-submenu__item">
-                                          <a class="header-submenu__link" href="#middleware_development.html">
-                                          Middleware
-                                          </a>
-                                       </li>
-                                       <li class="header-submenu__item">
-                                          <a class="header-submenu__link" href="#embedded.html">
-                                          Embedded Apps
-                                          </a>
-                                       </li>
-                                       <li class="header-submenu__item">
-                                          <a class="header-submenu__link" href="#thunderbolt-solution-development.html">
-                                          Thunderbolt Solutions
-                                          </a>
-                                       </li>
-                                       <li class="header-submenu__item">
-                                          <a class="header-submenu__link" href="#hmi_development.html">
-                                          Human-Machine Interfaces (HMIs)
-                                          </a>
-                                       </li>
-                                       <li class="header-submenu__item">
-                                          <a class="header-submenu__link" href="#connectivity_solutions.html">
-                                          Connectivity Solutions
-                                          </a>
-                                       </li>
-                                       <li class="header-submenu__item">
-                                          <a class="header-submenu__link" href="#proximity_solutions.html">
-                                          Proximity Solutions
-                                          </a>
-                                       </li>
-                                    </ul>
-                                 </li>
-                                 <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="custom_application_development.php">
+                                    <a class="header-submenu__link" href="digital-transformation.php">
                                     Digital Transformation
                                     </a>
                                  </li>
+
                                  <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="custom_application_development.php">
-                                    Hardware Design
-                                    </a>
-                                    <ul class="header-submenu header-submenu--more">
-                                       <li class="header-submenu__item">
-                                          <a class="header-submenu__link" href="custom_application_development.php">
-                                          Electronic System Design
-                                          </a>
-                                       </li>
-                                       <li class="header-submenu__item">
-                                          <a class="header-submenu__link" href="custom_application_development.php">
-                                          Electronic Circuit Design
-                                          </a>
-                                       </li>
-                                       <li class="header-submenu__item">
-                                          <a class="header-submenu__link" href="custom_application_development.php">
-                                          PCB Design and Layout Services
-                                          </a>
-                                       </li>
-                                       <li class="header-submenu__item">
-                                          <a class="header-submenu__link" href="custom_application_development.php">
-                                          PCB Design Simulations
-                                          </a>
-                                       </li>
-                                       <li class="header-submenu__item">
-                                          <a class="header-submenu__link" href="custom_application_development.php">
-                                          FPGA Design
-                                          </a>
-                                       </li>
-                                       <li class="header-submenu__item">
-                                          <a class="header-submenu__link" href="custom_application_development.php">
-                                          Enclosure Design
-                                          </a>
-                                       </li>
-                                    </ul>
-                                 </li>
-                                 <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="custom_application_development.php">
+                                    <a class="header-submenu__link" href="Early-stage-innovation.php">
                                     Early Stage Innovation
                                     </a>
                                  </li>
                                  <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="custom_application_development.php">
-                                    Venture Studio for Startups
-                                    </a>
-                                 </li>
-                                 <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="custom_application_development.php">
+                                    <a class="header-submenu__link" href="business-analysis.php">
                                     Business Analysis
                                     </a>
                                  </li>
                                  <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="custom_application_development.php">
-                                    Front End
+                                    <a class="header-submenu__link" href="quality-assurance.php">
+                                    Quality assurance
                                     </a>
                                  </li>
+                                 
                                  <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="custom_application_development.php">
-                                    UX/UI Design
-                                    </a>
-                                 </li>
-                                 <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="custom_application_development.php">
-                                    Back End
-                                    </a>
-                                 </li>
-                                 <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="custom_application_development.php">
+                                    <a class="header-submenu__link" href="cyber-security.php">
                                     Cyber Security
                                     </a>
                                  </li>
-                                 <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="custom_application_development.php">
-                                    Maintenance and Support
-                                    </a>
-                                 </li>
-                                 <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="custom_application_development.php">
-                                    Quality Assurance
-                                    </a>
-                                 </li>
-                                 <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="custom_application_development.php">
-                                    DevOps
-                                    </a>
-                                 </li>
+                                 
                               </ul>
                            </li>
                            <li class="header-menu__item">
@@ -192,18 +79,23 @@
                               <ul class="header-submenu header-submenu_v2 header-menu__submenu">
                                  <li class="header-submenu__title h3">Solutions</li>
                                  <li class="header-submenu__item">
+                                    <a class="header-submenu__link" href="Saas-and-privatization.php">
+                                    SaaS and privatization
+                                    </a>
+                                 </li>
+                                 <li class="header-submenu__item">
                                     <a class="header-submenu__link" href="custom_application_development.php">
                                     IoT
                                     </a>
                                     <ul class="header-submenu header-submenu--more">
                                        <li class="header-submenu__item">
-                                          <a class="header-submenu__link" href="custom_application_development.php">
+                                          <a class="header-submenu__link" href="consumer-IoT.php">
                                           Consumer IoT
                                           </a>
                                        </li>
                                        <li class="header-submenu__item">
                                           <a class="header-submenu__link" href="custom_application_development.php">
-                                          Industrial IoT (IIoT)
+                                          Industrial IoT
                                           </a>
                                        </li>
                                        <li class="header-submenu__item">
@@ -225,41 +117,72 @@
                                  </li>
                                  <li class="header-submenu__item">
                                     <a class="header-submenu__link" href="custom_application_development.php">
-                                    AI/Machine Learning
+                                    Metaverse 
                                     </a>
+                                    <ul class="header-submenu header-submenu--more">
+                                       <li class="header-submenu__item">
+                                          <a class="header-submenu__link" href="custom_application_development.php">
+                                          Metaverse NFT marketplace
+                                          </a>
+                                       </li>
+                                       <li class="header-submenu__item">
+                                          <a class="header-submenu__link" href="custom_application_development.php">
+                                          Metaverse game development
+                                          </a>
+                                       </li>
+                                       <li class="header-submenu__item">
+                                          <a class="header-submenu__link" href="custom_application_development.php">
+                                          Metaverse real state development
+                                          </a>
+                                       </li>
+                                       <li class="header-submenu__item">
+                                          <a class="header-submenu__link" href="custom_application_development.php">
+                                          Metaverse social media app development
+                                          </a>
+                                       </li>
+
+                                    </ul>
                                  </li>
                                  <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="custom_application_development.php">
-                                    Storage
+                                    <a class="header-submenu__link" href="ai-machine-learning-and-robotics.php">
+                                   AI, Machine Learning and Robotics
                                     </a>
                                  </li>
+                                 
                                  <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="custom_application_development.php">
-                                    Industrial Automation and Robotics
-                                    </a>
-                                 </li>
-                                 <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="custom_application_development.php">
-                                    Computer Vision
-                                    </a>
-                                 </li>
-                                 <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="custom_application_development.php">
-                                    Content Processing and Distribution
-                                    </a>
-                                 </li>
-                                 <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="custom_application_development.php">
-                                    AR/VR
-                                    </a>
-                                 </li>
-                                 <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="custom_application_development.php">
+                                    <a class="header-submenu__link" href="block-chain.php">
                                     Blockchain
                                     </a>
+                                    <ul class="header-submenu header-submenu--more">
+                                       <li class="header-submenu__item">
+                                          <a class="header-submenu__link" href="eco-system.php">
+                                          Ecosystem
+                                          </a>
+                                       </li>                                    
+                                       <li class="header-submenu__item">
+                                          <a class="header-submenu__link" href="Exchange.php">
+                                          Exchange  
+                                          </a>
+                                       </li>
+                                       <li class="header-submenu__item">
+                                          <a class="header-submenu__link" href="Wallet.php">
+                                          Wallet 
+                                          </a>
+                                       </li>       
+                                       <li class="header-submenu__item">
+                                          <a class="header-submenu__link" href="token.php">
+                                          Token
+                                          </a>
+                                       </li>                                      
+                                    </ul>
                                  </li>
+
+                                
                               </ul>
                            </li>
+
+                           </li>
+
                            <li class="header-menu__item">
                               <div class="header-menu__link header-menu__link--with-arrow">
                                  Industries
@@ -267,90 +190,42 @@
                               <ul class="header-submenu header-submenu_v2 header-menu__submenu">
                                  <li class="header-submenu__title h3">Industries</li>
                                  <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="custom_application_development.php">
-                                    Consumer Electronics
+                                    <a class="header-submenu__link" href="micro-small-and-medium-enterprises.php">
+                                    Micro, small & medium enterprises
                                     </a>
                                  </li>
                                  <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="custom_application_development.php">
-                                    Automotive
+                                    <a class="header-submenu__link" href="consumer-durables.php">
+                                    Consumer durables
                                     </a>
                                  </li>
                                  <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="custom_application_development.php">
+                                    <a class="header-submenu__link" href="Healthcare.php">
                                     Healthcare
                                     </a>
                                  </li>
+
                                  <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="custom_application_development.php">
-                                    Oil and Gas
+                                    <a class="header-submenu__link" href="Manufacturing-Automation.php">
+                                    Manufacturing Automation
                                     </a>
                                  </li>
                                  <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="custom_application_development.php">
-                                    Media and Entertainment
+                                    <a class="header-submenu__link" href="software-technology-it.php">
+                                    Software Technology, IT
                                     </a>
                                  </li>
                                  <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="custom_application_development.php">
-                                    Software and Technology
+                                    <a class="header-submenu__link" href="Gaming.php">
+                                    Gaming
                                     </a>
                                  </li>
                                  <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="custom_application_development.php">
-                                    Industrial Manufacturing
+                                    <a class="header-submenu__link" href="Banking-and-Insurance.php">
+                                    Banking & Insurance
                                     </a>
                                  </li>
-                                 <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="custom_application_development.php">
-                                    Transportation
-                                    </a>
-                                 </li>
-                                 <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="custom_application_development.php">
-                                    Data Storage
-                                    </a>
-                                 </li>
-                                 <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="custom_application_development.php">
-                                    Games
-                                    </a>
-                                 </li>
-                                 <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="custom_application_development.php">
-                                    Sports
-                                    </a>
-                                 </li>
-                                 <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="custom_application_development.php">
-                                    Pet Tech
-                                    </a>
-                                 </li>
-                                 <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="custom_application_development.php">
-                                    Climate Tech
-                                    </a>
-                                 </li>
-                                 <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="custom_application_development.php">
-                                    Baby Tech
-                                    </a>
-                                 </li>
-                                 <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="custom_application_development.php">
-                                    e-Learning
-                                    </a>
-                                 </li>
-                                 <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="custom_application_development.php">
-                                    Construction
-                                    </a>
-                                 </li>
-                                 <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="custom_application_development.php">
-                                    Retail
-                                    </a>
-                                 </li>
+                               
                               </ul>
                            </li>
                            <li class="header-menu__item">
@@ -360,60 +235,37 @@
                               <ul class="header-submenu header-submenu_v2 header-menu__submenu">
                                  <li class="header-submenu__title h3">About</li>
                                  <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="about.php">
-                                    About Virtual Dinero
+                                    <a class="header-submenu__link" href="vision.php">
+                                    Vision 
                                     </a>
                                  </li>
                                  <li class="header-submenu__item">
+                                    <a class="header-submenu__link" href="mission.php">
+                                    Mission 
+                                    </a>
+                                 </li>
+
+                                 <li class="header-submenu__item">
+                                    <a class="header-submenu__link" href="goals.php">
+                                    Goals
+                                    </a>
+                                 </li>                                 <li class="header-submenu__item">
+                                    <a class="header-submenu__link" href="research-and-development.php">
+                                    Research & Development
+                                    </a>
+                                 </li>
+                                 
+                                 <li class="header-submenu__item">
                                     <a class="header-submenu__link" href="about.php">
-                                    25 Years of Innovation
+                                    Meet the team
                                     </a>
                                  </li>
                                  <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="about.php">
-                                    What Our Customers Say
-                                    </a>
-                                 </li>
-                                 <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="about.php">
-                                    Innovation Lab
-                                    </a>
-                                 </li>
-                                 <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="about.php">
-                                    Our Process
-                                    </a>
-                                 </li>
-                                 <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="about.php">
-                                    Our Tech Skills
-                                    </a>
-                                 </li>
-                                 <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="about.php">
-                                    Our Vision, Mission, and Values
-                                    </a>
-                                 </li>
-                                 <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="about.php">
-                                    Collaboration Models
-                                    </a>
-                                 </li>
-                                 <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="about.php">
-                                    Partnerships
-                                    </a>
-                                 </li>
-                                 <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="about.php">
-                                    ISO Certificates
-                                    </a>
-                                 </li>
-                                 <li class="header-submenu__item">
-                                    <a class="header-submenu__link" href="#" target="_blank">
+                                    <a class="header-submenu__link" href="careers.php">
                                     Careers
                                     </a>
                                  </li>
+                               
                               </ul>
                            </li>
                         </ul>
@@ -433,17 +285,17 @@
                   </div>
                </div>
             </div>
-            <div id="hs_cos_wrapper_module_16317066883226" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+            <!-- <div id="hs_cos_wrapper_module_16317066883226" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
                <div class="ribbon" data-id="global">
                   <div class="ribbon__container">
                      <div class="ribbon__row">
                         <div class="ribbon__col ribbon__col_text ribbon__text">
-                           <h3>Virtual Dinero LTD Continues Growth of Venture Fund, Welcomes H2 2022 Venture Studio Cohort with Increasing Global Representation</h3>
+                           <h3>Virtual Dinero Private Limited Continues Growth of Venture Fund, Welcomes H2 2022 Venture Studio Cohort with Increasing Global Representation</h3>
                         </div>
                         
                      </div>
                    
                   </div>
                </div>
-            </div>
+            </div> -->
          </header>

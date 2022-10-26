@@ -1,7 +1,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="description" content="...">
-    <title>Virtual Dinero LTD Blockchain Development Company | Blockchain Software Developers</title>
+    <title>Virtual Dinero Private Limited Blockchain Development Company | Blockchain Software Developers</title>
     <!-- <link rel="shortcut icon" href="hubfs/favicon-32.png"> -->
     
     <script src="hs/hsstatic/jquery-libs/static-1.4/jquery/jquery-1.11.2.js"></script>
@@ -21,6 +21,7 @@ a.cta_button{-moz-box-sizing:content-box !important;-webkit-box-sizing:content-b
 <link rel="stylesheet" href="hs-fs/hub/2915353/hub_generated/module_assets/21055464374/1665053351942/module_21055464374_capabilities_1.min.css">
 <link rel="stylesheet" href="hs-fs/hub/2915353/hub_generated/module_assets/1615469062823/module_42225714444_search-field-footer.css">
 <link rel="stylesheet" href="hs-fs/hub/2915353/hub_generated/module_assets/1615468549715/module_41053827494_search-field.css">
+<link rel="stylesheet" href="css/style.css">
     
 
     
@@ -29,6 +30,12 @@ a.cta_button{-moz-box-sizing:content-box !important;-webkit-box-sizing:content-b
 <link rel="stylesheet" href="hs-fs/hub/2915353/hub_generated/template_assets/37039861337/1655206432308/softeq/css/fonts.min.css">
 
 
+
+<link rel="stylesheet" href="hs-fs/hub/2915353/hub_generated/module_assets/53825549984/1658907872008/module_53825549984_Vision.min.css">
+<link rel="stylesheet" href="hs-fs/hub/2915353/hub_generated/module_assets/1665053387782/module_53824004105_Mission.css">
+<link rel="stylesheet" href="hs-fs/hub/2915353/hub_generated/module_assets/53826530105/1658993172903/module_53826530105_Values-v2.min.css">
+<link rel="stylesheet" href="hs-fs/hub/2915353/hub_generated/module_assets/1615469062823/module_42225714444_search-field-footer.css">
+<link rel="stylesheet" href="hs-fs/hub/2915353/hub_generated/module_assets/1615468549715/module_41053827494_search-field.css">
 
 
   <meta name="generator" content="HubSpot"></head>
